@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:LaneExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC5%20Show%20Stock%20Reports.bpusagemodel#_Oa7EMN56EealBtzUCfkZ3g"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_YbZIgFjAEeaVN9HYl5xt5w"/>
+  </abstractlaneextension>
+</intBIIS_LP:LaneExtContainer>

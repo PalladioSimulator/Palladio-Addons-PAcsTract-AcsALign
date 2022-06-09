@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_gU7UIO37EeaVJe0Sxifr_Q"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Twvv8O39EeaVJe0Sxifr_Q"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_eH5b4O37EeaVJe0Sxifr_Q"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_OG9AcO3-EeaVJe0Sxifr_Q"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_cjjCUO39EeaVJe0Sxifr_Q"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Xz0j0O39EeaVJe0Sxifr_Q"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_YUm8sO39EeaVJe0Sxifr_Q"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_c0f6UO37EeaVJe0Sxifr_Q"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_lGV0sO37EeaVJe0Sxifr_Q"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_VG5DgO39EeaVJe0Sxifr_Q"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Or8j4O3-EeaVJe0Sxifr_Q"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_ibNrMO37EeaVJe0Sxifr_Q"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_lqUrgO37EeaVJe0Sxifr_Q"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_ZgJ0sO37EeaVJe0Sxifr_Q"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Z_CJEO37EeaVJe0Sxifr_Q"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Wmum4O6zEeasdO_pne2t6A"/>
+  </elscmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_dpIcQO37EeaVJe0Sxifr_Q"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_b7sqEO37EeaVJe0Sxifr_Q"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_XUe8cO39EeaVJe0Sxifr_Q"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_aeoPIO37EeaVJe0Sxifr_Q"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Z_CJEO37EeaVJe0Sxifr_Q"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_TTw5AO39EeaVJe0Sxifr_Q"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Z_CJEO37EeaVJe0Sxifr_Q"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_PItYYO3-EeaVJe0Sxifr_Q"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_lqUrgO37EeaVJe0Sxifr_Q"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Y3xmEO37EeaVJe0Sxifr_Q"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_eH5b4O37EeaVJe0Sxifr_Q"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_c-2eQO39EeaVJe0Sxifr_Q"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_dpIcQO37EeaVJe0Sxifr_Q"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_aeoPIO37EeaVJe0Sxifr_Q"/>
+  </rdrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_lqUrgO37EeaVJe0Sxifr_Q"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_ZBreEO39EeaVJe0Sxifr_Q"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_fF8YgO37EeaVJe0Sxifr_Q"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_heu00O37EeaVJe0Sxifr_Q"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_fF8YgO37EeaVJe0Sxifr_Q"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_ZlmDcO39EeaVJe0Sxifr_Q"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_fF8YgO37EeaVJe0Sxifr_Q"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_n7pN4O37EeaVJe0Sxifr_Q"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_eH5b4O37EeaVJe0Sxifr_Q"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_W0NL0O37EeaVJe0Sxifr_Q"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_lGV0sO37EeaVJe0Sxifr_Q"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_foN_IO37EeaVJe0Sxifr_Q"/>
+  </adrmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

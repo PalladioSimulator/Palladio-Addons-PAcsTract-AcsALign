@@ -1,0 +1,6 @@
+Rolle;Berechtigungen;Erbt_von
+Administrational Division:EnterpriseManager;[];
+Administrational Division:StockManager;[, READ/WRITE Items (Coll), READ/WRITE Item (Comp), WRITE CustomerIdentifier (Comp), READ/WRITE Delivery (Comp)];Administrational Division:EnterpriseManager
+Administrational Division:StoreManager;[, WRITE StoreID (Comp)];Administrational Division:EnterpriseManager
+External:Customer;[READ/WRITE Items (Coll), WRITE MoneyCollection (Coll), READ/WRITE CreditCard (Comp), READ/WRITE Receipt (Comp), WRITE CreditCardPIN (Comp), , READ EnterpriseCollection (Coll), WRITE Enterprise (Comp), READ StoreCollection (Coll), WRITE StoreID (Comp), WRITE Item (Comp), READ ShoppingCart (Comp), READ CreditCardCollection (Coll)];Administrational Division:EnterpriseManager,Administrational Division:StoreManager
+Operative Division:Cashier;[, READ/WRITE Item (Comp), READ/WRITE MoneyCollection (Coll), READ/WRITE CreditCard (Comp), READ/WRITE Receipt (Comp), READ/WRITE Barcode (Comp), READ Items (Coll)];Administrational Division:EnterpriseManager

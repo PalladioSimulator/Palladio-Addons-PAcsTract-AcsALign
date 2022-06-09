@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:LaneExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_T423QO1GEealP-F5eHurBQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_NWarAOSgEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_P_G5oOSiEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+  <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_KBq1YOSjEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_LO8g0OSjEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l5ZUwOSkEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_2-vsIOSkEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_te3BYOSQEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_X5uaEOSSEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Z2BAQOSVEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ZPuKYOSXEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_a4ffAOSXEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_y70DMOSZEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_59tYoOSZEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_jLY5kOSoEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Du3VkGrIEeaGoungTdjFcw"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_aVsvcD6dEeaewP-8r44ssQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_RNERwEHkEeaQx52r8RCbXg"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_G1QCAEHnEeaQx52r8RCbXg"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_KUS9YEjaEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_sCBKUEjcEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Vlu8MOSoEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_eNynoEjrEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Q_I2cOSmEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_QYxW2eSiEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_pfxlmeSkEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Qe6uCuSVEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_43vPGeSZEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_1qHYWj6cEeaewP-8r44ssQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Wmy-6UjcEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l4Ug2UjfEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ismVSUjrEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_rgZ3yUjsEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+	<releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_wqZ3eUjsEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_7An5GD6TEeaewP-8r44ssQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_XTtXaD6YEeaewP-8r44ssQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PGUQeOSiEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_nVxzOOSkEea-2_--ND6G3w"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_JY01GOSVEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_2fx5OOSZEeaUD7qLq3AzNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_H2W7yD6cEeaewP-8r44ssQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_RDEQmEjcEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+	<acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_XLqouEjrEea808Ttd_V1HQ"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </abstractlaneextension>
+</intBIIS_LP:LaneExtContainer>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:LaneExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_heu00O37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_ZlmDcO39EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_n7pN4O37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_W0NL0O37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_foN_IO37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:AcquireDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_ZBreEO39EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_PItYYO3-EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_c-2eQO39EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_b7sqEO37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_TTw5AO39EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_aeoPIO37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:ReleaseDeviceResourceAction_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Y3xmEO37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Twvv8O39EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_OG9AcO3-EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Xz0j0O39EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_c0f6UO37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_ibNrMO37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_VG5DgO39EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_ZgJ0sO37EeaVJe0Sxifr_Q"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel#_Wmum4O6zEeasdO_pne2t6A"/>
+  </abstractlaneextension>
+</intBIIS_LP:LaneExtContainer>

@@ -1,0 +1,30 @@
+Id,Role,BusinessPermission,ISDataType
+1,Administrational Division:StockManager,READ/WRITE Item (Comp),Product (Comp)
+2,Administrational Division:StockManager,READ/WRITE Items (Coll),List_products (Coll)
+3,Administrational Division:StockManager,READ/WRITE Delivery (Comp),
+4,Administrational Division:StockManager,WRITE CustomerIdentifier (Comp),customerIdentifier (Comp)
+7,Administrational Division:StoreManager,WRITE StoreID (Comp),storeID (Comp)
+8,External:Customer,READ/WRITE CreditCard (Comp),creditCard (Comp)
+9,External:Customer,READ CreditCardCollection (Coll),list_creditCards (Coll)
+10,External:Customer,READ EnterpriseCollection (Coll),List_enterprises (Coll)
+11,External:Customer,READ/WRITE Items (Coll),List_products (Coll)
+12,External:Customer,READ/WRITE Receipt (Comp),
+13,External:Customer,READ ShoppingCart (Comp),shoppingCart (Comp)
+14,External:Customer,READ StoreCollection (Coll),list_store (Coll)
+18,External:Customer,WRITE CreditCardPIN (Comp),creditCardPIN (Comp)
+19,External:Customer,WRITE Enterprise (Comp),Enterprise (Comp)
+20,External:Customer,WRITE Item (Comp),Product (Comp)
+22,External:Customer,WRITE MoneyCollection (Coll),
+23,External:Customer,WRITE StoreID (Comp),storeID (Comp)
+24,Operative Division:Cashier,ACQUIRE BarCodeScanner,
+25,Operative Division:Cashier,ACQUIRE CardReader,
+26,Operative Division:Cashier,ACQUIRE CashBox,
+27,Operative Division:Cashier,ACQUIRE CashDeskPC,
+28,Operative Division:Cashier,ACQUIRE LightDisplay,
+29,Operative Division:Cashier,ACQUIRE Printer,
+30,Operative Division:Cashier,READ/WRITE Barcode (Comp),Barcode (Comp)
+31,Operative Division:Cashier,READ/WRITE CreditCard (Comp),creditCard (Comp)
+32,Operative Division:Cashier,READ/WRITE Item (Comp),Product (Comp)
+33,Operative Division:Cashier,READ Items (Coll),List_products (Coll)
+34,Operative Division:Cashier,READ/WRITE MoneyCollection (Coll),
+38,Operative Division:Cashier,READ/WRITE Receipt (Comp),

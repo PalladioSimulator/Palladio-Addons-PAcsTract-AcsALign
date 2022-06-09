@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_B26mtoByEemBVuSpUWQRuQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_KxgN0N53EealBtzUCfkZ3g"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_IdGmBuPMEeauPeJO52TmNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_eSdIsOPMEeauPeJO52TmNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_TRWWRuPNEeauPeJO52TmNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_e_75wOPMEeauPeJO52TmNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_ylVWluPNEeauPeJO52TmNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_Uj64MN55EealBtzUCfkZ3g"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

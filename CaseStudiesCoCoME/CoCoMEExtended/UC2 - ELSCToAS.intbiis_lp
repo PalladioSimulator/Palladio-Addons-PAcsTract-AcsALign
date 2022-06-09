@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Dv82JD6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_T423QO1GEealP-F5eHurBQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_NCFZxuSgEea-2_--ND6G3w"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_NWarAOSgEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PgPMVuSiEea-2_--ND6G3w"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_P_G5oOSiEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_JyxdxuSjEea-2_--ND6G3w"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_KBq1YOSjEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_KyhDhuSjEea-2_--ND6G3w"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_LO8g0OSjEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_llF4tuSkEea-2_--ND6G3w"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l5ZUwOSkEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_mdPYxuSQEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_te3BYOSQEeaUD7qLq3AzNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_oHwpxuSkEea-2_--ND6G3w"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_2-vsIOSkEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_4dWIVkHmEeaQx52r8RCbXg"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_G1QCAEHnEeaQx52r8RCbXg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Y6VJNuSXEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ZPuKYOSXEeaUD7qLq3AzNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_HPVT1uSnEea-2_--ND6G3w"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_jLY5kOSoEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_cniaxuSXEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_jLY5kOSoEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_-ovJRmrHEeaGoungTdjFcw"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Du3VkGrIEeaGoungTdjFcw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PZReJj6dEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_aVsvcD6dEeaewP-8r44ssQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_6I2HFuSYEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_KUS9YEjaEea808Ttd_V1HQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Ee2ltuSmEea-2_--ND6G3w"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Vlu8MOSoEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_mBBvJuSWEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_RNERwEHkEeaQx52r8RCbXg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_byxb5kjZEea808Ttd_V1HQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Vlu8MOSoEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ypuNpuSZEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_y70DMOSZEeaUD7qLq3AzNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ZccCpuSVEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Z2BAQOSVEeaUD7qLq3AzNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_w3l8tkjdEea808Ttd_V1HQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_sCBKUEjcEea808Ttd_V1HQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_V-k8BuSSEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_X5uaEOSSEeaUD7qLq3AzNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ai_wJuSXEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_a4ffAOSXEeaUD7qLq3AzNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_3KXuVuSZEeaUD7qLq3AzNA"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_59tYoOSZEeaUD7qLq3AzNA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_9ajlpkjrEea808Ttd_V1HQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_eNynoEjrEea808Ttd_V1HQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PgU4NkjsEea808Ttd_V1HQ"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Q_I2cOSmEea-2_--ND6G3w"/>
+  </elscmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_MZg2huSjEea-2_--ND6G3w"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l4Ug2UjfEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PgU4NkjsEea808Ttd_V1HQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_rgZ3yUjsEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_4Bno9uSlEea-2_--ND6G3w"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l4Ug2UjfEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_9ajlpkjrEea808Ttd_V1HQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ismVSUjrEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_HPVT1uSnEea-2_--ND6G3w"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_43vPGeSZEeaUD7qLq3AzNA"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PgU4NkjsEea808Ttd_V1HQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_wqZ3eUjsEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_cniaxuSXEeaUD7qLq3AzNA"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l4Ug2UjfEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_HPVT1uSnEea-2_--ND6G3w"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l4Ug2UjfEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_byxb5kjZEea808Ttd_V1HQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l4Ug2UjfEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Ee2ltuSmEea-2_--ND6G3w"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_l4Ug2UjfEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Ee2ltuSmEea-2_--ND6G3w"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Wmy-6UjcEea808Ttd_V1HQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PZReJj6dEeaewP-8r44ssQ"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_1qHYWj6cEeaewP-8r44ssQ"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PgPMVuSiEea-2_--ND6G3w"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_QYxW2eSiEea-2_--ND6G3w"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_4Bno9uSlEea-2_--ND6G3w"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_pfxlmeSkEea-2_--ND6G3w"/>
+  </rdrmatchasext>
+  <rdrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ZccCpuSVEeaUD7qLq3AzNA"/>
+    <releasedeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_Qe6uCuSVEeaUD7qLq3AzNA"/>
+  </rdrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_9ajlpkjrEea808Ttd_V1HQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_XLqouEjrEea808Ttd_V1HQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_21iGxuSZEeaUD7qLq3AzNA"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_2fx5OOSZEeaUD7qLq3AzNA"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_gjTERkjcEea808Ttd_V1HQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_RDEQmEjcEea808Ttd_V1HQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PZReJj6dEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_H2W7yD6cEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_ZccCpuSVEeaUD7qLq3AzNA"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_JY01GOSVEeaUD7qLq3AzNA"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_nt2U9uSkEea-2_--ND6G3w"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_nVxzOOSkEea-2_--ND6G3w"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_984AFuSdEea-2_--ND6G3w"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_7An5GD6TEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PgPMVuSiEea-2_--ND6G3w"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_PGUQeOSiEea-2_--ND6G3w"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_mdPYxuSQEeaUD7qLq3AzNA"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_7An5GD6TEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_GfnE5j6UEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_7An5GD6TEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_mdPYxuSQEeaUD7qLq3AzNA"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_XTtXaD6YEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_984AFuSdEea-2_--ND6G3w"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_XTtXaD6YEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_GfnE5j6UEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_XTtXaD6YEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_mdPYxuSQEeaUD7qLq3AzNA"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_nYGoGD6YEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_984AFuSdEea-2_--ND6G3w"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_nYGoGD6YEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+  <adrmatchasext>
+    <actorstep href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_GfnE5j6UEeaewP-8r44ssQ"/>
+    <acquiredeviceresourceaction href="cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel#_nYGoGD6YEeaewP-8r44ssQ"/>
+  </adrmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

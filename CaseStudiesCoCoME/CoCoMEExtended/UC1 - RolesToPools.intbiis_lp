@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:PoolExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <role_poolext organizationalUnit="Operative Division">
+    <role href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="External">
+    <role href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+  </role_poolext>
+</intBIIS_LP:PoolExtContainer>

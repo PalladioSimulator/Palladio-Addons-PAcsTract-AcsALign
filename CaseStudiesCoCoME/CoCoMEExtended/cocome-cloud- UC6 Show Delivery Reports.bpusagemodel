@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagemodel:UsageModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpusagemodel="http://palladiosimulator.org/PalladioComponentModel/5.2/bp/bpUsageModel" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2" xsi:schemaLocation="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//usagemodel">
+  <usageScenario_UsageModel id="_zI-twFl2Eeafw8jrX0KOKw" entityName="ShowReportView">
+    <scenarioBehaviour_UsageScenario id="_zlMvsFl2Eeafw8jrX0KOKw" entityName="ShowReportView">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_8Wls1Fl2Eeafw8jrX0KOKw" entityName="Start" successor="#_9Goptll2Eeafw8jrX0KOKw"/>
+      <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" id="_9Goptll2Eeafw8jrX0KOKw" entityName="TheEnterpriseManagerEntersTheEnterpriseIdentifier" successor="#__2QRpll2Eeafw8jrX0KOKw" predecessor="#_8Wls1Fl2Eeafw8jrX0KOKw" responsibleRole="cocome-cloud.organizationenvironmentmodel#_hWlOgFlHEeafw8jrX0KOKw"/>
+      <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" id="__2QRpll2Eeafw8jrX0KOKw" entityName="TheEnterpriseManagerPressesTheButtonCreateReport" successor="#_Ej_MEFl3Eeafw8jrX0KOKw" predecessor="#_9Goptll2Eeafw8jrX0KOKw" responsibleRole="cocome-cloud.organizationenvironmentmodel#_hWlOgFlHEeafw8jrX0KOKw"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" id="_Ej_MEFl3Eeafw8jrX0KOKw" entityName="loadReport" successor="#_Fq9bM1l3Eeafw8jrX0KOKw" predecessor="#__2QRpll2Eeafw8jrX0KOKw" providedRole_EntryLevelSystemCall="cocome-cloud.system#_hqSan2qTEeaAnZVBu2pnYQ" operationSignature__EntryLevelSystemCall="cocome-cloud.repository#_TvWSoGYSEeamEr6y5T9PEQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_Fq9bM1l3Eeafw8jrX0KOKw" entityName="Stop" predecessor="#_Ej_MEFl3Eeafw8jrX0KOKw"/>
+    </scenarioBehaviour_UsageScenario>
+  </usageScenario_UsageModel>
+</usagemodel:UsageModel>

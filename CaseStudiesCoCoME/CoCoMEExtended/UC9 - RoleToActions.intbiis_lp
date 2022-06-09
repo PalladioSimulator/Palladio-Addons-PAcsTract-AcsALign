@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:LaneExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_uIclYMCtEeiMra9UwDrm8g"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_M3sEcMCvEeiMra9UwDrm8g"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_aQL6IMCwEeiMra9UwDrm8g"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_j_BPkMCzEeiMra9UwDrm8g"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_jAa7IMVaEei0cctadQzPxQ"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_BpLv8MYmEeiQJoOfUT4S3g"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_QpwCkMr8Eei5C56c6CdUog"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_XPDzkMYjEeiQJoOfUT4S3g"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_1ekiUMYnEeiQJoOfUT4S3g"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_3fP6EMrcEei5C56c6CdUog"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_iQ93EMrfEei5C56c6CdUog"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+    <entrylevelsystemcall href="CoCoMe-Cloud-%20UC9%20ProcessOnlineSale.usagemodel#_OXMScMruEei5C56c6CdUog"/>
+  </abstractlaneextension>
+</intBIIS_LP:LaneExtContainer>

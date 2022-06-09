@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC4%20Receive%20Ordered%20Products.bpusagemodel#_WCtOFllpEeafw8jrX0KOKw"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC4%20Receive%20Ordered%20Products.bpusagemodel#_Ym7lsVlmEeafw8jrX0KOKw"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_qhvYZsu5EeiixI9yhBknWg"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_rkLu0MujEeiEALHbGw0KLg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_THSstsukEeiEALHbGw0KLg"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_dgk0sMukEeiEALHbGw0KLg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_9ZIXJsujEeiEALHbGw0KLg"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_kZI8YGIFEeq2ZLC2yI226g"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_CYa7psukEeiEALHbGw0KLg"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_7w7iMGIFEeq2ZLC2yI226g"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_ezWmVmIKEeq2ZLC2yI226g"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_utMz4GIKEeq2ZLC2yI226g"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

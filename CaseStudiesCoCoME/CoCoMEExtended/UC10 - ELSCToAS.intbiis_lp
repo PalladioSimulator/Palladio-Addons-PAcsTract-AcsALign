@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_qhvYZsu5EeiixI9yhBknWg"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_rkLu0MujEeiEALHbGw0KLg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_THSstsukEeiEALHbGw0KLg"/>
+    <entrylevelsystemcall href="cocome-cloud-%20UC10%20Manage%20Product%20Information.bpusagemodel#_dgk0sMukEeiEALHbGw0KLg"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

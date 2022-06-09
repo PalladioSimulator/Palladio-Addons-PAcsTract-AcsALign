@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamodel:DataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datamodel="http://palladiosimulator.org/PalladioComponentModel/5.2/bp/DataModel" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2">
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_OGk9oD6REeaewP-8r44ssQ" entityName="Items" innerDataObjects="_TNcw0T6REeaewP-8r44ssQ">
+    <dataTypes xsi:type="repository:CollectionDataType" href="cocome-cloud.repository#_kA99otYgEeWrM-HnT5f_ug"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_TNcw0T6REeaewP-8r44ssQ" entityName="Item">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_j83gwNYgEeWrM-HnT5f_ug"/>
+    <innerDataObjectDeclarations entityName="Barcode" dataObject="_3hyNMVPoEeauN605R1P33Q"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_cOPOQEHmEeaQx52r8RCbXg" entityName="MoneyCollection" innerDataObjects="_eRVucUHmEeaQx52r8RCbXg"/>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_eRVucUHmEeaQx52r8RCbXg" entityName="Money"/>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_qgO5YUjaEea808Ttd_V1HQ" entityName="CreditCard">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_SrePDdBoEeiHG8N5MRvOaA"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_RcgD8NE4EeiiCLl4ruM6KA" entityName="CreditCardCollection" innerDataObjects="_qgO5YUjaEea808Ttd_V1HQ">
+    <dataTypes xsi:type="repository:CollectionDataType" href="cocome-cloud.repository#_04gCjNE4EeiiCLl4ruM6KA"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_GiHnEUjsEea808Ttd_V1HQ" entityName="Receipt"/>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_3hyNMVPoEeauN605R1P33Q" entityName="Barcode">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_jVQ-HUdGEeaL399ofOJboA"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_21WaMVloEeafw8jrX0KOKw" entityName="Delivery">
+    <innerDataObjectDeclarations entityName="Items" dataObject="_OGk9oD6REeaewP-8r44ssQ"/>
+    <innerDataObjectDeclarations entityName="OrderId" dataObject="_48_cIVloEeafw8jrX0KOKw"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_48_cIVloEeafw8jrX0KOKw" entityName="OrderId"/>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_5sP5odEdEeiiCLl4ruM6KA" entityName="CreditCardPIN">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_TGdFbdBpEeiHG8N5MRvOaA"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_LU9x4dEgEeiiCLl4ruM6KA" entityName="ShoppingCart">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_2XAOrdB5EeiHG8N5MRvOaA"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_bDBmMdEgEeiiCLl4ruM6KA" entityName="TransactionID">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_j4glMNYgEeWrM-HnT5f_ug"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_bl1_YdEgEeiiCLl4ruM6KA" entityName="StoreID">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_-O8wbtB7EeiHG8N5MRvOaA"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_HRy6kdEkEeiiCLl4ruM6KA" entityName="Enterprise">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_m9Qvw1_BEea_gvFl-mCXRQ"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_nBtXANEmEeiiCLl4ruM6KA" entityName="EnterpriseCollection" innerDataObjects="_HRy6kdEkEeiiCLl4ruM6KA">
+    <dataTypes xsi:type="repository:CollectionDataType" href="cocome-cloud.repository#_kA99oNYgEeWrM-HnT5f_ug"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_mpicsdEoEeiiCLl4ruM6KA" entityName="Store">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_j8Rq4NYgEeWrM-HnT5f_ug"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_FCjCgNEpEeiiCLl4ruM6KA" entityName="StoreCollection" innerDataObjects="_mpicsdEoEeiiCLl4ruM6KA">
+    <dataTypes xsi:type="repository:CollectionDataType" href="cocome-cloud.repository#_j3mmSdYgEeWrM-HnT5f_ug"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_VuD-YdXbEei96ae2QLAd0Q" entityName="CustomerIdentifier">
+    <dataTypes xsi:type="repository:CompositeDataType" href="cocome-cloud.repository#_5e6BAtXaEei96ae2QLAd0Q"/>
+  </dataObjects>
+</datamodel:DataModel>

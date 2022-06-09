@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_WpPuULp-Eei2N-HbqpBUJw" version="12.1.0.201708031200">
+  <semanticResources>cocome-cloud.allocation</semanticResources>
+  <semanticResources>cocome-cloud.resourceenvironment</semanticResources>
+  <semanticResources>cocome-cloud.system</semanticResources>
+  <semanticResources>pathmap://PCM_MODELS/Palladio.resourcetype</semanticResources>
+  <semanticResources>cocome-cloud.repository</semanticResources>
+  <semanticResources>pathmap://PCM_MODELS/PrimitiveTypes.repository</semanticResources>
+  <semanticResources>cocome-cloud.datamodel</semanticResources>
+  <semanticResources>cocome-cloud.organizationenvironmentmodel</semanticResources>
+  <semanticResources>cocome-cloud-%20UC1%20Process%20Sale.bpusagemodel</semanticResources>
+  <semanticResources>cocome-cloud-%20UC2%20Manage%20Express%20Checkout.bpusagemodel</semanticResources>
+  <semanticResources>cocome-cloud-%20UC3%20Order%20Products.bpusagemodel</semanticResources>
+  <semanticResources>cocome-cloud-%20UC4%20Receive%20Ordered%20Products.bpusagemodel</semanticResources>
+  <semanticResources>cocome-cloud-%20UC5%20Show%20Stock%20Reports.bpusagemodel</semanticResources>
+  <semanticResources>cocome-cloud-%20UC6%20Show%20Delivery%20Reports.bpusagemodel</semanticResources>
+  <semanticResources>cocome-cloud-%20UC7%20Change%20Price.bpusagemodel</semanticResources>
+  <semanticResources>cocome-cloud-ext%20UC1%20Process%20Sale.bpusagemodel</semanticResources>
+  <semanticResources>UC2%20RolesToActions.intbiis_lp</semanticResources>
+  <semanticResources>UC1%20RolesToActions.intbiis_lp</semanticResources>
+  <semanticResources>UC3%20-%20RolesToActions.intbiis_lp</semanticResources>
+</viewpoint:DAnalysis>

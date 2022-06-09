@@ -1,0 +1,122 @@
+Id,Role,Process,BusinessActivity,BusinessPermission,ISDataType,ISActivity,System,ServiceCall,ISPermission
+1,External:Customer,sale-process,ArrivingAtCashdesk,WRITE Items (Coll),List_products (Coll),,,,
+2,Operative Division:Cashier,sale-process,PressStartNewSale,,,,,,
+2,Operative Division:Cashier,sale-process,PressStartNewSale,,,,,1. AcquireCashDeskPC<br>2. AcquireLightDisplay<br>3. AcquireCashBox<br>,1. ACQUIRE CashDeskPC<br>2. ACQUIRE LightDisplay<br>3. ACQUIRE CashBox<br>
+3,Operative Division:Cashier,sale-process,EnterDigit,READ/WRITE Item (Comp),Product (Comp),addDigitToBarCode,cocome-cloud,ICashDeskView.addDigitToBarcode(),READ digit: CHAR
+4,Operative Division:Cashier,sale-process,ScanItems,READ/WRITE Item (Comp),Product (Comp),scanBarcode,cocome-cloud,ICashDeskView.scanBarcode(),WRITE STRING
+4,Operative Division:Cashier,sale-process,ScanItems,,,,,1. AcquireBarCodeScanner<br>2. ReleaseBarCodeScanner<br>,1. ACQUIRE BarCodeScanner<br>2. RELEASE BarCodeScanner<br>
+5,External:Customer,sale-process,HandOverMoney,WRITE MoneyCollection (Coll),,PressControlKey (Cash Payment) sale process,cocome-cloud,ICashDeskView.startCashPayment(),WRITE STRING
+6,Operative Division:Cashier,sale-process,EnterRecievedCash,READ MoneyCollection (Coll),,PressNumPadKey (CashAmount),cocome-cloud,ICashDeskView.enterCashAmount(),1. READ cashAmount: DOUBLE<br>2. WRITE STRING<br>
+7,Operative Division:Cashier,sale-process,PressEnter,,,,,,
+8,Operative Division:Cashier,sale-process,CloseCashBox,,,,,,
+9,Operative Division:Cashier,sale-process,HandOverChange,WRITE MoneyCollection (Coll),,,,,
+9,Operative Division:Cashier,sale-process,HandOverChange,,,,,ReleaseCashBox,RELEASE CashBox
+10,External:Customer,sale-process,GiveCreditCard,WRITE CreditCard (Comp),creditCard (Comp),PressControlKey (Card Payment),cocome-cloud,ICashDeskView.startCardPayment(),WRITE STRING
+11,Operative Division:Cashier,sale-process,RecieveCreditCard,READ CreditCard (Comp),creditCard (Comp),,,,
+12,Operative Division:Cashier,sale-process,PullCreditCardThroughCardReader,READ/WRITE CreditCard (Comp),creditCard (Comp),enterCreditCardInfo,cocome-cloud,ICashDeskView.enterCardInfo(),1. READ cardInfo: STRING<br>2. READ pin: STRING<br>3. WRITE STRING<br>
+12,Operative Division:Cashier,sale-process,PullCreditCardThroughCardReader,,,,,AcquireCardReader,ACQUIRE CardReader
+13,External:Customer,sale-process,EnterPin,READ/WRITE CreditCard (Comp),creditCard (Comp),,,,
+13,External:Customer,sale-process,EnterPin,,,,,1. ReleaseCardReader<br>2. ReleaseCashBox<br>,1. RELEASE CardReader<br>2. RELEASE CashBox<br>
+14,Operative Division:Cashier,sale-process,HandReceiptOut,READ/WRITE Receipt (Comp),,getCurrentPrintout,cocome-cloud,ICashDeskView.updatePrinterOutput(),
+14,Operative Division:Cashier,sale-process,HandReceiptOut,,,,,1. AcquirePrinter<br>2. ReleasePrinter<br>,1. ACQUIRE Printer<br>2. RELEASE Printer<br>
+15,External:Customer,sale-process,LeaveWithReceiptAndGoods,1. READ/WRITE Receipt (Comp)<br>2. WRITE Items (Coll)<br>,1. <br>2. List_products (Coll)<br>,resetSale,cocome-cloud,ICashDeskView.resetSale(),WRITE STRING
+15,External:Customer,sale-process,LeaveWithReceiptAndGoods,,,,,1. ReleaseLightDisplay<br>2. ReleaseCashDeskPC<br>,1. RELEASE LightDisplay<br>2. RELEASE CashDeskPC<br>
+16,Administrational Division:StockManager,Manage Product Information,open overview of available products,,,getOverviewOfAvailableProducts,org.cocome.cloud.logic.webservice.storeservice,IStoreManager.getAllStoreProducts(),1. READ storeID: INT<br>2. WRITE List_ProductWithSupplierTO<br>
+17,Administrational Division:StockManager,Manage Product Information,select a Product,1. READ Items (Coll)<br>2. WRITE Item (Comp)<br>,1. List_products (Coll)<br>2. Product (Comp)<br>,,,,
+18,Administrational Division:StockManager,Manage Product Information,change product information,1. READ Items (Coll)<br>2. WRITE Item (Comp)<br>,1. List_products (Coll)<br>2. Product (Comp)<br>,,,,
+19,Administrational Division:StockManager,Manage Product Information,commit changes by pressing corresponding button,1. READ Item (Comp)<br>2. WRITE Items (Coll)<br>,1. Product (Comp)<br>2. List_products (Coll)<br>,commitChanges,org.cocome.cloud.logic.webservice.storeservice,IStoreManager.updateStockItem(),1. READ storeID: INT<br>2. READ stockItemTO: StockItemTO<br>
+20,Administrational Division:StockManager,View Customer Report,enter costumer identifier and submit report request,WRITE CustomerIdentifier (Comp),customerIdentifier (Comp),displayCustomerReport,org.cocome.cloud.logic.webservice.cashdeskline.cashdeskservice.userdisplay,IUserDisplay.null,
+21,External:Customer,Sale,customer arrives at cash desk,WRITE Items (Coll),List_products (Coll),isInExpressMode,cocome-cloud,ICashDeskView.isInExpressMode(),
+22,Operative Division:Cashier,Sale,cashier presses StartNewSale [Branch:KeepExpressModeEnabled],,,,,,
+22,Operative Division:Cashier,Sale,cashier presses StartNewSale [Branch:KeepExpressModeEnabled],,,,,1. AcquireCashDeskPC<br>2. AcquireLightDisplay<br>3. AcquireCashBox<br>,1. ACQUIRE CashDeskPC<br>2. ACQUIRE LightDisplay<br>3. ACQUIRE CashBox<br>
+23,Operative Division:Cashier,Sale,cashier enters digit [Branch:KeepExpressModeEnabled],1. READ Item (Comp)<br>2. WRITE Barcode (Comp)<br>,1. Product (Comp)<br>2. Barcode (Comp)<br>,addDigitToBarcode[Branch:KeepExpressModeEnabled],cocome-cloud,ICashDeskView.addDigitToBarcode(),READ digit: CHAR
+24,Operative Division:Cashier,Sale,cashier scans a item [Branch:KeepExpressModeEnabled],1. READ Item (Comp)<br>2. WRITE Barcode (Comp)<br>,1. Product (Comp)<br>2. Barcode (Comp)<br>,scanBarcode [Branch:KeepExpressModeEnabled],cocome-cloud,ICashDeskView.scanBarcode(),WRITE STRING
+24,Operative Division:Cashier,Sale,cashier scans a item [Branch:KeepExpressModeEnabled],,,,,1. AcquireBarCodeScanner[Branch:KeepExpressModeEnabled]<br>2. ReleaseBarCodeScanner[Branch:KeepExpressModeEnabled]<br>,1. ACQUIRE BarCodeScanner<br>2. RELEASE BarCodeScanner<br>
+25,Operative Division:Cashier,Sale,cashier presses CashPayment [Branch:KeepExpressModeEnabled],,,startCashPayment[Branch:KeepExpressModeEnabled],cocome-cloud,ICashDeskView.startCashPayment(),WRITE STRING
+26,External:Customer,Sale,customer hands over money [Branch:KeepExpressModeEnabled],WRITE MoneyCollection (Coll),,,,,
+27,Operative Division:Cashier,Sale,cashier enters recieved cash [Branch:KeepExpressModeEnabled],READ MoneyCollection (Coll),,enterCashAmount[Branch:KeepExpressModeEnabled],cocome-cloud,ICashDeskView.enterCashAmount(),1. READ cashAmount: DOUBLE<br>2. WRITE STRING<br>
+28,Operative Division:Cashier,Sale,cashier exchanges money with cash box [Branch:KeepExpressModeEnabled],READ/WRITE MoneyCollection (Coll),,,,,
+29,Operative Division:Cashier,Sale,cashier hands over change [Branch:KeepExpressModeEnabled],WRITE MoneyCollection (Coll),,,,,
+30,Operative Division:Cashier,Sale,cashier closes cash box [Branch:KeepExpressModeEnabled],,,,,,
+30,Operative Division:Cashier,Sale,cashier closes cash box [Branch:KeepExpressModeEnabled],,,,,ReleaseCashBox,RELEASE CashBox
+31,Operative Division:Cashier,Sale,cashier presses CardPayment [Branch:KeepExpressModeEnabled],,,startCardPayment[Branch:KeepExpressModeEnabled],cocome-cloud,ICashDeskView.startCardPayment(),WRITE STRING
+32,External:Customer,Sale,customer hands over credit card [Branch:KeepExpressModeEnabled],WRITE CreditCard (Comp),creditCard (Comp),,,,
+33,Operative Division:Cashier,Sale,cashier recieves credit card [Branch:KeepExpressModeEnabled],READ CreditCard (Comp),creditCard (Comp),,,,
+34,Operative Division:Cashier,Sale,cashier pulls credit cardt through card reader [Branch:KeepExpressModeEnabled],,,,,,
+34,Operative Division:Cashier,Sale,cashier pulls credit cardt through card reader [Branch:KeepExpressModeEnabled],,,,,AcquireCardReader[Branch:KeepExpressModeEnabled],ACQUIRE CardReader
+35,External:Customer,Sale,customer enters pin [Branch:KeepExpressModeEnabled],WRITE CreditCardPIN (Comp),creditCardPIN (Comp),enterCardInfo[Branch:KeepExpressModeEnabled],cocome-cloud,ICashDeskView.enterCardInfo(),1. READ cardInfo: STRING<br>2. READ pin: STRING<br>3. WRITE STRING<br>
+36,Operative Division:Cashier,Sale,cashier returns credit card to customer [Branch:KeepExpressModeEnabled],WRITE CreditCard (Comp),creditCard (Comp),,,,
+36,Operative Division:Cashier,Sale,cashier returns credit card to customer [Branch:KeepExpressModeEnabled],,,,,1. ReleaseCardReader[Branch:KeepExpressModeEnabled]<br>2. ReleaseCashBox<br>,1. RELEASE CardReader<br>2. RELEASE CashBox<br>
+37,Operative Division:Cashier,Sale,cashier presses DisableExpressMode,,,updateExpressMode(disable),cocome-cloud,ICashDeskView.updateExpressMode(),
+37,Operative Division:Cashier,Sale,cashier presses DisableExpressMode,,,,,1. AcquireCashDeskPC<br>2. AcquireLightDisplay<br>3. AcquireCashBox<br>,1. ACQUIRE CashDeskPC<br>2. ACQUIRE LightDisplay<br>3. ACQUIRE CashBox<br>
+38,Operative Division:Cashier,Sale,cashier presses StartNewSale [Branch:DisableExpressMode],,,,,,
+39,Operative Division:Cashier,Sale,cashier enters digit [Branch:DisableExpressMode],1. READ Items (Coll)<br>2. READ Barcode (Comp)<br>,1. List_products (Coll)<br>2. Barcode (Comp)<br>,addDigitToBarcode[Branch:DisableExpressMode],cocome-cloud,ICashDeskView.addDigitToBarcode(),READ digit: CHAR
+40,Operative Division:Cashier,Sale,cashier scans a item [Branch:DisableExpressMode],1. READ Item (Comp)<br>2. WRITE Barcode (Comp)<br>,1. Product (Comp)<br>2. Barcode (Comp)<br>,scanBarcode[Branch:DisableExpressMode],cocome-cloud,ICashDeskView.scanBarcode(),WRITE STRING
+40,Operative Division:Cashier,Sale,cashier scans a item [Branch:DisableExpressMode],,,,,1. AcquireBarCodeScanner[Branch:DisableExpressMode]<br>2. ReleaseBarCodeScanner[Branch:DisableExpressMode]<br>,1. ACQUIRE BarCodeScanner<br>2. RELEASE BarCodeScanner<br>
+41,Operative Division:Cashier,Sale,cashier presses CashPayment [Branch:DisableExpressMode],,,startCashPayment[Branch:DisableExpressMode],cocome-cloud,ICashDeskView.startCashPayment(),WRITE STRING
+42,External:Customer,Sale,customer hands over money [Branch:DisableExpressMode],WRITE MoneyCollection (Coll),,,,,
+43,Operative Division:Cashier,Sale,cashier enters recieved cash [Branch:DisableExpressMode],READ MoneyCollection (Coll),,enterCashAmount[Branch:DisableExpressMode],cocome-cloud,ICashDeskView.enterCashAmount(),1. READ cashAmount: DOUBLE<br>2. WRITE STRING<br>
+44,Operative Division:Cashier,Sale,cashier exchanges money with cash box [Branch:DisableExpressMode],READ/WRITE MoneyCollection (Coll),,,,,
+45,Operative Division:Cashier,Sale,cashier hands over change [Branch:DisableExpressMode],WRITE MoneyCollection (Coll),,,,,
+46,Operative Division:Cashier,Sale,cashier closes cash box [Branch:DisableExpressMode],,,updateExpressMode[Branch:DisableExpressMode],cocome-cloud,ICashDeskView.updateExpressMode(),
+46,Operative Division:Cashier,Sale,cashier closes cash box [Branch:DisableExpressMode],,,,,ReleaseCashBox,RELEASE CashBox
+47,Operative Division:Cashier,Sale,cashier presses CardPayment [Branch:DisableExpressMode],,,startCardPayment[Branch:DisableExpressMode],cocome-cloud,ICashDeskView.startCardPayment(),WRITE STRING
+48,External:Customer,Sale,customer hands over credit card [Branch:DisableExpressMode],WRITE CreditCard (Comp),creditCard (Comp),,,,
+49,Operative Division:Cashier,Sale,cashier recieves credit card [Branch:DisableExpressMode],READ CreditCard (Comp),creditCard (Comp),,,,
+50,Operative Division:Cashier,Sale,cashier pulls credit cardt through card reader [Branch:DisableExpressMode],READ CreditCard (Comp),creditCard (Comp),,,,
+50,Operative Division:Cashier,Sale,cashier pulls credit cardt through card reader [Branch:DisableExpressMode],,,,,AcquireCardReader[Branch:DisableExpressMode],ACQUIRE CardReader
+51,External:Customer,Sale,customer enters pin [Branch:DisableExpressMode],WRITE CreditCardPIN (Comp),creditCardPIN (Comp),enterCardInfo[Branch:DisableExpressMode],cocome-cloud,ICashDeskView.enterCardInfo(),1. READ cardInfo: STRING<br>2. READ pin: STRING<br>3. WRITE STRING<br>
+52,Operative Division:Cashier,Sale,cashier returns credit card to customer [Branch:DisableExpressMode],WRITE CreditCard (Comp),creditCard (Comp),updateExpressMode[Branch:DisableExpressMode],cocome-cloud,ICashDeskView.updateExpressMode(),
+52,Operative Division:Cashier,Sale,cashier returns credit card to customer [Branch:DisableExpressMode],,,,,1. ReleaseCardReader[Branch:DisableExpressMode]<br>2. ReleaseCashBox<br>,1. RELEASE CardReader<br>2. RELEASE CashBox<br>
+53,Operative Division:Cashier,Sale,cashier presses StartNewSale,,,,,,
+53,Operative Division:Cashier,Sale,cashier presses StartNewSale,,,,,1. AcquireCashDeskPC<br>2. AcquireLightDisplay<br>3. AcquireCashBox<br>,1. ACQUIRE CashDeskPC<br>2. ACQUIRE LightDisplay<br>3. ACQUIRE CashBox<br>
+54,Operative Division:Cashier,Sale,cashier enters digit,1. READ Item (Comp)<br>2. WRITE Barcode (Comp)<br>,1. Product (Comp)<br>2. Barcode (Comp)<br>,addDigitToBarcode,cocome-cloud,ICashDeskView.addDigitToBarcode(),READ digit: CHAR
+55,Operative Division:Cashier,Sale,cashier scans a item,READ Barcode (Comp),Barcode (Comp),scanBarcode,cocome-cloud,ICashDeskView.scanBarcode(),WRITE STRING
+55,Operative Division:Cashier,Sale,cashier scans a item,,,,,1. AcquireBarCodeScanner<br>2. ReleaseBarCodeScanner<br>,1. ACQUIRE BarCodeScanner<br>2. RELEASE BarCodeScanner<br>
+56,Operative Division:Cashier,Sale,cashier presses CashPayment,,,startCashPayment,cocome-cloud,ICashDeskView.startCashPayment(),WRITE STRING
+57,External:Customer,Sale,customer hands over money,WRITE MoneyCollection (Coll),,,,,
+58,Operative Division:Cashier,Sale,cashier enters recieved cash,READ MoneyCollection (Coll),,enterCashAmount,cocome-cloud,ICashDeskView.enterCashAmount(),1. READ cashAmount: DOUBLE<br>2. WRITE STRING<br>
+59,Operative Division:Cashier,Sale,cashier exchanges money with cash box,READ/WRITE MoneyCollection (Coll),,,,,
+60,Operative Division:Cashier,Sale,cashier hands over change,READ/WRITE MoneyCollection (Coll),,,,,
+61,Operative Division:Cashier,Sale,cashier closes cash box,,,updateExpressMode,cocome-cloud,ICashDeskView.updateExpressMode(),
+61,Operative Division:Cashier,Sale,cashier closes cash box,,,,,ReleaseCashBox,RELEASE CashBox
+62,Operative Division:Cashier,Sale,cashier presses CardPayment,,,startCardPayment,cocome-cloud,ICashDeskView.startCardPayment(),WRITE STRING
+63,External:Customer,Sale,customer hands over credit card,WRITE CreditCard (Comp),creditCard (Comp),,,,
+64,Operative Division:Cashier,Sale,cashier recieves credit card,READ CreditCard (Comp),creditCard (Comp),,,,
+65,Operative Division:Cashier,Sale,cashier pulls credit cardt through card reader,READ CreditCard (Comp),creditCard (Comp),,,,
+65,Operative Division:Cashier,Sale,cashier pulls credit cardt through card reader,,,,,AcquireCardReader,ACQUIRE CardReader
+66,External:Customer,Sale,customer enters pin,WRITE CreditCardPIN (Comp),creditCardPIN (Comp),enterCardInfo,cocome-cloud,ICashDeskView.enterCardInfo(),1. READ cardInfo: STRING<br>2. READ pin: STRING<br>3. WRITE STRING<br>
+67,Operative Division:Cashier,Sale,cashier returns credit card to customer,WRITE CreditCard (Comp),creditCard (Comp),updateExpressMode,cocome-cloud,ICashDeskView.updateExpressMode(),
+67,Operative Division:Cashier,Sale,cashier returns credit card to customer,,,,,1. ReleaseCardReader<br>2. ReleaseCashBox<br>,1. RELEASE CardReader<br>2. RELEASE CashBox<br>
+68,Operative Division:Cashier,Sale,cashier hands out receipt,READ/WRITE Receipt (Comp),,getCurrentPrintout,cocome-cloud,ICashDeskView.updatePrinterOutput(),
+68,Operative Division:Cashier,Sale,cashier hands out receipt,,,,,1. AcquirePrinter<br>2. ReleasePrinter<br>,1. ACQUIRE Printer<br>2. RELEASE Printer<br>
+69,External:Customer,Sale,customer leaves with receipt and goods,1. READ/WRITE Receipt (Comp)<br>2. WRITE Items (Coll)<br>,1. <br>2. List_products (Coll)<br>,resetSale,cocome-cloud,ICashDeskView.resetSale(),WRITE STRING
+69,External:Customer,Sale,customer leaves with receipt and goods,,,,,1. ReleaseLightDisplay<br>2. ReleaseCashDeskPC<br>,1. RELEASE LightDisplay<br>2. RELEASE CashDeskPC<br>
+70,Administrational Division:StoreManager,OrderProducts,Get Order Items,,,getOrderItems,cocome-cloud,IstockOrderView.getOrderItems(),WRITE List_OrderItem
+71,Administrational Division:StoreManager,OrderProducts,store manager selects a product,,,selectOrderItem,cocome-cloud,IstockOrderView.selectOrderItem(),1. READ item: ProductWrapper<br>2. WRITE STRING<br>
+72,Administrational Division:StoreManager,OrderProducts,store manager enters corresponting amount,,,addOrderAmount,cocome-cloud,IstockOrderView.addOrderAmount(),1. READ amount: INT<br>2. READ selectedItem: ProductWrapper<br>3. WRITE STRING<br>
+73,Administrational Division:StoreManager,OrderProducts,store manager finishes the order,,,submitOrder,cocome-cloud,IstockOrderView.submitOrder(),WRITE STRING
+74,Administrational Division:StockManager,cocome-cloud-receive-ordered-procuts,StockManagerChecksTheDeliveryForCompletenessAndCorrectness,READ/WRITE Delivery (Comp),,rollInRecievedOrder,cocome-cloud,IReceiveOrderView.rollInOrder(),1. READ order: ComplexOrderTO<br>2. WRITE STRING<br>
+75,Administrational Division:StoreManager,ShowStockReports,store manager enters store id and presses create report,WRITE StoreID (Comp),storeID (Comp),loadReport,cocome-cloud,IShowReportView.loadReport(),READ storeId: INT
+76,Administrational Division:EnterpriseManager,ShowReportView,TheEnterpriseManagerEntersTheEnterpriseIdentifier,,,,,,
+77,Administrational Division:EnterpriseManager,ShowReportView,TheEnterpriseManagerPressesTheButtonCreateReport,,,loadReport,cocome-cloud,IShowReportView.loadReport(),READ storeId: INT
+78,Administrational Division:StoreManager,ChangePrice,store manager selects a product item and changes its sales price,,,loadReport,cocome-cloud,IShowReportView.loadReport(),READ storeId: INT
+78,Administrational Division:StoreManager,ChangePrice,store manager selects a product item and changes its sales price,,,updateStockItem,cocome-cloud,IShowStockView.updateStockItem(),1. READ item: ProductWrapper<br>2. WRITE STRING<br>
+79,External:Customer,Process Online Sale,User clicks selectStore-button,,,selectStore,org.cocome.cloud.web.frontend.enterprise,IEnterpriseInformation.getEnterprises(),WRITE List_enterprises
+80,External:Customer,Process Online Sale,Submit enterprise,1. READ EnterpriseCollection (Coll)<br>2. WRITE Enterprise (Comp)<br>,1. List_enterprises (Coll)<br>2. Enterprise (Comp)<br>,submitEnterprise,org.cocome.cloud.web.frontend.enterprise,IEnterpriseInformation.getStores(),WRITE List_OrderItem
+81,External:Customer,Process Online Sale,Submit store,1. READ StoreCollection (Coll)<br>2. WRITE StoreID (Comp)<br>,1. list_store (Coll)<br>2. storeID (Comp)<br>,submitStore,org.cocome.cloud.web.frontend.store,IStoreInformation.setPickupStore(),READ storeID: storeID
+82,External:Customer,Process Online Sale,Add product to cart,1. READ Items (Coll)<br>2. WRITE Item (Comp)<br>,1. List_products (Coll)<br>2. Product (Comp)<br>,addItemToCart,org.cocome.cloud.web.frontend.store,IShoppingCartView.addToCart(),READ Item: Product
+83,External:Customer,Process Online Sale,Open shopping cart,READ ShoppingCart (Comp),shoppingCart (Comp),showCart,org.cocome.cloud.web.frontend.store,IShoppingCartView.getProductList(),WRITE List_products
+84,External:Customer,Process Online Sale,Proceed to checkout,READ ShoppingCart (Comp),shoppingCart (Comp),proceedToCheckout,org.cocome.cloud.web.frontend.store,CheckOutWizardView.proceedCheckout(),
+85,External:Customer,Process Online Sale,Authenticate user,,,,,,
+86,External:Customer,Process Online Sale,Select creditCard for payment [Branch: CreditCard Was Already Added To The Account],1. READ CreditCardCollection (Coll)<br>2. WRITE CreditCard (Comp)<br>,1. list_creditCards (Coll)<br>2. creditCard (Comp)<br>,,,,
+87,External:Customer,Process Online Sale,Enter cardNumber of new creditCard [Branch: CreditCard Wasnt Added To The Account Before],WRITE CreditCard (Comp),creditCard (Comp),setCreditCardInfo [Branch: CreditCard Wasn't Added To The Account Before],org.cocome.cloud.web.frontend.store,AddCreditCardWizardView.setCreditCardInfo(),1. READ creditCardInfo: CreditCardInfo<br>2. WRITE creditCard<br>
+88,External:Customer,Process Online Sale,Select creditCard for payment [Branch: CreditCard Wasnt Added To The Account Before],1. READ CreditCardCollection (Coll)<br>2. WRITE CreditCard (Comp)<br>,1. list_creditCards (Coll)<br>2. creditCard (Comp)<br>,,,,
+89,External:Customer,Process Online Sale,Confirm chosen creditCard,READ/WRITE CreditCard (Comp),creditCard (Comp),confirmCreditCard,org.cocome.cloud.web.frontend.store,CheckOutWizardView.setCreditCard(),READ creditCard: creditCard
+90,External:Customer,Process Online Sale,Enter creditCard pin and confirm,1. READ CreditCard (Comp)<br>2. WRITE CreditCardPIN (Comp)<br>,1. creditCard (Comp)<br>2. creditCardPIN (Comp)<br>,confirmCreditCardPin,org.cocome.cloud.web.frontend.store,CheckOutWizardView.setCreditCardPin(),
+91,External:Customer,Process Online Sale,Confirm purchase,,,confirmPurchase,org.cocome.cloud.web.frontend.store,CheckOutWizardView.accountSale(),READ shoppingCart: shoppingCart
+91,External:Customer,Process Online Sale,Confirm purchase,,,showNewPurchase,,,
+92,External:Customer,Process Online Sale,Leave the website [Branch:Purchase Invalidated],READ Receipt (Comp),,,,,
+93,External:Customer,Process Online Sale,Retry by confirming again [Branch:Retry Validation],WRITE CreditCard (Comp),creditCard (Comp),confirmPurchase [Branch:Retry Validation],org.cocome.cloud.web.frontend.store,CheckOutWizardView.accountSale(),READ shoppingCart: shoppingCart
+94,External:Customer,Process Online Sale,Abort purchase [Branch:Abort Purchase],READ ShoppingCart (Comp),shoppingCart (Comp),,,,
+95,External:Customer,Process Online Sale,Leave the website [Branch:Abort Purchase],READ Receipt (Comp),,,,,

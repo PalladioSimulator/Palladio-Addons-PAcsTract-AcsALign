@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagemodel:UsageModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Identifier_1.0="http://sdq.ipd.uka.de/Identifier/1.0" xmlns:bpusagemodel="http://palladiosimulator.org/PalladioComponentModel/5.1/bp/bpUsageModel" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2" xsi:schemaLocation="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//usagemodel">
+  <usageScenario_UsageModel Identifier_1.0:id="_NDBnsN57EealBtzUCfkZ3g" entityName="ChangePrice">
+    <scenarioBehaviour_UsageScenario Identifier_1.0:id="_NOJSkN57EealBtzUCfkZ3g" entityName="ChangePrice">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" Identifier_1.0:id="_OdOU1N57EealBtzUCfkZ3g" entityName="start" successor="#_4GBtEOPPEeauPeJO52TmNA"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" Identifier_1.0:id="_4GBtEOPPEeauPeJO52TmNA" entityName="loadReport" successor="#_zAOQ5uPPEeauPeJO52TmNA" predecessor="#_OdOU1N57EealBtzUCfkZ3g" providedRole_EntryLevelSystemCall="cocome-cloud.system#_hqSan2qTEeaAnZVBu2pnYQ" operationSignature__EntryLevelSystemCall="cocome-cloud.repository#_TvWSoGYSEeamEr6y5T9PEQ"/>
+      <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" Identifier_1.0:id="_zAOQ5uPPEeauPeJO52TmNA" entityName="store manager selects a product item and changes its sales price" successor="#_DsmuoOPQEeauPeJO52TmNA" predecessor="#_4GBtEOPPEeauPeJO52TmNA" responsibleRole="cocome-cloud.organizationenvironmentmodel#_YbZIgFjAEeaVN9HYl5xt5w"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" Identifier_1.0:id="_DsmuoOPQEeauPeJO52TmNA" entityName="updateStockItem" successor="#_qqnXo957EealBtzUCfkZ3g" predecessor="#_zAOQ5uPPEeauPeJO52TmNA" providedRole_EntryLevelSystemCall="cocome-cloud.system#_2CH2b2qTEeaAnZVBu2pnYQ" operationSignature__EntryLevelSystemCall="cocome-cloud.repository#_dZ3DYGYCEeamEr6y5T9PEQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" Identifier_1.0:id="_qqnXo957EealBtzUCfkZ3g" entityName="stop" predecessor="#_DsmuoOPQEeauPeJO52TmNA"/>
+    </scenarioBehaviour_UsageScenario>
+  </usageScenario_UsageModel>
+</usagemodel:UsageModel>

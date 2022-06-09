@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:PoolExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <role_poolext organizationalUnit="Administrational Division">
+    <role href="cocome-cloud.organizationenvironmentmodel#_eDg7QFlHEeafw8jrX0KOKw"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Extern">
+    <role href="cocome-cloud.organizationenvironmentmodel#_KKQnID6TEeaewP-8r44ssQ"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Internal Administration">
+    <role href="cocome-cloud.organizationenvironmentmodel#_YbZIgFjAEeaVN9HYl5xt5w"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Internal Selling Division">
+    <role href="cocome-cloud.organizationenvironmentmodel#_Pk4cwD6TEeaewP-8r44ssQ"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="External Division">
+    <role href="cocome-cloud.organizationenvironmentmodel#_od5ZAGIKEeq2ZLC2yI226g"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Internal Selling Division">
+    <role href="cocome-cloud.organizationenvironmentmodel#_5RK-YGIJEeq2ZLC2yI226g"/>
+  </role_poolext>
+</intBIIS_LP:PoolExtContainer>

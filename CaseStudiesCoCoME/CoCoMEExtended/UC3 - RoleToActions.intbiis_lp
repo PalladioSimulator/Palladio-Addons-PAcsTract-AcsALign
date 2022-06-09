@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:LaneExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_KxgN0N53EealBtzUCfkZ3g"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_YbZIgFjAEeaVN9HYl5xt5w"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_eSdIsOPMEeauPeJO52TmNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_YbZIgFjAEeaVN9HYl5xt5w"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_e_75wOPMEeauPeJO52TmNA"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_YbZIgFjAEeaVN9HYl5xt5w"/>
+  </abstractlaneextension>
+  <abstractlaneextension xsi:type="intBIIS_LP:EntryLevelSystemCall_LaneExt">
+	<entrylevelsystemcall href="cocome-cloud-%20UC3%20Order%20Products.bpusagemodel#_Uj64MN55EealBtzUCfkZ3g"/>
+    <responsibleRole href="cocome-cloud.organizationenvironmentmodel#_YbZIgFjAEeaVN9HYl5xt5w"/>
+  </abstractlaneextension>
+</intBIIS_LP:LaneExtContainer>

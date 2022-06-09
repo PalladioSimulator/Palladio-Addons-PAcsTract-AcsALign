@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagemodel:UsageModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Identifier_1.0="http://sdq.ipd.uka.de/Identifier/1.0" xmlns:bpusagemodel="http://palladiosimulator.org/PalladioComponentModel/5.1/bp/bpUsageModel" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2" xsi:schemaLocation="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//usagemodel">
+  <usageScenario_UsageModel Identifier_1.0:id="_9TebEN55EealBtzUCfkZ3g" entityName="ShowStockReports">
+    <scenarioBehaviour_UsageScenario Identifier_1.0:id="_-H0CEN55EealBtzUCfkZ3g" entityName="ShowStockReports">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" Identifier_1.0:id="_-yhL9N55EealBtzUCfkZ3g" entityName="start" successor="#_1AMaBuPOEeauPeJO52TmNA"/>
+      <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" Identifier_1.0:id="_1AMaBuPOEeauPeJO52TmNA" entityName="store manager enters store id and presses 'create report'" successor="#_Oa7EMN56EealBtzUCfkZ3g" predecessor="#_-yhL9N55EealBtzUCfkZ3g" responsibleRole="cocome-cloud.organizationenvironmentmodel#_YbZIgFjAEeaVN9HYl5xt5w"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:EntryLevelSystemCall" Identifier_1.0:id="_Oa7EMN56EealBtzUCfkZ3g" entityName="loadReport" successor="#_gcCgQ956EealBtzUCfkZ3g" predecessor="#_1AMaBuPOEeauPeJO52TmNA" providedRole_EntryLevelSystemCall="cocome-cloud.system#_hqSan2qTEeaAnZVBu2pnYQ" operationSignature__EntryLevelSystemCall="cocome-cloud.repository#_TvWSoGYSEeamEr6y5T9PEQ"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" Identifier_1.0:id="_gcCgQ956EealBtzUCfkZ3g" entityName="stop" predecessor="#_Oa7EMN56EealBtzUCfkZ3g"/>
+    </scenarioBehaviour_UsageScenario>
+  </usageScenario_UsageModel>
+</usagemodel:UsageModel>
