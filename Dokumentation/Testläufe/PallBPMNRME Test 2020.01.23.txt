@@ -1,0 +1,51 @@
+#27 Bei ISDataType hinzufügen ob Composite oder Collection
+#32 Bei ISPermission, kann man hier zusätzlich den Typ aufschreiben? bzw. evt. braucht man ja nur den typ!!! ROMAN muss sagen
+
+Traceabiltiy Model
+UC1:
+	Y* TM 9+13 AS HandOverChange - RDR Release CashBox (Sollte doch auch mit vorangegangenen AS EnterPin dabei sein) (Die Zuweisungen sind ja über IntBIIS_LP gemacht, da EnterPin von Customer ist, und CashBox aber dem Cashier gehört wurde das nicht verbunden <- Im Prinzip OK)
+	Y#33 -A TM 14 AS HandReceiptOut - ELSC GetCurrentPrintout fehlt im TM obwohl in IntBIIS_LP verbunden
+	Y#34 -B TM 15 AS LeaveWithReceiptAndGoods - 2tes Output Objekt fehlt (items) statt dessen wird es in TM 16 separat ausgegeben
+	* In allen/vielen ELSC ist im bpusagemodel als ProvidedRoleEntryLevelSystemCall die außenfassade des Systems ausgewählt, müsste hier nicht die dahinterliegende Componente ausgewählt sein (z.b. ELSC resetSale hat cocome-cloud->ICashDeskView, statt das ICashDeskView in der Componente die es implementiert?)
+	
+UC10
+	Y#34 -B TM 22 AS comit chagnes by pressing ... - Output Objeckt fehlt (Items), stattdessen wird es in TM 23 separat ausgegeben
+
+UC13
+	Y#33 -A TM 24 AS enter customer ... - ELSC displayCustomerReport fehlt obwohl in IntBIIS_LP verbunden
+
+UC2
+	Y#33 -A TM 25 AS customer arrives at... - ELSC isInExpressMode fehlt obwohl in IntBIIS_LP verbunden
+		Y#33 -A TM 43 AS cashier presses DisableExpressMode - ELSC updateExpressMode(disable) fehlt obwohl in IntBIIS_LP verbunden
+		Y#33 -A TM 76 + 70 - ELSC updateExpressMode [ID:_VI...] fehlt bei beiden AS obwohl in IntBIIS_LP verbunden
+		Y#33 -A TM 77 AS cashier hands out receipt - ELSC getcurrentPrintout fehlt obwohl in IntBIIS_LP verbunden
+	Y#35 -C TM 26 AS Cashier presses StartNewSale [KeepExpressModeEnabled] - ADR AcquireLightDisplay & AcquireCashBox fehlen obwohl in IntBIIS_LP verbunden (Die 2 sachen + AcquireCashDeskPC sind zu 3 AS verbunden, das ist auch korrekt)
+		Y#35 - TM 44 AS Cashier presser StartNeSale [DisableExpressMode] - ADR AcquireCashDeskPC fehlt obwohl in IntBIIS_LP verbunden
+		Y#35 - TM 61 AS cashier presses StartNewSale - Alle 3 ADR Fehlen
+		Y#35 - TM Y42/Y60/Y76  AS cashier returns credit card to customer [Branch:KeepExpressModeEnabled]/...[Branch:DisableExpressMode]/... + TM Y36(Hier vorhanden)/Y54/Y70 cashier closes cash box [Branch:KeepExpressModeEnabled]/...[Branch:DisableExpressMode]/... - fehlt RDR ReleaseCashBox 
+	Y#34 -B TM 28 AS cashier enters digit [Branch:KeepExpressModeEnabled] - Input/und Output Objekte sind über 2 Zeilen
+		Y#34 -B TM 29 selbe
+		Y#34 -B TM 46 AS cashier enters digit [Branch:DisableExpressMode] - die 2 Input Objekte sind in 2 Zeilen
+		Y#34 -B TM 47 cashier scans a item [Branch:DisableExpressMode] - Input/und Output Objekte sind über 2 Zeilen
+		Y#34 -B TM 62/63 selbe
+		Y#34 -B TM 78/79 selbe
+	 
+	Y#33 -! TODO Modellierung: ELSC updateExpressMode[Branch:DisableExpressMode] ist nur 1mal modelliert und an den Falschen AS modelliert -> muss auf AS cashier return credit card to customer [Branch:DisableExpressMode] + AS cashier closes Cash box [Branch:DisableExpressMode] (Sind die beiden vorhergehenden AS) -> Danach prüfen ob korrekt visualisiert in TraceabilityModel
+	Y#35 -Modellierung: Eig. müsste doch AcquireLightdisplay, AcuiqreCashBox, AcquireCahBoxPC von Anfang nicht auf AS cashier presses StartNewSale [Branch:DisableExpressMode] zeigen sondern auf den vorangehenden AS cashier presses DisableExpressMode 
+	
+UC9
+	Y#34 -B TM 90/91 AS Submit enterprise - Input/und Output Objekte sind über 2 Zeilen
+		Y#34 -B TM 92/93 Submit store - selbe
+		Y#34 -B TM 94/95 Add product to cart - selbe
+		Y#34 -B TM 105/106 	Enter creditCard pin and confirm - selbe
+	Y#33 -A TM 97 AS Proceed to checkout - ELSC proceedToCheckout fehlt obwohl in IntBIIS_LP verbunden
+		Y#33 -A TM 107 AS Confirm purchase - ELSC showNewPurchase fehlt in separater Zeile obwohl in IntBIIS_LP verbunden
+		Y#33 -A TM 109 Retry by confirming again - ELSC confirmPurchase fehlt obwohl in IntBIIS_LP verbunden
+	Y#36 - Ein TM fehlt für AS Select credidCard for payment im ScenarioBehaviour "CreditCard Was Already Added To the Account" + Die TM ID Zahlen 99 und 100 fehlen im TraceabilityModel?
+	Y#36 - Ein TM fehlt für AS Leave the website im ScenarioBehaviour "Purchase Validated" + die TM ID Zahlen 108 fehlen
+	
+	
+
+	
+		
+	

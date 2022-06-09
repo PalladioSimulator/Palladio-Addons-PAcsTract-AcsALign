@@ -1,0 +1,3 @@
+			*- Sortiereung
+				* Sortierung ist korrekt nach ISDataType
+- some Business Permissions are solo with read and write and some together, also some are duplicated due to this (e.g. creditCard, MoeyCollection) -> Must be solo or all together: If possible make together (Read/Write), if complicated make all solo

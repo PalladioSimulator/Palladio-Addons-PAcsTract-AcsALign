@@ -1,0 +1,1451 @@
+<!DOCTYPE html><html>
+<head>
+<style>
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	}
+
+body > table > tbody > tr > td:nth-child(6){
+border-right: 5px solid lightgrey;
+}
+
+body > table > tbody > tr:nth-child(1) > th:nth-child(6) {
+border-right: 5px solid lightgrey;
+}
+
+th, td {
+	border: 1px solid lightgrey;
+	text-align: left;
+	padding: 8px;
+	; vertical-align:top;
+	; white-space:nowrap;
+	}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th{
+	background-color: #4CAF50;
+	color: white;
+	}
+
+</style>
+</head>
+<body>
+<h1 align="center">TraceabilityModel</h1>
+<p align="center">If you want to export it as a PDF, print it with a PDF-reader of your choice, wich is able to print things as a PDF</p>
+
+
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Role</th>
+			<th>Process</th>
+			<th>BusinessActivity</th>
+			<th>BusinessPermission</th>
+			<th>ISDataType</th>
+			<th>ISActivity:</th>
+			<th>System:</th>
+			<th>ServiceCall:</th>
+			<th>ISPermission:</th>
+		<tr>
+			<td>1</td>
+			<td>External:Customer</td>
+			<td>sale-process</td>
+			<td>ArrivingAtCashdesk</td>
+			<td>1. WRITE Items<br></td>
+			<td>1. List_products<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>2</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>PressStartNewSale</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>2</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>PressStartNewSale</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireCashDeskPC<br>2. AcquireLightDisplay<br>3. AcquireCashBox<br></td>
+			<td>1. ACQUIRE CashDeskPC<br>2. ACQUIRE LightDisplay<br>3. ACQUIRE CashBox<br></td>
+		<tr>
+			<td>3</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>EnterDigit</td>
+			<td>1. READ/WRITE Item<br></td>
+			<td>1. Product<br></td>
+			<td>addDigitToBarCode</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.addDigitToBarcode()</td>
+			<td>1. READ digit<br></td>
+		<tr>
+			<td>4</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>ScanItems</td>
+			<td>1. READ/WRITE Item<br></td>
+			<td>1. Product<br></td>
+			<td>scanBarcode</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.scanBarcode()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>4</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>ScanItems</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireBarCodeScanner<br>2. ReleaseBarCodeScanner<br></td>
+			<td>1. ACQUIRE BarCodeScanner<br>2. RELEASE BarCodeScanner<br></td>
+		<tr>
+			<td>5</td>
+			<td>External:Customer</td>
+			<td>sale-process</td>
+			<td>HandOverMoney</td>
+			<td>1. WRITE MoneyCollection<br></td>
+			<td></td>
+			<td>PressControlKey (Cash Payment) sale process</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.startCashPayment()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>6</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>EnterRecievedCash</td>
+			<td>1. READ MoneyCollection<br></td>
+			<td></td>
+			<td>PressNumPadKey (CashAmount)</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.enterCashAmount()</td>
+			<td>1. READ cashAmount<br>2. WRITE STRING<br></td>
+		<tr>
+			<td>7</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>PressEnter</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>8</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>CloseCashBox</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>9</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>HandOverChange</td>
+			<td>1. WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>9</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>HandOverChange</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. ReleaseCashBox<br></td>
+			<td>1. RELEASE CashBox<br></td>
+		<tr>
+			<td>10</td>
+			<td>External:Customer</td>
+			<td>sale-process</td>
+			<td>GiveCreditCard</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td>PressControlKey (Card Payment)</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.startCardPayment()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>11</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>RecieveCreditCard</td>
+			<td>1. READ CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>12</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>PullCreditCardThroughCardReader</td>
+			<td>1. READ/WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td>enterCreditCardInfo</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.enterCardInfo()</td>
+			<td>1. READ cardInfo<br>2. READ pin<br>3. WRITE STRING<br></td>
+		<tr>
+			<td>12</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>PullCreditCardThroughCardReader</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireCardReader<br></td>
+			<td>1. ACQUIRE CardReader<br></td>
+		<tr>
+			<td>13</td>
+			<td>External:Customer</td>
+			<td>sale-process</td>
+			<td>EnterPin</td>
+			<td>1. READ/WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>13</td>
+			<td>External:Customer</td>
+			<td>sale-process</td>
+			<td>EnterPin</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. ReleaseCardReader<br></td>
+			<td>1. RELEASE CardReader<br></td>
+		<tr>
+			<td>14</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>HandReceiptOut</td>
+			<td>1. READ/WRITE Receipt<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>14</td>
+			<td>Operative Division:Cashier</td>
+			<td>sale-process</td>
+			<td>HandReceiptOut</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquirePrinter<br>2. ReleasePrinter<br></td>
+			<td>1. ACQUIRE Printer<br>2. RELEASE Printer<br></td>
+		<tr>
+			<td>15</td>
+			<td>External:Customer</td>
+			<td>sale-process</td>
+			<td>LeaveWithReceiptAndGoods</td>
+			<td>1. READ/WRITE Receipt<br></td>
+			<td></td>
+			<td>resetSale</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.resetSale()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>15</td>
+			<td>External:Customer</td>
+			<td>sale-process</td>
+			<td>LeaveWithReceiptAndGoods</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. ReleaseLightDisplay<br>2. ReleaseCashDeskPC<br></td>
+			<td>1. RELEASE LightDisplay<br>2. RELEASE CashDeskPC<br></td>
+		<tr>
+			<td>16</td>
+			<td>External:Customer</td>
+			<td>sale-process</td>
+			<td>LeaveWithReceiptAndGoods</td>
+			<td>1. WRITE Items<br></td>
+			<td>1. List_products<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>17</td>
+			<td>Administrational Division:StockManager</td>
+			<td>Manage Product Information</td>
+			<td>open overview of available products</td>
+			<td></td>
+			<td></td>
+			<td>getOverviewOfAvailableProducts</td>
+			<td>org.cocome.cloud.logic.webservice.storeservice</td>
+			<td>IStoreManager.getAllStoreProducts()</td>
+			<td>1. READ storeID<br>2. WRITE List_ProductWithSupplierTO<br></td>
+		<tr>
+			<td>19</td>
+			<td>Administrational Division:StockManager</td>
+			<td>Manage Product Information</td>
+			<td>select a Product</td>
+			<td>1. READ Items<br>2. WRITE Item<br></td>
+			<td>1. List_products<br>2. Product<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>21</td>
+			<td>Administrational Division:StockManager</td>
+			<td>Manage Product Information</td>
+			<td>change product information</td>
+			<td>1. READ Items<br>2. WRITE Item<br></td>
+			<td>1. List_products<br>2. Product<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>22</td>
+			<td>Administrational Division:StockManager</td>
+			<td>Manage Product Information</td>
+			<td>commit changes by pressing corresponding button</td>
+			<td>1. READ Item<br></td>
+			<td>1. Product<br></td>
+			<td>commitChanges</td>
+			<td>org.cocome.cloud.logic.webservice.storeservice</td>
+			<td>IStoreManager.updateStockItem()</td>
+			<td>1. READ storeID<br>2. READ stockItemTO<br></td>
+		<tr>
+			<td>23</td>
+			<td>Administrational Division:StockManager</td>
+			<td>Manage Product Information</td>
+			<td>commit changes by pressing corresponding button</td>
+			<td>1. WRITE Items<br></td>
+			<td>1. List_products<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>24</td>
+			<td>Administrational Division:StockManager</td>
+			<td>View Customer Report</td>
+			<td>enter costumer identifier and submit report request</td>
+			<td>1. WRITE CustomerIdentifier<br></td>
+			<td>1. customerIdentifier<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>25</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer arrives at cash desk</td>
+			<td>1. WRITE Items<br></td>
+			<td>1. List_products<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>26</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses StartNewSale [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>26</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses StartNewSale [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireCashDeskPC<br></td>
+			<td>1. ACQUIRE CashDeskPC<br></td>
+		<tr>
+			<td>27</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters digit [Branch:KeepExpressModeEnabled]</td>
+			<td>1. READ Item<br></td>
+			<td>1. Product<br></td>
+			<td>addDigitToBarcode[Branch:KeepExpressModeEnabled]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.addDigitToBarcode()</td>
+			<td>1. READ digit<br></td>
+		<tr>
+			<td>28</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters digit [Branch:KeepExpressModeEnabled]</td>
+			<td>1. WRITE Barcode<br></td>
+			<td>1. Barcode<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>29</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier scans a item [Branch:KeepExpressModeEnabled]</td>
+			<td>1. READ Item<br></td>
+			<td>1. Product<br></td>
+			<td>scanBarcode [Branch:KeepExpressModeEnabled]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.scanBarcode()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>29</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier scans a item [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireBarCodeScanner[Branch:KeepExpressModeEnabled]<br>2. ReleaseBarCodeScanner[Branch:KeepExpressModeEnabled]<br></td>
+			<td>1. ACQUIRE BarCodeScanner<br>2. RELEASE BarCodeScanner<br></td>
+		<tr>
+			<td>30</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier scans a item [Branch:KeepExpressModeEnabled]</td>
+			<td>1. WRITE Barcode<br></td>
+			<td>1. Barcode<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>31</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses CashPayment [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td>startCashPayment[Branch:KeepExpressModeEnabled]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.startCashPayment()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>32</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer hands over money [Branch:KeepExpressModeEnabled]</td>
+			<td>1. WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>33</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters recieved cash [Branch:KeepExpressModeEnabled]</td>
+			<td>1. READ MoneyCollection<br></td>
+			<td></td>
+			<td>enterCashAmount[Branch:KeepExpressModeEnabled]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.enterCashAmount()</td>
+			<td>1. READ cashAmount<br>2. WRITE STRING<br></td>
+		<tr>
+			<td>34</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier exchanges money with cash box [Branch:KeepExpressModeEnabled]</td>
+			<td>1. READ/WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>35</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier hands over change [Branch:KeepExpressModeEnabled]</td>
+			<td>1. WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>36</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier closes cash box [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>36</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier closes cash box [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. ReleaseCashBox<br></td>
+			<td>1. RELEASE CashBox<br></td>
+		<tr>
+			<td>37</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses CardPayment [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td>startCardPayment[Branch:KeepExpressModeEnabled]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.startCardPayment()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>38</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer hands over credit card [Branch:KeepExpressModeEnabled]</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>39</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier recieves credit card [Branch:KeepExpressModeEnabled]</td>
+			<td>1. READ CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>40</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier pulls credit cardt through card reader [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>40</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier pulls credit cardt through card reader [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireCardReader[Branch:KeepExpressModeEnabled]<br></td>
+			<td>1. ACQUIRE CardReader<br></td>
+		<tr>
+			<td>41</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer enters pin [Branch:KeepExpressModeEnabled]</td>
+			<td>1. WRITE CreditCardPIN<br></td>
+			<td>1. creditCardPIN<br></td>
+			<td>enterCardInfo[Branch:KeepExpressModeEnabled]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.enterCardInfo()</td>
+			<td>1. READ cardInfo<br>2. READ pin<br>3. WRITE STRING<br></td>
+		<tr>
+			<td>42</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier returns credit card to customer [Branch:KeepExpressModeEnabled]</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>42</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier returns credit card to customer [Branch:KeepExpressModeEnabled]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. ReleaseCardReader[Branch:KeepExpressModeEnabled]<br></td>
+			<td>1. RELEASE CardReader<br></td>
+		<tr>
+			<td>43</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses DisableExpressMode</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>44</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses StartNewSale [Branch:DisableExpressMode]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>44</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses StartNewSale [Branch:DisableExpressMode]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireLightDisplay<br>2. AcquireCashBox<br></td>
+			<td>1. ACQUIRE LightDisplay<br>2. ACQUIRE CashBox<br></td>
+		<tr>
+			<td>45</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters digit [Branch:DisableExpressMode]</td>
+			<td>1. READ Items<br></td>
+			<td>1. List_products<br></td>
+			<td>addDigitToBarcode[Branch:DisableExpressMode]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.addDigitToBarcode()</td>
+			<td>1. READ digit<br></td>
+		<tr>
+			<td>46</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters digit [Branch:DisableExpressMode]</td>
+			<td>1. READ Barcode<br></td>
+			<td>1. Barcode<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>47</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier scans a item [Branch:DisableExpressMode]</td>
+			<td>1. READ Item<br></td>
+			<td>1. Product<br></td>
+			<td>scanBarcode[Branch:DisableExpressMode]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.scanBarcode()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>47</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier scans a item [Branch:DisableExpressMode]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireBarCodeScanner[Branch:DisableExpressMode]<br>2. ReleaseBarCodeScanner[Branch:DisableExpressMode]<br></td>
+			<td>1. ACQUIRE BarCodeScanner<br>2. RELEASE BarCodeScanner<br></td>
+		<tr>
+			<td>48</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier scans a item [Branch:DisableExpressMode]</td>
+			<td>1. WRITE Barcode<br></td>
+			<td>1. Barcode<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>49</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses CashPayment [Branch:DisableExpressMode]</td>
+			<td></td>
+			<td></td>
+			<td>startCashPayment[Branch:DisableExpressMode]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.startCashPayment()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>50</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer hands over money [Branch:DisableExpressMode]</td>
+			<td>1. WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>51</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters recieved cash [Branch:DisableExpressMode]</td>
+			<td>1. READ MoneyCollection<br></td>
+			<td></td>
+			<td>enterCashAmount[Branch:DisableExpressMode]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.enterCashAmount()</td>
+			<td>1. READ cashAmount<br>2. WRITE STRING<br></td>
+		<tr>
+			<td>52</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier exchanges money with cash box [Branch:DisableExpressMode]</td>
+			<td>1. READ/WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>53</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier hands over change [Branch:DisableExpressMode]</td>
+			<td>1. WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>54</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier closes cash box [Branch:DisableExpressMode]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>55</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses CardPayment [Branch:DisableExpressMode]</td>
+			<td></td>
+			<td></td>
+			<td>startCardPayment[Branch:DisableExpressMode]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.startCardPayment()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>56</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer hands over credit card [Branch:DisableExpressMode]</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>57</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier recieves credit card [Branch:DisableExpressMode]</td>
+			<td>1. READ CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>58</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier pulls credit cardt through card reader [Branch:DisableExpressMode]</td>
+			<td>1. READ CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>58</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier pulls credit cardt through card reader [Branch:DisableExpressMode]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireCardReader[Branch:DisableExpressMode]<br></td>
+			<td>1. ACQUIRE CardReader<br></td>
+		<tr>
+			<td>59</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer enters pin [Branch:DisableExpressMode]</td>
+			<td>1. WRITE CreditCardPIN<br></td>
+			<td>1. creditCardPIN<br></td>
+			<td>enterCardInfo[Branch:DisableExpressMode]</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.enterCardInfo()</td>
+			<td>1. READ cardInfo<br>2. READ pin<br>3. WRITE STRING<br></td>
+		<tr>
+			<td>60</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier returns credit card to customer [Branch:DisableExpressMode]</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>60</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier returns credit card to customer [Branch:DisableExpressMode]</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. ReleaseCardReader[Branch:DisableExpressMode]<br></td>
+			<td>1. RELEASE CardReader<br></td>
+		<tr>
+			<td>61</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses StartNewSale</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>62</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters digit</td>
+			<td>1. READ Item<br></td>
+			<td>1. Product<br></td>
+			<td>addDigitToBarcode</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.addDigitToBarcode()</td>
+			<td>1. READ digit<br></td>
+		<tr>
+			<td>63</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters digit</td>
+			<td>1. WRITE Barcode<br></td>
+			<td>1. Barcode<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>64</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier scans a item</td>
+			<td>1. READ Barcode<br></td>
+			<td>1. Barcode<br></td>
+			<td>scanBarcode</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.scanBarcode()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>64</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier scans a item</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireBarCodeScanner<br>2. ReleaseBarCodeScanner<br></td>
+			<td>1. ACQUIRE BarCodeScanner<br>2. RELEASE BarCodeScanner<br></td>
+		<tr>
+			<td>65</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses CashPayment</td>
+			<td></td>
+			<td></td>
+			<td>startCashPayment</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.startCashPayment()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>66</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer hands over money</td>
+			<td>1. WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>67</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier enters recieved cash</td>
+			<td>1. READ MoneyCollection<br></td>
+			<td></td>
+			<td>enterCashAmount</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.enterCashAmount()</td>
+			<td>1. READ cashAmount<br>2. WRITE STRING<br></td>
+		<tr>
+			<td>68</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier exchanges money with cash box</td>
+			<td>1. READ/WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>69</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier hands over change</td>
+			<td>1. READ/WRITE MoneyCollection<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>70</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier closes cash box</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>71</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier presses CardPayment</td>
+			<td></td>
+			<td></td>
+			<td>startCardPayment</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.startCardPayment()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>72</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer hands over credit card</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>73</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier recieves credit card</td>
+			<td>1. READ CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>74</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier pulls credit cardt through card reader</td>
+			<td>1. READ CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>74</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier pulls credit cardt through card reader</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquireCardReader<br></td>
+			<td>1. ACQUIRE CardReader<br></td>
+		<tr>
+			<td>75</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer enters pin</td>
+			<td>1. WRITE CreditCardPIN<br></td>
+			<td>1. creditCardPIN<br></td>
+			<td>enterCardInfo</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.enterCardInfo()</td>
+			<td>1. READ cardInfo<br>2. READ pin<br>3. WRITE STRING<br></td>
+		<tr>
+			<td>76</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier returns credit card to customer</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>76</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier returns credit card to customer</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. ReleaseCardReader<br></td>
+			<td>1. RELEASE CardReader<br></td>
+		<tr>
+			<td>77</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier hands out receipt</td>
+			<td>1. READ/WRITE Receipt<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>77</td>
+			<td>Operative Division:Cashier</td>
+			<td>Sale</td>
+			<td>cashier hands out receipt</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. AcquirePrinter<br>2. ReleasePrinter<br></td>
+			<td>1. ACQUIRE Printer<br>2. RELEASE Printer<br></td>
+		<tr>
+			<td>78</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer leaves with receipt and goods</td>
+			<td>1. READ/WRITE Receipt<br></td>
+			<td></td>
+			<td>resetSale</td>
+			<td>cocome-cloud</td>
+			<td>ICashDeskView.resetSale()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>78</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer leaves with receipt and goods</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1. ReleaseLightDisplay<br>2. ReleaseCashDeskPC<br></td>
+			<td>1. RELEASE LightDisplay<br>2. RELEASE CashDeskPC<br></td>
+		<tr>
+			<td>79</td>
+			<td>External:Customer</td>
+			<td>Sale</td>
+			<td>customer leaves with receipt and goods</td>
+			<td>1. WRITE Items<br></td>
+			<td>1. List_products<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>80</td>
+			<td>Administrational Division:StoreManager</td>
+			<td>OrderProducts</td>
+			<td>Get Order Items</td>
+			<td></td>
+			<td></td>
+			<td>getOrderItems</td>
+			<td>cocome-cloud</td>
+			<td>IstockOrderView.getOrderItems()</td>
+			<td>1. WRITE List_OrderItem<br></td>
+		<tr>
+			<td>81</td>
+			<td>Administrational Division:StoreManager</td>
+			<td>OrderProducts</td>
+			<td>store manager selects a product</td>
+			<td></td>
+			<td></td>
+			<td>selectOrderItem</td>
+			<td>cocome-cloud</td>
+			<td>IstockOrderView.selectOrderItem()</td>
+			<td>1. READ item<br>2. WRITE STRING<br></td>
+		<tr>
+			<td>82</td>
+			<td>Administrational Division:StoreManager</td>
+			<td>OrderProducts</td>
+			<td>store manager enters corresponting amount</td>
+			<td></td>
+			<td></td>
+			<td>addOrderAmount</td>
+			<td>cocome-cloud</td>
+			<td>IstockOrderView.addOrderAmount()</td>
+			<td>1. READ amount<br>2. READ selectedItem<br>3. WRITE STRING<br></td>
+		<tr>
+			<td>83</td>
+			<td>Administrational Division:StoreManager</td>
+			<td>OrderProducts</td>
+			<td>store manager finishes the order</td>
+			<td></td>
+			<td></td>
+			<td>submitOrder</td>
+			<td>cocome-cloud</td>
+			<td>IstockOrderView.submitOrder()</td>
+			<td>1. WRITE STRING<br></td>
+		<tr>
+			<td>84</td>
+			<td>Administrational Division:StockManager</td>
+			<td>cocome-cloud-receive-ordered-procuts</td>
+			<td>StockManagerChecksTheDeliveryForCompletenessAndCorrectness</td>
+			<td>1. READ/WRITE Delivery<br></td>
+			<td></td>
+			<td>rollInRecievedOrder</td>
+			<td>cocome-cloud</td>
+			<td>IReceiveOrderView.rollInOrder()</td>
+			<td>1. READ order<br>2. WRITE STRING<br></td>
+		<tr>
+			<td>85</td>
+			<td>Administrational Division:StoreManager</td>
+			<td>ShowStockReports</td>
+			<td>store manager enters store id and presses create report</td>
+			<td>1. WRITE StoreID<br></td>
+			<td>1. storeID<br></td>
+			<td>loadReport</td>
+			<td>cocome-cloud</td>
+			<td>IShowReportView.loadReport()</td>
+			<td>1. READ storeId<br></td>
+		<tr>
+			<td>86</td>
+			<td>Administrational Division:EnterpriseManager</td>
+			<td>ShowReportView</td>
+			<td>TheEnterpriseManagerEntersTheEnterpriseIdentifier</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>87</td>
+			<td>Administrational Division:EnterpriseManager</td>
+			<td>ShowReportView</td>
+			<td>TheEnterpriseManagerPressesTheButtonCreateReport</td>
+			<td></td>
+			<td></td>
+			<td>loadReport</td>
+			<td>cocome-cloud</td>
+			<td>IShowReportView.loadReport()</td>
+			<td>1. READ storeId<br></td>
+		<tr>
+			<td>88</td>
+			<td>Administrational Division:StoreManager</td>
+			<td>ChangePrice</td>
+			<td>store manager selects a product item and changes its sales price</td>
+			<td></td>
+			<td></td>
+			<td>loadReport</td>
+			<td>cocome-cloud</td>
+			<td>IShowReportView.loadReport()</td>
+			<td>1. READ storeId<br></td>
+		<tr>
+			<td>88</td>
+			<td>Administrational Division:StoreManager</td>
+			<td>ChangePrice</td>
+			<td>store manager selects a product item and changes its sales price</td>
+			<td></td>
+			<td></td>
+			<td>updateStockItem</td>
+			<td>cocome-cloud</td>
+			<td>IShowStockView.updateStockItem()</td>
+			<td>1. READ item<br>2. WRITE STRING<br></td>
+		<tr>
+			<td>89</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>User clicks selectStore-button</td>
+			<td></td>
+			<td></td>
+			<td>selectStore</td>
+			<td>org.cocome.cloud.web.frontend.enterprise</td>
+			<td>IEnterpriseInformation.getEnterprises()</td>
+			<td>1. WRITE List_enterprises<br></td>
+		<tr>
+			<td>90</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Submit enterprise</td>
+			<td>1. READ EnterpriseCollection<br></td>
+			<td>1. List_enterprises<br></td>
+			<td>submitEnterprise</td>
+			<td>org.cocome.cloud.web.frontend.enterprise</td>
+			<td>IEnterpriseInformation.getStores()</td>
+			<td>1. WRITE List_OrderItem<br></td>
+		<tr>
+			<td>91</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Submit enterprise</td>
+			<td>1. WRITE Enterprise<br></td>
+			<td>1. Enterprise<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>92</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Submit store</td>
+			<td>1. READ StoreCollection<br></td>
+			<td>1. list_store<br></td>
+			<td>submitStore</td>
+			<td>org.cocome.cloud.web.frontend.store</td>
+			<td>IStoreInformation.setPickupStore()</td>
+			<td>1. READ storeID<br></td>
+		<tr>
+			<td>93</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Submit store</td>
+			<td>1. WRITE StoreID<br></td>
+			<td>1. storeID<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>94</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Add product to cart</td>
+			<td>1. READ Items<br></td>
+			<td>1. List_products<br></td>
+			<td>addItemToCart</td>
+			<td>org.cocome.cloud.web.frontend.store</td>
+			<td>IShoppingCartView.addToCart()</td>
+			<td>1. READ Item<br></td>
+		<tr>
+			<td>95</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Add product to cart</td>
+			<td>1. WRITE Item<br></td>
+			<td>1. Product<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>96</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Open shopping cart</td>
+			<td>1. READ ShoppingCart<br></td>
+			<td>1. shoppingCart<br></td>
+			<td>showCart</td>
+			<td>org.cocome.cloud.web.frontend.store</td>
+			<td>IShoppingCartView.getProductList()</td>
+			<td>1. WRITE List_products<br></td>
+		<tr>
+			<td>97</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Proceed to checkout</td>
+			<td>1. READ ShoppingCart<br></td>
+			<td>1. shoppingCart<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>98</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Authenticate user</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>101</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Enter cardNumber of new creditCard</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td>setCreditCardInfo</td>
+			<td>org.cocome.cloud.web.frontend.store</td>
+			<td>AddCreditCardWizardView.setCreditCardInfo()</td>
+			<td>1. READ creditCardInfo<br>2. WRITE creditCard<br></td>
+		<tr>
+			<td>103</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Select creditCard for payment</td>
+			<td>1. READ CreditCardCollection<br>2. WRITE CreditCard<br></td>
+			<td>1. list_creditCards<br>2. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>104</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Confirm chosen creditCard</td>
+			<td>1. READ/WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td>confirmCreditCard</td>
+			<td>org.cocome.cloud.web.frontend.store</td>
+			<td>CheckOutWizardView.setCreditCard()</td>
+			<td>1. READ creditCard<br></td>
+		<tr>
+			<td>105</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Enter creditCard pin and confirm</td>
+			<td>1. READ CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td>confirmCreditCardPin</td>
+			<td>org.cocome.cloud.web.frontend.store</td>
+			<td>CheckOutWizardView.setCreditCardPin()</td>
+			<td>1. READ pin<br></td>
+		<tr>
+			<td>106</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Enter creditCard pin and confirm</td>
+			<td>1. WRITE CreditCardPIN<br></td>
+			<td>1. creditCardPIN<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>107</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Confirm purchase</td>
+			<td></td>
+			<td></td>
+			<td>confirmPurchase</td>
+			<td>org.cocome.cloud.web.frontend.store</td>
+			<td>CheckOutWizardView.accountSale()</td>
+			<td>1. READ shoppingCart<br>2. READ shoppingCart<br></td>
+		<tr>
+			<td>109</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Retry by confirming again</td>
+			<td>1. WRITE CreditCard<br></td>
+			<td>1. creditCard<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>110</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Abort purchase</td>
+			<td>1. READ ShoppingCart<br></td>
+			<td>1. shoppingCart<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>111</td>
+			<td>External:Customer</td>
+			<td>Process Online Sale</td>
+			<td>Leave the website</td>
+			<td>1. READ Receipt<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+	</table>
+</body>
+</html>

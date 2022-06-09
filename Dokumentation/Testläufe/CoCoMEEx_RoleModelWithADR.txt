@@ -1,0 +1,7 @@
+					*- Missing ADRRDR: External Customer UC: sale-process missing "ReleaseCardReader", "ReleaseCashBox", "ReleaseLightDisplay", "ReleaseCashDesk"; as can be also seen in AcquireDeviceResourses
+						* is correct, as only ADRs are printed!!!
+
+- some Business Permissions are solo with read and write and some together, also some are duplicated due to this (8, 17 and 15; 34, 41 and 36) -> Must be solo or all together
+
+			*- Missin ADR: die "Acquire... mit []" fehlen beim Cashier - UC sale
+				* is correct, beacause we have only distinct acquire!

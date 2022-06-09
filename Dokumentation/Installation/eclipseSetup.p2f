@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?p2f version='1.0.0'?>
+<p2f version='1.0.0'>
+  <ius size='7'>
+    <iu id='org.palladiosimulator.dataflow.confidentiality.editor.tree.feature.source.feature.group' name='Data Flow Confidentiality Tree Editors Developer Resources' version='0.1.0.202004081057'>
+      <repositories size='1'>
+        <repository location='https://updatesite.palladio-simulator.com/palladio-supporting-dataflowdiagramconfidentiality/nightly/'/>
+      </repositories>
+    </iu>
+    <iu id='org.palladiosimulator.dataflow.confidentiality.pcm.editor.tree.feature.source.feature.group' name='PCM Data Flow Confidentiality Tree Editor Developer Resources' version='0.1.0.202004091628'>
+      <repositories size='1'>
+        <repository location='https://updatesite.palladio-simulator.com/palladio-addons-dataflowconfidentiality/nightly/'/>
+      </repositories>
+    </iu>
+    <iu id='org.palladiosimulator.dataflow.diagram.editor.tree.feature.source.feature.group' name='Data Flow Diagram Tree Editor Developer Resources' version='0.1.0.202004071938'>
+      <repositories size='1'>
+        <repository location='https://updatesite.palladio-simulator.com/palladio-supporting-dataflowdiagram/nightly/'/>
+      </repositories>
+    </iu>
+    <iu id='org.palladiosimulator.dataflow.dictionary.editor.tree.feature.source.feature.group' name='Data Dictionary Tree Editor Developer Resources' version='0.1.0.202004071938'>
+      <repositories size='1'>
+        <repository location='https://updatesite.palladio-simulator.com/palladio-supporting-dataflowdiagram/nightly/'/>
+      </repositories>
+    </iu>
+    <iu id='org.palladiosimulator.editors.sirius.feature.source.feature.group' name='Palladio Component Model - Sirius Editors Developer Resources' version='4.2.0.202004090151'>
+      <repositories size='1'>
+        <repository location='https://updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/'/>
+      </repositories>
+    </iu>
+    <iu id='org.palladiosimulator.editors.tree.feature.source.feature.group' name='Palladio Component Model - Tree Editors Developer Resources' version='4.2.0.202004090045'>
+      <repositories size='1'>
+        <repository location='https://updatesite.palladio-simulator.com/palladio-build-updatesite/nightly/'/>
+      </repositories>
+    </iu>
+    <iu id='org.palladiosimulator.intbiis.editor.tree.feature.source.feature.group' name='IntBIIS Tree Editor Developer Resources' version='1.0.0.202004081310'>
+      <repositories size='1'>
+        <repository location='https://updatesite.palladio-simulator.com/palladio-addons-intbiis/nightly/'/>
+      </repositories>
+    </iu>
+  </ius>
+</p2f>

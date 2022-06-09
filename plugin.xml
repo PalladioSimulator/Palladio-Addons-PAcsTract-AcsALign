@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  
+   //VOGELLA ab hier
+   <extension point="org.eclipse.debug.core.launchConfigurationTypes">
+    	<launchConfigurationType
+        	name="PallBPMNRME_LP launch"
+        	delegate="extractor.Launch"
+        	modes="run, debug"
+        	id="test.handlers.launchConfigurationType">
+    	</launchConfigurationType>
+	</extension>
+	<extension
+    point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+    <launchConfigurationTabGroup
+        class="ui.SampleTabGroup"
+        id="test.handlers.launchConfigurationTabGroup"
+        type="test.handlers.launchConfigurationType">
+    </launchConfigurationTabGroup>
+	</extension>
+	<extension
+        	point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+    	<launchConfigurationTypeImage
+            id="test.handlers.ui.launch.launchconfigurationtypeimage"
+            configTypeID="test.handlers.launchConfigurationType"
+            icon="icons/iconHotDog.png">
+    	</launchConfigurationTypeImage>
+	</extension>
+
+</plugin>
