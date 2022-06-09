@@ -22,4 +22,6 @@ The old name of PAcsTract is PallBPMNRME, and might be often found in namings of
 * Eclipse Setup p2f: \Dokumentation\Installation\
 * UML Architecture: \Dokumentation\UML-Diagramme
 * JavaDoc: \Dokumentation\JavaDoc\
+* Input Files from Case Study CoCoME: \CaseStudiesCoCoME\
+  * Documentation in: \CaseStudiesCoCoME\Dokumentation CoCoMe-CaseStudies 9, 10 & 13 implementierung.docx
 
