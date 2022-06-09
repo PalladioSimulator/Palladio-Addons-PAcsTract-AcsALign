@@ -1,0 +1,332 @@
+{
+    "dataFlowGraphs": [
+        {
+            "nodes": [
+                {
+                    "id": 0,
+                    "element": {
+                        "entity": {
+                            "id": "_1nQKX48MEeq6s4Ktlhauqg",
+                            "name": "Füge Leihvertrag zur Datenbank hinzu"
+                        },
+                        "context": [
+                            {
+                                "id": "_0tH0sIQ8EemPcPOWzdV97g",
+                                "name": "LeihverkehrsverwaltungsDB"
+                            },
+                            {
+                                "id": "_YtDnEJtEEem7-7-vEoxAxg",
+                                "name": "ComLeihverkehrsverwaltungsDB"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 1,
+                    "element": {
+                        "entity": {
+                            "id": "_6Z8w8IqxEeqcZItgqQRyrQ",
+                            "name": "Leihvertrag erstellen"
+                        },
+                        "context": [
+                        ]
+                    }
+                },
+                {
+                    "id": 2,
+                    "element": {
+                        "entity": {
+                            "id": "_DCJKMI3xEeqGfpJ2wir_UA"
+                        },
+                        "context": [
+                            {
+                                "id": "_pX-sQJtEEem7-7-vEoxAxg",
+                                "name": "ComDatendrehscheibe"
+                            },
+                            {
+                                "id": "_zWv3oIQ8EemPcPOWzdV97g",
+                                "name": "Datendrehscheibe"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "element": {
+                        "entity": {
+                            "id": "_Ev7HUJgwEemIcqpEX65OJg",
+                            "name": "Leihvertrag hinzufügen"
+                        },
+                        "context": [
+                        ]
+                    }
+                },
+                {
+                    "id": 4,
+                    "element": {
+                        "entity": {
+                            "id": "_GaAd4I3xEeqGfpJ2wir_UA",
+                            "name": "sendeLeihvertragZuDB"
+                        },
+                        "context": [
+                            {
+                                "id": "_pX-sQJtEEem7-7-vEoxAxg",
+                                "name": "ComDatendrehscheibe"
+                            },
+                            {
+                                "id": "_zWv3oIQ8EemPcPOWzdV97g",
+                                "name": "Datendrehscheibe"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 5,
+                    "element": {
+                        "entity": {
+                            "id": "_LiDVwI3xEeqGfpJ2wir_UA"
+                        },
+                        "context": [
+                            {
+                                "id": "_0tH0sIQ8EemPcPOWzdV97g",
+                                "name": "LeihverkehrsverwaltungsDB"
+                            },
+                            {
+                                "id": "_YtDnEJtEEem7-7-vEoxAxg",
+                                "name": "ComLeihverkehrsverwaltungsDB"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 6,
+                    "element": {
+                        "entity": {
+                            "id": "_YRkVEJpsEem7Hd476Ia8XA",
+                            "name": "Leihvertrag hinzufügen"
+                        },
+                        "context": [
+                        ]
+                    }
+                },
+                {
+                    "id": 7,
+                    "element": {
+                        "entity": {
+                            "id": "_c3DIII3wEeqGfpJ2wir_UA"
+                        },
+                        "context": [
+                            {
+                                "id": "_14emEJwNEembRtDV6Cn0CQ",
+                                "name": "Leihverkehr"
+                            },
+                            {
+                                "id": "_4S-cMJtVEemzvcE3zA47iw",
+                                "name": "ComLeihverkehr"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 8,
+                    "element": {
+                        "entity": {
+                            "id": "_pzLAUI3wEeqGfpJ2wir_UA",
+                            "name": "sendeLeihvertragZuDatendrehscheibe"
+                        },
+                        "context": [
+                            {
+                                "id": "_14emEJwNEembRtDV6Cn0CQ",
+                                "name": "Leihverkehr"
+                            },
+                            {
+                                "id": "_4S-cMJtVEemzvcE3zA47iw",
+                                "name": "ComLeihverkehr"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 9,
+                    "element": {
+                        "entity": {
+                            "id": "_sBOEMI8MEeq6s4Ktlhauqg"
+                        },
+                        "context": [
+                            {
+                                "id": "_0tH0sIQ8EemPcPOWzdV97g",
+                                "name": "LeihverkehrsverwaltungsDB"
+                            },
+                            {
+                                "id": "_KSPLoI8NEeq6s4Ktlhauqg",
+                                "name": "Assembly_LeihvertragDB"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "from": 0,
+                    "to": 9
+                },
+                {
+                    "from": 1,
+                    "to": 7
+                },
+                {
+                    "from": 2,
+                    "to": 4
+                },
+                {
+                    "from": 3,
+                    "to": 7
+                },
+                {
+                    "from": 4,
+                    "to": 5
+                },
+                {
+                    "from": 5,
+                    "to": 0
+                },
+                {
+                    "from": 6,
+                    "to": 7
+                },
+                {
+                    "from": 7,
+                    "to": 8
+                },
+                {
+                    "from": 8,
+                    "to": 2
+                }
+            ]
+        }
+    ],
+    "dataTypeUsage": [
+        {
+            "dataFlowGraphId": -1,
+            "entryLevelSystemCall": {
+                "id": "_-_fysJpREeme991UpCdgnw",
+                "name": "sich im System für die Ablehnungs-Hinzufügung anmelden"
+            },
+            "readDataTypes": [
+            ],
+            "writeDataTypes": [
+            ]
+        },
+        {
+            "dataFlowGraphId": -1,
+            "entryLevelSystemCall": {
+                "id": "_-_fysJpREeme991UpCdgnw",
+                "name": "sich im System für die Ablehnungs-Hinzufügung anmelden"
+            },
+            "readDataTypes": [
+            ],
+            "writeDataTypes": [
+            ]
+        },
+        {
+            "dataFlowGraphId": -1,
+            "entryLevelSystemCall": {
+                "id": "_-scJQJpQEeme991UpCdgnw",
+                "name": "Leihanfrage hinzufügen"
+            },
+            "readDataTypes": [
+            ],
+            "writeDataTypes": [
+            ]
+        },
+        {
+            "dataFlowGraphId": 0,
+            "entryLevelSystemCall": {
+                "id": "_-scJQJpQEeme991UpCdgnw",
+                "name": "Leihanfrage hinzufügen"
+            },
+            "readDataTypes": [
+            ],
+            "writeDataTypes": [
+                {
+                    "id": "_arj_O5sYEemn470s_s91wg",
+                    "name": "Leihanfrage"
+                }
+            ]
+        },
+        {
+            "dataFlowGraphId": -1,
+            "entryLevelSystemCall": {
+                "id": "_0ODM4JpSEeme991UpCdgnw",
+                "name": "CRM-Eintrag für die Bestätigung holen"
+            },
+            "readDataTypes": [
+            ],
+            "writeDataTypes": [
+            ]
+        },
+        {
+            "dataFlowGraphId": 1,
+            "entryLevelSystemCall": {
+                "id": "_0ODM4JpSEeme991UpCdgnw",
+                "name": "CRM-Eintrag für die Bestätigung holen"
+            },
+            "readDataTypes": [
+                {
+                    "id": "_X4XezZsYEemn470s_s91wg",
+                    "name": "CRM-Eintrag"
+                }
+            ],
+            "writeDataTypes": [
+            ]
+        },
+        {
+            "dataFlowGraphId": -1,
+            "entryLevelSystemCall": {
+                "id": "_0ODM4JpSEeme991UpCdgnw",
+                "name": "CRM-Eintrag für die Bestätigung holen"
+            },
+            "readDataTypes": [
+            ],
+            "writeDataTypes": [
+            ]
+        },
+        {
+            "dataFlowGraphId": -1,
+            "entryLevelSystemCall": {
+                "id": "_1Xafp4q7Eeq-P6mHGLYXLg",
+                "name": "Hole fremdes Ausstellungkonzeptobjekt"
+            },
+            "readDataTypes": [
+            ],
+            "writeDataTypes": [
+            ]
+        },
+        {
+            "dataFlowGraphId": 2,
+            "entryLevelSystemCall": {
+                "id": "_1Xafp4q7Eeq-P6mHGLYXLg",
+                "name": "Hole fremdes Ausstellungkonzeptobjekt"
+            },
+            "readDataTypes": [
+                {
+                    "id": "__X2kTZtBEem7-7-vEoxAxg",
+                    "name": "Ausstellungskonzeptobjekt für eigenes Werk"
+                }
+            ],
+            "writeDataTypes": [
+            ]
+        },
+        {
+            "dataFlowGraphId": -1,
+            "entryLevelSystemCall": {
+                "id": "_1Xafp4q7Eeq-P6mHGLYXLg",
+                "name": "Hole fremdes Ausstellungkonzeptobjekt"
+            },
+            "readDataTypes": [
+            ],
+            "writeDataTypes": [
+            ]
+        }
+    ]
+}
