@@ -5,6 +5,8 @@ This Repository contains the tools developed by Roman Pilipchuk throughout his d
 * **PAcsTract (old name PallBPMNRME)**: Uses in IntBIIS_LP defined business processes in order to extract access control requirement
 * **AcsALign**: Uses PAcsTract and a Palladio defined architecture model with Stephan Seifermanns Data Flow Extension in order to analze the architecture (Enterprise Application Architecture) for violations of access control requirements extracted from business processes
 
+See also Dissertation (\Dokumentation\Dissertation.pdf) for further details on the approaches and especially the publication "Challenges in Aligning Enterprise Application Architectures to Business Process Access Control Requirements in Evolutional Changes" on more infos about AcsALign.
+
 ### IntBIIS_Lanes and Pool (IntBIIS_LP)
 
 * Documentation in: \IntBIIS_LP\model\documentation\
