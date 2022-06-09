@@ -1,0 +1,225 @@
+<!DOCTYPE html><html>
+<head>
+<style>
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	}
+
+th, td {
+	border: 1px solid lightgrey;
+	text-align: left;
+	padding: 8px;
+	; vertical-align:top;
+	; white-space:nowrap;
+	}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th{
+	background-color: #4CAF50;
+	color: white;
+	}
+
+</style>
+</head>
+<body>
+<h1 align="center">Role Model With ADR</h1>
+<p align="center">If you want to export it as a PDF, print it with a PDF-reader of your choice, wich is able to print things as a PDF</p>
+
+
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>Role</th>
+			<th>BusinessPermission</th>
+			<th>ISDataType</th>
+		<tr>
+			<td>1</td>
+			<td>Ausschuss:Leihkommission</td>
+			<td>READ Leihanfrage (Comp)</td>
+			<td>Leihanfrage (Comp)</td>
+		<tr>
+			<td>2</td>
+			<td>Kommunikation:Kommunikation</td>
+			<td>READ Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+		<tr>
+			<td>3</td>
+			<td>Sammlund und Wissenschaft:Restaurator</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+		<tr>
+			<td>4</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+		<tr>
+			<td>5</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>WRITE Standortdaten (Coll)</td>
+			<td>Standortdaten (Coll)</td>
+		<tr>
+			<td>6</td>
+			<td>Sammlung und Wissenschaft:Kunstvermittler</td>
+			<td>READ Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+		<tr>
+			<td>7</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+		<tr>
+			<td>8</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekte (Coll)</td>
+		<tr>
+			<td>9</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag (Comp)</td>
+		<tr>
+			<td>10</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ Fremdes Ausstellungsobjekt (Comp)</td>
+			<td>Fremdes Ausstellungsobjekt (Comp)</td>
+		<tr>
+			<td>11</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ/WRITE Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Kosten- und Finanzierungsplan (Comp)</td>
+		<tr>
+			<td>12</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ Literatur (Coll)</td>
+			<td>Literatur (Coll)</td>
+		<tr>
+			<td>13</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ Standortdaten (Coll)</td>
+			<td>Standortdaten (Coll)</td>
+		<tr>
+			<td>14</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ öffentliche und private Forschungsliteratur (Coll)</td>
+			<td>öffentliche und private Forschungsliteratur (Coll)</td>
+		<tr>
+			<td>16</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ/WRITE Bestätigung des</td>
+			<td>Bestätigung des Leihgesuchs (Comp)</td>
+		<tr>
+			<td>17</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+		<tr>
+			<td>18</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>WRITE Ablehnung Leihanfrage (Comp)</td>
+			<td>Ablehnung Leihanfrage (Comp)</td>
+		<tr>
+			<td>20</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>WRITE Bestätigung Leihanfrage (Comp)</td>
+			<td>Bestätigung Leihanfrage (Comp)</td>
+		<tr>
+			<td>22</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>WRITE Leihgesuch (Comp)</td>
+			<td>Leihgesuch (Comp)</td>
+		<tr>
+			<td>23</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+		<tr>
+			<td>24</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>READ Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+		<tr>
+			<td>25</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>READ Bestätigung des Leihgesuchs (Comp)</td>
+			<td>Bestätigung des Leihgesuchs (Comp)</td>
+		<tr>
+			<td>26</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>READ/WRITE CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag (Comp)</td>
+		<tr>
+			<td>28</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+		<tr>
+			<td>29</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>READ Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekte (Coll)</td>
+		<tr>
+			<td>30</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+		<tr>
+			<td>31</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+		<tr>
+			<td>33</td>
+			<td>Vorstand:Direktor</td>
+			<td>READ Ablehnung Leihanfrage (Comp)</td>
+			<td>Ablehnung Leihanfrage (Comp)</td>
+		<tr>
+			<td>34</td>
+			<td>Vorstand:Direktor</td>
+			<td>READ Bestätigung Leihanfrage (Comp)</td>
+			<td>Bestätigung Leihanfrage (Comp)</td>
+		<tr>
+			<td>35</td>
+			<td>Vorstand:Direktor</td>
+			<td>READ Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Kosten- und Finanzierungsplan (Comp)</td>
+		<tr>
+			<td>36</td>
+			<td>Vorstand:Direktor</td>
+			<td>READ/WRITE Leihgesuch (Comp)</td>
+			<td>Leihgesuch (Comp)</td>
+		<tr>
+			<td>37</td>
+			<td>Vorstand:Direktor</td>
+			<td>READ/WRITE Ablehnung Leihanfrage</td>
+			<td>Ablehnung Leihanfrage (Comp)</td>
+		<tr>
+			<td>38</td>
+			<td>Vorstand:Direktor</td>
+			<td>READ/WRITE Bestätigung Leihanfrage</td>
+			<td>Bestätigung Leihanfrage (Comp)</td>
+		<tr>
+			<td>40</td>
+			<td>Vorstand:Direktor</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+		<tr>
+			<td>41</td>
+			<td>Vorstand:Direktor</td>
+			<td>WRITE Bestätigung des Leihgesuchs (Comp)</td>
+			<td>Bestätigung des Leihgesuchs (Comp)</td>
+		<tr>
+			<td>42</td>
+			<td>Vorstand:Direktor</td>
+			<td>WRITE Leihanfrage (Comp)</td>
+			<td>Leihanfrage (Comp)</td>
+		<tr>
+			<td>43</td>
+			<td>Vorstand:Kaufmännische Geschäftsführer</td>
+			<td>READ Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Kosten- und Finanzierungsplan (Comp)</td>
+	</table>
+</body>
+</html>

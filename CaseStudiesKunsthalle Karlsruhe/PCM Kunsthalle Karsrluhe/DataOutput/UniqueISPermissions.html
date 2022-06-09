@@ -1,0 +1,345 @@
+<!DOCTYPE html><html>
+<head>
+<style>
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	}
+
+th, td {
+	border: 1px solid lightgrey;
+	text-align: left;
+	padding: 8px;
+	; vertical-align:top;
+	; white-space:nowrap;
+	}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th{
+	background-color: #4CAF50;
+	color: white;
+	}
+
+</style>
+</head>
+<body>
+<h1 align="center">UniqueISPermissions</h1>
+<p align="center">If you want to export it as a PDF, print it with a PDF-reader of your choice, wich is able to print things as a PDF</p>
+
+
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>System</th>
+			<th>ServiceCall</th>
+			<th>ISPermission</th>
+		<tr>
+			<td>1</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>READ cred: Credentials</td>
+		<tr>
+			<td>2</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>WRITE Token</td>
+		<tr>
+			<td>3</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>4</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>READ protokoll: Protokoll</td>
+		<tr>
+			<td>5</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjektMitStandort()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>6</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjektMitStandort()</td>
+			<td>READ name: STRING</td>
+		<tr>
+			<td>7</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjektMitStandort()</td>
+			<td>WRITE AusstellungsobjektMitStandort</td>
+		<tr>
+			<td>8</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.aktualisiereStandort()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>9</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.aktualisiereStandort()</td>
+			<td>READ standort: Standort</td>
+		<tr>
+			<td>10</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>11</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeKostenUndFinanzierungsplanHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>12</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeKostenUndFinanzierungsplanHinzu()</td>
+			<td>READ plan: Kosten- und Finanzierungsplan</td>
+		<tr>
+			<td>13</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekteMitStandort()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>14</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekteMitStandort()</td>
+			<td>WRITE AusstellungsobjekteMitStandort</td>
+		<tr>
+			<td>15</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibLiteratur()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>16</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibLiteratur()</td>
+			<td>WRITE Literatur</td>
+		<tr>
+			<td>17</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.erstelleAusstellungskonzept()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>18</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.erstelleAusstellungskonzept()</td>
+			<td>WRITE Ausstellungskonzept</td>
+		<tr>
+			<td>19</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>20</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ konzept: Ausstellungskonzept</td>
+		<tr>
+			<td>21</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ eigenesAusstellungsobjekt: Ausstellungsobjekt</td>
+		<tr>
+			<td>22</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ Restaurorische Maßnahmen erforderlich?: BOOL</td>
+		<tr>
+			<td>23</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ inhaltliches: STRING</td>
+		<tr>
+			<td>24</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibAusstellungskonzept()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>25</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibAusstellungskonzept()</td>
+			<td>READ ausstellungsName: STRING</td>
+		<tr>
+			<td>26</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibAusstellungskonzept()</td>
+			<td>WRITE Ausstellungskonzept</td>
+		<tr>
+			<td>27</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.entferneAusstellungsobjektAusAusstellungskonzept()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>28</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.entferneAusstellungsobjektAusAusstellungskonzept()</td>
+			<td>READ konzept: Ausstellungskonzept</td>
+		<tr>
+			<td>29</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.entferneAusstellungsobjektAusAusstellungskonzept()</td>
+			<td>READ ausstellungsobjekt: öffentlich sichtbares Ausstellungsobjekt</td>
+		<tr>
+			<td>30</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeFremdesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>31</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeFremdesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ konzept: Ausstellungskonzept</td>
+		<tr>
+			<td>32</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeFremdesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ fremdesAusstellungsobjekt: Fremdes Ausstellungsobjekt</td>
+		<tr>
+			<td>33</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeFremdesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>READ inhaltliches: STRING</td>
+		<tr>
+			<td>34</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>35</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>READ name: STRING</td>
+		<tr>
+			<td>36</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>WRITE CRM-Eintrag</td>
+		<tr>
+			<td>37</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibFremdesAusstellungsobjektAusAusstellungskonzept()</td>
+			<td>READ Ausstellungsname: STRING</td>
+		<tr>
+			<td>38</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibFremdesAusstellungsobjektAusAusstellungskonzept()</td>
+			<td>READ Ausstellungsobjektname: STRING</td>
+		<tr>
+			<td>39</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibFremdesAusstellungsobjektAusAusstellungskonzept()</td>
+			<td>WRITE Ausstellungskonzeptobjekt für fremdes Werk</td>
+		<tr>
+			<td>40</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihgesuchHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>41</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihgesuchHinzu()</td>
+			<td>READ Empfänger: CRM-Eintrag</td>
+		<tr>
+			<td>42</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihgesuchHinzu()</td>
+			<td>READ Ausstellungskonzeptobjekt für fremdes Werk: Ausstellungskonzeptobjekt für fremdes Werk</td>
+		<tr>
+			<td>43</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeBestätigungLeihgesuchHinzu()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>44</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeBestätigungLeihgesuchHinzu()</td>
+			<td>READ bestätigung Leihgesuch: Bestätigung des Leihgesuchs</td>
+		<tr>
+			<td>45</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeBestätigungLeihgesuchHinzu()</td>
+			<td>WRITE Leihgesuch</td>
+		<tr>
+			<td>46</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.gibBestätigungLeihgesuch()</td>
+			<td>READ titel Aussstellungsobjekt: STRING</td>
+		<tr>
+			<td>47</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.gibBestätigungLeihgesuch()</td>
+			<td>WRITE Bestätigung des Leihgesuchs</td>
+		<tr>
+			<td>48</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihvertragHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>49</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihvertragHinzu()</td>
+			<td>READ Leihvertragsinformationen: STRING</td>
+		<tr>
+			<td>50</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihvertragHinzu()</td>
+			<td>READ Bestätigung Leihgesuch o. Leihanfrage: Allgemeine Leihanfrage</td>
+		<tr>
+			<td>51</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeTransportauftragHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>52</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeTransportauftragHinzu()</td>
+			<td>READ auftrag: Transportauftrag</td>
+		<tr>
+			<td>53</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekt()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>54</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekt()</td>
+			<td>READ name: STRING</td>
+		<tr>
+			<td>55</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekt()</td>
+			<td>WRITE öffentlich sichtbares Ausstellungsobjekt</td>
+		<tr>
+			<td>56</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihanfrageHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>57</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihanfrageHinzu()</td>
+			<td>READ anfrage: Leihanfrage</td>
+		<tr>
+			<td>58</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeBestätigungLeihanfrageHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>59</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeBestätigungLeihanfrageHinzu()</td>
+			<td>READ bestätigung Leihanfrage: Bestätigung Leihanfrage</td>
+		<tr>
+			<td>60</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeAblehnungLeihanfrageHinzu()</td>
+			<td>READ token: Token</td>
+		<tr>
+			<td>61</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeAblehnungLeihanfrageHinzu()</td>
+			<td>READ ablehnung: Ablehnung Leihanfrage</td>
+	</table>
+</body>
+</html>

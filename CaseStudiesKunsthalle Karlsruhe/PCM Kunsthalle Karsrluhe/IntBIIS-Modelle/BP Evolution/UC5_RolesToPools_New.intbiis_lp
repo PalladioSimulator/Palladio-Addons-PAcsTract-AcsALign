@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:PoolExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <role_poolext organizationalUnit="Zentrale Dienste">
+    <role href="../kunsthalle.organizationenvironmentmodel#_r7T9AJgVEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Sammlung und Wissenschaft">
+    <role href="../kunsthalle.organizationenvironmentmodel#_U8TDkJgVEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Sammlung und Wissenschaft">
+    <role href="../kunsthalle.organizationenvironmentmodel#_l7oSgJgVEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Sammlung und Wissenschaft">
+    <role href="../kunsthalle.organizationenvironmentmodel#_krCd4H_DEeqtothAHK-iyQ"/>
+  </role_poolext>
+</intBIIS_LP:PoolExtContainer>

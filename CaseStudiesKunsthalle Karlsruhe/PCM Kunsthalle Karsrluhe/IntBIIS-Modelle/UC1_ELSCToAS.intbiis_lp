@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC1_Konzeption_neuer_Ausstellung.bpusagemodel#_WdF8ZpgfEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC1_Konzeption_neuer_Ausstellung.bpusagemodel#_gDGNUJgfEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC1_Konzeption_neuer_Ausstellung.bpusagemodel#_WdF8ZpgfEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC1_Konzeption_neuer_Ausstellung.bpusagemodel#_TFVAIJmwEembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC1_Konzeption_neuer_Ausstellung.bpusagemodel#_WdF8ZpgfEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC1_Konzeption_neuer_Ausstellung.bpusagemodel#_MVvisJmwEembgY-6Yjlxug"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

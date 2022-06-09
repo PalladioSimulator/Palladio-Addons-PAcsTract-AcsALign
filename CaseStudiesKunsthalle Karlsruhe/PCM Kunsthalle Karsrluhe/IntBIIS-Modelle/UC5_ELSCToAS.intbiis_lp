@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt.bpusagemodel#_dtFORpo6EemT3cd5zpPfPA"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt.bpusagemodel#_nUZGwJo6EemT3cd5zpPfPA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt.bpusagemodel#_dtFORpo6EemT3cd5zpPfPA"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt.bpusagemodel#_nx7-YJo6EemT3cd5zpPfPA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt.bpusagemodel#_dtFORpo6EemT3cd5zpPfPA"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt.bpusagemodel#_oEXLIJo6EemT3cd5zpPfPA"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

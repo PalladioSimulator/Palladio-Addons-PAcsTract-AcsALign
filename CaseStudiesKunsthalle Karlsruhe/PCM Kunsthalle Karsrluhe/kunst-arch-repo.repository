@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:characteristics="http://palladiosimulator.org/dataflow/confidentiality/characterizedactions/0.1.0/characteristics" xmlns:characterizedActions="http://palladiosimulator.org/dataflow/confidentiality/characterizedactions/0.1.0" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:expressions="http://palladiosimulator.org/dataflow/confidentiality/characterizedactions/0.1.0/expressions" xmlns:expressions_1="http://palladiosimulator.org/dataflow/dictionary/characterized/expressions/1.0" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:repository_1="http://palladiosimulator.org/dataflow/confidentiality/characterizedactions/0.1.0/repository" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:subsystem="http://palladiosimulator.org/PalladioComponentModel/SubSystem/5.2" id="_1_Ct0IOzEemuQ9yUtDd2WA" entityName="main-repository" repositoryDescription="">
+  <components__Repository xsi:type="subsystem:SubSystem" id="_eVxPFIO2EemuQ9yUtDd2WA" entityName="SammlungsDB">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_QGEjIJtEEem7-7-vEoxAxg" entityName="ComSammlungsDB" encapsulatedComponent__AssemblyContext="_2TonRZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_hpRvlJwSEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_rY3Q0ZtCEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_y0EdH5wREemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_QGEjIJtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_y0EdH5wREemggutmlkhqpA" entityName="ProvIZugriffSammlungsDB" providedInterface__OperationProvidedRole="_TNBtho4qEeqbw9NlvrHP6A"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_bdGcBIO6EemuQ9yUtDd2WA" entityName="LiteraturverwaltungsDB">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_TU7EwJtEEem7-7-vEoxAxg" entityName="ComLiteraturverwaltungsDB" encapsulatedComponent__AssemblyContext="_2rWjqZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_CSl5NJwVEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_zYOUEZtCEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="__kteD5wREemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_TU7EwJtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="__kteD5wREemggutmlkhqpA" entityName="ProvIZugriffLiteraturverwaltungsDB" providedInterface__OperationProvidedRole="_qNWHx4O7EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_1Bzv5IO7EemuQ9yUtDd2WA" entityName="StandortverwaltungsDB">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_Wezm0JtEEem7-7-vEoxAxg" entityName="ComStandortverwaltungsDB" encapsulatedComponent__AssemblyContext="_3hL_eZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_IJ0yVJwVEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_4yJmIZtCEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_Co0vT5wSEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_Wezm0JtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Co0vT5wSEemggutmlkhqpA" entityName="ProvIZugriffStandortverwaltungsDB" providedInterface__OperationProvidedRole="_0bMb14O7EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_4x7ylIO7EemuQ9yUtDd2WA" entityName="LeihverkehrsverwaltungDB">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_YtDnEJtEEem7-7-vEoxAxg" entityName="ComLeihverkehrsverwaltungsDB" encapsulatedComponent__AssemblyContext="_38LSWZtAEem7-7-vEoxAxg"/>
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_n63PoI8IEeq6s4Ktlhauqg" entityName="Assembly_BestätigungLeihgesuchDB" encapsulatedComponent__AssemblyContext="_0uDqwI8HEeq6s4Ktlhauqg"/>
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_KSPLoI8NEeq6s4Ktlhauqg" entityName="Assembly_LeihvertragDB" encapsulatedComponent__AssemblyContext="_dYT6EI8MEeq6s4Ktlhauqg"/>
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="__Rv-cJHlEeq5GsfJOQn_FQ" entityName="Assembly_LeihgesuchDB" encapsulatedComponent__AssemblyContext="_LR26WpHmEeq5GsfJOQn_FQ"/>
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_TBTc0JHnEeq5GsfJOQn_FQ" entityName="Assembly_LeihanfrageDB" encapsulatedComponent__AssemblyContext="_OMgGipHmEeq5GsfJOQn_FQ"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_M2jAIZwVEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_-qboIZtCEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_JLNeP5wSEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_YtDnEJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_p_Ct4I8IEeq6s4Ktlhauqg" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_YtDnEJtEEem7-7-vEoxAxg" providingAssemblyContext_AssemblyConnector="_n63PoI8IEeq6s4Ktlhauqg" providedRole_AssemblyConnector="_7Eu48I8HEeq6s4Ktlhauqg" requiredRole_AssemblyConnector="_7tm20I8HEeq6s4Ktlhauqg"/>
+    <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_NHyccI8NEeq6s4Ktlhauqg" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_YtDnEJtEEem7-7-vEoxAxg" providingAssemblyContext_AssemblyConnector="_KSPLoI8NEeq6s4Ktlhauqg" providedRole_AssemblyConnector="_r_-uEI8MEeq6s4Ktlhauqg" requiredRole_AssemblyConnector="_vm-C4I8MEeq6s4Ktlhauqg"/>
+    <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_ts1EQJHnEeq5GsfJOQn_FQ" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_YtDnEJtEEem7-7-vEoxAxg" providingAssemblyContext_AssemblyConnector="__Rv-cJHlEeq5GsfJOQn_FQ" providedRole_AssemblyConnector="_eNUewZHmEeq5GsfJOQn_FQ" requiredRole_AssemblyConnector="_hkk5BZHnEeq5GsfJOQn_FQ"/>
+    <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_unO3AJHnEeq5GsfJOQn_FQ" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_YtDnEJtEEem7-7-vEoxAxg" providingAssemblyContext_AssemblyConnector="_TBTc0JHnEeq5GsfJOQn_FQ" providedRole_AssemblyConnector="_cTrckZHmEeq5GsfJOQn_FQ" requiredRole_AssemblyConnector="_f0h3tJHnEeq5GsfJOQn_FQ"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_JLNeP5wSEemggutmlkhqpA" entityName="ProvIZugriffLeihverkehrsverwaltungDB" providedInterface__OperationProvidedRole="_6BD4J4O7EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_5XFHBIO7EemuQ9yUtDd2WA" entityName="RestaurierungsDB">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_bT2qMJtEEem7-7-vEoxAxg" entityName="ComRestaurierungsDB" encapsulatedComponent__AssemblyContext="_4P6tuZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_TBAXRJwVEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_DlAEsZtDEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_SXPBj5wVEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_bT2qMJtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_SXPBj5wVEemggutmlkhqpA" entityName="ProvIZugriffRestaurierungsDB" providedInterface__OperationProvidedRole="_6bVZV4O7EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_bZ5sJIO8EemuQ9yUtDd2WA" entityName="BibliotheksDB">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_ex9v0JtEEem7-7-vEoxAxg" entityName="ComBibliotheksDB" encapsulatedComponent__AssemblyContext="_4qVY2ZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_m35pNJwVEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_H22UYZtDEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_nlxb35wVEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_ex9v0JtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_nlxb35wVEemggutmlkhqpA" entityName="ProvIZugriffBibliotheksDB" providedInterface__OperationProvidedRole="_dL0Vt4O8EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_NzlK9IO9EemuQ9yUtDd2WA" entityName="Fotoserver">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_gmyjcJtEEem7-7-vEoxAxg" entityName="ComFotoserver" encapsulatedComponent__AssemblyContext="_5WfUOZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_wN_O1JwVEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_VqUrUZtDEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_vXGqL5wVEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_gmyjcJtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_vXGqL5wVEemggutmlkhqpA" entityName="ProvIZugriffFotoserver" providedInterface__OperationProvidedRole="_PXTnh4O9EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_R6TItIO9EemuQ9yUtDd2WA" entityName="Datenablage">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_iXCZEJtEEem7-7-vEoxAxg" entityName="ComDatenablage" encapsulatedComponent__AssemblyContext="_5vYVWZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_50kHhJwVEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_Zf4noZtDEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_5N8Mb5wVEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_iXCZEJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_9nTs0I4qEeqbw9NlvrHP6A" entityName="newProvidedDelegationConnector" innerProvidedRole_ProvidedDelegationConnector="_dIJ54Y4qEeqbw9NlvrHP6A" outerProvidedRole_ProvidedDelegationConnector="_hAD_no4qEeqbw9NlvrHP6A" assemblyContext_ProvidedDelegationConnector="_iXCZEJtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_5N8Mb5wVEemggutmlkhqpA" entityName="ProvIZugriffDatenablage" providedInterface__OperationProvidedRole="_TMGu14O9EemuQ9yUtDd2WA"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_hAD_no4qEeqbw9NlvrHP6A" entityName="ProvIZugriffDatenablage2" providedInterface__OperationProvidedRole="_TNBtho4qEeqbw9NlvrHP6A"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_V2l_JIO9EemuQ9yUtDd2WA" entityName="ForschungsprojektDB">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_kLSk8JtEEem7-7-vEoxAxg" entityName="ComForschungsprojektDB" encapsulatedComponent__AssemblyContext="_6hJwiZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_Asg2xJwWEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_f2N3kZtDEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_Be3gz5wWEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_kLSk8JtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Be3gz5wWEemggutmlkhqpA" entityName="ProvIZugriffForschungsprojektDB" providedInterface__OperationProvidedRole="_YJz-94O9EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_fADeBIO9EemuQ9yUtDd2WA" entityName="CRMSystem">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_nRv_kJtEEem7-7-vEoxAxg" entityName="ComCRMSystem" encapsulatedComponent__AssemblyContext="_6zI4aZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_IQvdNJwWEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_kC3eMZtDEem7-7-vEoxAxg" outerProvidedRole_ProvidedDelegationConnector="_JQPLX5wWEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_nRv_kJtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_JQPLX5wWEemggutmlkhqpA" entityName="ProvIZugriffCRMSystem" providedInterface__OperationProvidedRole="_geZrV4O9EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_GRfdFIO-EemuQ9yUtDd2WA" entityName="Datendrehscheibe">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_pX-sQJtEEem7-7-vEoxAxg" entityName="ComDatendrehscheibe" encapsulatedComponent__AssemblyContext="_7INwiZtAEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_4MeS5JwWEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_x_SNIZvwEem1hMDboMSycg" outerProvidedRole_ProvidedDelegationConnector="_09J3P5wWEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_8CKyFZwWEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_rqxDtZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_VXgfM5wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_8r4ddZwWEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_toacJZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_ox8eo5wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_9bU9ZZwWEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_soqPVZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_WQxpg5wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_97JF5ZwWEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_tTbqpZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_n-u5A5wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_-azdZZwWEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_sLPThZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_V0jAg5wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="__W7HZZwWEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_qoDphZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_TpIR05wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_i6l0NZwXEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_psTy9ZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_QlapM5wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_jpdsZZwXEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_rCYOBZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_U6hBM5wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_kSv59ZwXEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_onQ2dZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_N37sE5wSEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_vVnKdZwXEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_qMyCxZtDEem7-7-vEoxAxg" outerRequiredRole_RequiredDelegationConnector="_PZ1m45wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_wCb0NZwXEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_zFJpBZvwEem1hMDboMSycg" outerRequiredRole_RequiredDelegationConnector="_pNubs5wWEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_JVkDsI4rEeqbw9NlvrHP6A" entityName="newRequiredDelegationConnector" innerRequiredRole_RequiredDelegationConnector="_oL1CtY4qEeqbw9NlvrHP6A" outerRequiredRole_RequiredDelegationConnector="_lGoMY44qEeqbw9NlvrHP6A" assemblyContext_RequiredDelegationConnector="_pX-sQJtEEem7-7-vEoxAxg"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_09J3P5wWEemggutmlkhqpA" entityName="ProvIDatendrehscheibe" providedInterface__OperationProvidedRole="_f2O9FJvwEem1hMDboMSycg"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_N37sE5wSEemggutmlkhqpA" entityName="ReqIZugriffSammlungsDB" requiredInterface__OperationRequiredRole="_TNBtho4qEeqbw9NlvrHP6A"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_QlapM5wWEemggutmlkhqpA" entityName="ReqIZugriffLiteraturverwaltungsDB" requiredInterface__OperationRequiredRole="_qNWHx4O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_PZ1m45wWEemggutmlkhqpA" entityName="ReqIZugriffStandortverwaltungsDB" requiredInterface__OperationRequiredRole="_0bMb14O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_TpIR05wWEemggutmlkhqpA" entityName="ReqIZugriffLeihverkehrsverwaltungsDB" requiredInterface__OperationRequiredRole="_6BD4J4O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_U6hBM5wWEemggutmlkhqpA" entityName="ReqIZugriffRestaurierungsDB" requiredInterface__OperationRequiredRole="_6bVZV4O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_VXgfM5wWEemggutmlkhqpA" entityName="ReqIZugriffBibliotheksDB" requiredInterface__OperationRequiredRole="_dL0Vt4O8EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_V0jAg5wWEemggutmlkhqpA" entityName="ReqIZugriffFotoserver" requiredInterface__OperationRequiredRole="_PXTnh4O9EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_WQxpg5wWEemggutmlkhqpA" entityName="ReqIZugriffDatenablage" requiredInterface__OperationRequiredRole="_TMGu14O9EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_lGoMY44qEeqbw9NlvrHP6A" entityName="ReqIZugriffDatenablage2" requiredInterface__OperationRequiredRole="_TNBtho4qEeqbw9NlvrHP6A"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_n-u5A5wWEemggutmlkhqpA" entityName="ReqIZugriffForschungsprojektDB" requiredInterface__OperationRequiredRole="_YJz-94O9EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_ox8eo5wWEemggutmlkhqpA" entityName="ReqIZugriffCRMSystem" requiredInterface__OperationRequiredRole="_geZrV4O9EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_pNubs5wWEemggutmlkhqpA" entityName="ReqIInternZugang" requiredInterface__OperationRequiredRole="_mZLsuJvwEem1hMDboMSycg"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_1BAyoZtJEemzvcE3zA47iw" entityName="Zugang">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_VmKN8JtMEemzvcE3zA47iw" entityName="ComZugang" encapsulatedComponent__AssemblyContext="_3AeI8ptJEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_q6gYdJwUEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_Yy0XMZtMEemzvcE3zA47iw" outerProvidedRole_ProvidedDelegationConnector="_yQknH5wUEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_VmKN8JtMEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_xBC45JwUEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_B480gZvxEem1hMDboMSycg" outerProvidedRole_ProvidedDelegationConnector="_xrtmj5wUEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_VmKN8JtMEemzvcE3zA47iw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_yQknH5wUEemggutmlkhqpA" entityName="ProvISystemZugang" providedInterface__OperationProvidedRole="_6Op8OJtJEemzvcE3zA47iw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_xrtmj5wUEemggutmlkhqpA" entityName="ProvIInternZugang" providedInterface__OperationProvidedRole="_mZLsuJvwEem1hMDboMSycg"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_VLsNm5tOEemzvcE3zA47iw" entityName="Ausstellung">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_XLh-YJtOEemzvcE3zA47iw" entityName="ComAusstellung" encapsulatedComponent__AssemblyContext="_SpkPGZtOEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_VJWZRJwUEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_opYVUZtOEemzvcE3zA47iw" outerProvidedRole_ProvidedDelegationConnector="_cqSbL5wUEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_XLh-YJtOEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_cHbltZwUEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_FKI4dZvxEem1hMDboMSycg" outerRequiredRole_RequiredDelegationConnector="_dg1os5wUEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_XLh-YJtOEemzvcE3zA47iw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_cqSbL5wUEemggutmlkhqpA" entityName="ProvISystemAusstellung" providedInterface__OperationProvidedRole="_mC9suJtOEemzvcE3zA47iw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_dg1os5wUEemggutmlkhqpA" entityName="ReqIDatendrehscheibeAusstellung" requiredInterface__OperationRequiredRole="_f2O9FJvwEem1hMDboMSycg"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_Qkajq5tSEemzvcE3zA47iw" entityName="AllgemeineZugriffe">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_SHdqwJtSEemzvcE3zA47iw" entityName="ComAllgemeineZugriffe" encapsulatedComponent__AssemblyContext="_G4ROeZtSEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_1v8GZJwTEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_IsUmAZtSEemzvcE3zA47iw" outerProvidedRole_ProvidedDelegationConnector="_3ECyn5wTEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_SHdqwJtSEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_2awlBZwTEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_PWNq5ZvxEem1hMDboMSycg" outerRequiredRole_RequiredDelegationConnector="_4R8JI5wTEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_SHdqwJtSEemzvcE3zA47iw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_3ECyn5wTEemggutmlkhqpA" entityName="ProvISystemAllgemeineZugriffe" providedInterface__OperationProvidedRole="_-kKDOJtREemzvcE3zA47iw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_4R8JI5wTEemggutmlkhqpA" entityName="ReqIDatendrehscheibeAllgemeineZugriffe" requiredInterface__OperationRequiredRole="_f2O9FJvwEem1hMDboMSycg"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_PTkfiZtVEemzvcE3zA47iw" entityName="CRM">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_RxViYJtVEemzvcE3zA47iw" entityName="ComCRM" encapsulatedComponent__AssemblyContext="_S8MzCZtVEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_nahgBJwTEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_eGKKAZtVEemzvcE3zA47iw" outerProvidedRole_ProvidedDelegationConnector="_pQBCD5wTEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_RxViYJtVEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_ofkchZwTEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_Rh7UhZvxEem1hMDboMSycg" outerRequiredRole_RequiredDelegationConnector="_rIdxc5wTEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_RxViYJtVEemzvcE3zA47iw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_pQBCD5wTEemggutmlkhqpA" entityName="ProvISystemCRM" providedInterface__OperationProvidedRole="_VDnyiJtVEemzvcE3zA47iw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_rIdxc5wTEemggutmlkhqpA" entityName="ReqIDatendrehscheibeCRM" requiredInterface__OperationRequiredRole="_f2O9FJvwEem1hMDboMSycg"/>
+  </components__Repository>
+  <components__Repository xsi:type="subsystem:SubSystem" id="_09j_qZtVEemzvcE3zA47iw" entityName="Leihverkehr">
+    <assemblyContexts__ComposedStructure xsi:type="characterizedActions:CharacterizableAssemblyContext" id="_4S-cMJtVEemzvcE3zA47iw" entityName="ComLeihverkehr" encapsulatedComponent__AssemblyContext="_2xmwGZtVEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_-ZfypJwSEemggutmlkhqpA" entityName="IConnector" innerProvidedRole_ProvidedDelegationConnector="_-C9d0ZtVEemzvcE3zA47iw" outerProvidedRole_ProvidedDelegationConnector="_yyhIf5wSEemggutmlkhqpA" assemblyContext_ProvidedDelegationConnector="_4S-cMJtVEemzvcE3zA47iw"/>
+    <connectors__ComposedStructure xsi:type="composition:RequiredDelegationConnector" id="_A5jUlZwTEemggutmlkhqpA" entityName="IConnector" innerRequiredRole_RequiredDelegationConnector="_TyzK9ZvxEem1hMDboMSycg" outerRequiredRole_RequiredDelegationConnector="_0EtwM5wSEemggutmlkhqpA" assemblyContext_RequiredDelegationConnector="_4S-cMJtVEemzvcE3zA47iw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_yyhIf5wSEemggutmlkhqpA" entityName="ProvISystemLeihverkehr" providedInterface__OperationProvidedRole="_7B2dSJtVEemzvcE3zA47iw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_0EtwM5wSEemggutmlkhqpA" entityName="ReqIDatendrehscheibeLeihverkehr" requiredInterface__OperationRequiredRole="_f2O9FJvwEem1hMDboMSycg"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_2TonRZtAEem7-7-vEoxAxg" entityName="SammlungsDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_rY3Q0ZtCEem7-7-vEoxAxg" entityName="ComProvIZugriffSammlungsDB" providedInterface__OperationProvidedRole="_TNBtho4qEeqbw9NlvrHP6A"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_2rWjqZtAEem7-7-vEoxAxg" entityName="LiteraturverwaltungsDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_zYOUEZtCEem7-7-vEoxAxg" entityName="ComProvIZugriffLiteraturverwaltungsDB" providedInterface__OperationProvidedRole="_qNWHx4O7EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_3hL_eZtAEem7-7-vEoxAxg" entityName="StandortverwaltungsDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_4yJmIZtCEem7-7-vEoxAxg" entityName="ComProvIZugriffStandortverwaltungsDB" providedInterface__OperationProvidedRole="_0bMb14O7EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_38LSWZtAEem7-7-vEoxAxg" entityName="LeihverkehrsverwaltungsDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_-qboIZtCEem7-7-vEoxAxg" entityName="ComProvIZugriffLeihverkehrsverwaltungsDB" providedInterface__OperationProvidedRole="_6BD4J4O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_7tm20I8HEeq6s4Ktlhauqg" entityName="LeihverkehrsverwaltungsDB.required.IBestätigungLeihgesuchDB" requiredInterface__OperationRequiredRole="_5C9OcI8HEeq6s4Ktlhauqg"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_vm-C4I8MEeq6s4Ktlhauqg" entityName="LeihverkehrsverwaltungsDB.required.ILeihvertragDB" requiredInterface__OperationRequiredRole="_fX82n48MEeq6s4Ktlhauqg"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_f0h3tJHnEeq5GsfJOQn_FQ" entityName="LeihverkehrsverwaltungsDB.required.ILeihvanfrageDB" requiredInterface__OperationRequiredRole="_gX4R35HmEeq5GsfJOQn_FQ"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_hkk5BZHnEeq5GsfJOQn_FQ" entityName="LeihverkehrsverwaltungsDB.required.ILeihgesuchDB" requiredInterface__OperationRequiredRole="_h43jf5HmEeq5GsfJOQn_FQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_IXVuQI3mEeqGfpJ2wir_UA" describedService__SEFF="_GroFQI3kEeqGfpJ2wir_UA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_JQeVsI3mEeqGfpJ2wir_UA" successor_AbstractAction="_rs1Fb48IEeq6s4Ktlhauqg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_JQeVsY3mEeqGfpJ2wir_UA" predecessor_AbstractAction="_Tj0NwI3mEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_rs1Fb48IEeq6s4Ktlhauqg" entityName="Speichere Bestätigung Leihgesuch" predecessor_AbstractAction="_JQeVsI3mEeqGfpJ2wir_UA" successor_AbstractAction="_Tj0NwI3mEeqGfpJ2wir_UA" calledService_ExternalService="_F30oEI8IEeq6s4Ktlhauqg" role_ExternalService="_7tm20I8HEeq6s4Ktlhauqg">
+        <parameterAssignments id="_z4gtYI8IEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_0PKS0I8IEeq6s4Ktlhauqg" externalCallAction="_rs1Fb48IEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.18/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_1u5nRo8IEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.7/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_Tj0NwI3mEeqGfpJ2wir_UA" entityName="Hole zugehöriges Leihgesuch für Rückgabe" predecessor_AbstractAction="_rs1Fb48IEeq6s4Ktlhauqg" successor_AbstractAction="_JQeVsY3mEeqGfpJ2wir_UA"/>
+      <returnAssignments id="_3H5akI8IEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_3X1T848IEeq6s4Ktlhauqg" dataType="_AOt3XYQ3Eemen-4qGppMaQ">
+          <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+        </lhs>
+        <rhs xsi:type="expressions_1:True" id="_6pRPiI8IEeq6s4Ktlhauqg"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_LiDVwI3xEeqGfpJ2wir_UA" describedService__SEFF="_IgFsUJwMEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_MVioMI3xEeqGfpJ2wir_UA" successor_AbstractAction="_1nQKX48MEeq6s4Ktlhauqg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_MVioMY3xEeqGfpJ2wir_UA" predecessor_AbstractAction="_1nQKX48MEeq6s4Ktlhauqg"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_1nQKX48MEeq6s4Ktlhauqg" entityName="Füge Leihvertrag zur Datenbank hinzu" predecessor_AbstractAction="_MVioMI3xEeqGfpJ2wir_UA" successor_AbstractAction="_MVioMY3xEeqGfpJ2wir_UA" calledService_ExternalService="_j_x9UI8MEeq6s4Ktlhauqg" role_ExternalService="_vm-C4I8MEeq6s4Ktlhauqg">
+        <parameterAssignments id="_7ypVkI8MEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_9WPPQI8MEeq6s4Ktlhauqg" externalCallAction="_1nQKX48MEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.19/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_-YA1Vo8MEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.2/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_OyrlcJHVEeq5GsfJOQn_FQ" describedService__SEFF="_3c0YkJwLEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_P1H54JHVEeq5GsfJOQn_FQ" successor_AbstractAction="_rh8FkJHdEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_P1H54ZHVEeq5GsfJOQn_FQ" predecessor_AbstractAction="_rh8FkJHdEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_rh8FkJHdEeq5GsfJOQn_FQ" entityName="Speichere Leihgesuch" predecessor_AbstractAction="_P1H54JHVEeq5GsfJOQn_FQ" successor_AbstractAction="_P1H54ZHVEeq5GsfJOQn_FQ" calledService_ExternalService="_qdkIYJHmEeq5GsfJOQn_FQ" role_ExternalService="_hkk5BZHnEeq5GsfJOQn_FQ">
+        <parameterAssignments id="_4IFtwJHdEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_4gcjYJHdEeq5GsfJOQn_FQ" externalCallAction="_rh8FkJHdEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.21/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_8A5yZpHdEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_Y3gD4JHWEeq5GsfJOQn_FQ" describedService__SEFF="_L36A8JHWEeq5GsfJOQn_FQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_ZVH0AJHWEeq5GsfJOQn_FQ" successor_AbstractAction="_Ar-TAJHhEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_ZVH0AZHWEeq5GsfJOQn_FQ" predecessor_AbstractAction="_Ar-TAJHhEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_Ar-TAJHhEeq5GsfJOQn_FQ" entityName="Hole Liehgesuch zum titel des Ausstellungsobjekts" predecessor_AbstractAction="_ZVH0AJHWEeq5GsfJOQn_FQ" successor_AbstractAction="_ZVH0AZHWEeq5GsfJOQn_FQ"/>
+      <returnAssignments id="_kJ6yYJHhEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_kq0f85HhEeq5GsfJOQn_FQ" dataType="_Ghv7zZsZEemn470s_s91wg">
+          <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+        </lhs>
+        <rhs xsi:type="expressions_1:True" id="_lLXoSJHhEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_6deCAJHjEeq5GsfJOQn_FQ" describedService__SEFF="_309LwJwLEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_7epLIJHjEeq5GsfJOQn_FQ" successor_AbstractAction="_P6wC8JHkEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_7epLIZHjEeq5GsfJOQn_FQ" predecessor_AbstractAction="_P6wC8JHkEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_P6wC8JHkEeq5GsfJOQn_FQ" entityName="Speichere Leihanfrage ab" predecessor_AbstractAction="_7epLIJHjEeq5GsfJOQn_FQ" successor_AbstractAction="_7epLIZHjEeq5GsfJOQn_FQ" calledService_ExternalService="_orH6YJHmEeq5GsfJOQn_FQ" role_ExternalService="_f0h3tJHnEeq5GsfJOQn_FQ">
+        <parameterAssignments id="_njXTAJHkEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_n65pQJHkEeq5GsfJOQn_FQ" externalCallAction="_P6wC8JHkEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.20/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_ocaa5pHkEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_4P6tuZtAEem7-7-vEoxAxg" entityName="RestaurierungsDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_DlAEsZtDEem7-7-vEoxAxg" entityName="ComProvIZugriffRestaurierungsDB" providedInterface__OperationProvidedRole="_6bVZV4O7EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_4qVY2ZtAEem7-7-vEoxAxg" entityName="BibliotheksDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_H22UYZtDEem7-7-vEoxAxg" entityName="ComProvIZugriffBibliotheksDB" providedInterface__OperationProvidedRole="_dL0Vt4O8EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_5WfUOZtAEem7-7-vEoxAxg" entityName="Fotoserver">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_VqUrUZtDEem7-7-vEoxAxg" entityName="ComProvIZugriffFotoserver" providedInterface__OperationProvidedRole="_PXTnh4O9EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_5vYVWZtAEem7-7-vEoxAxg" entityName="Datenablage">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Zf4noZtDEem7-7-vEoxAxg" entityName="ComProvIZugriffDatenablage" providedInterface__OperationProvidedRole="_TMGu14O9EemuQ9yUtDd2WA"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_dIJ54Y4qEeqbw9NlvrHP6A" entityName="ComProvIZugriffDatenablage2" providedInterface__OperationProvidedRole="_TNBtho4qEeqbw9NlvrHP6A"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_2GPU8J1wEemu59OTdW6dtA" describedService__SEFF="_rFU3cJwLEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_4G8BYp1wEemu59OTdW6dtA" entityName="Start" successor_AbstractAction="_5Jfqnp1wEemu59OTdW6dtA"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_5Jfqnp1wEemu59OTdW6dtA" entityName="lege neues Ausstellungskonzept an" predecessor_AbstractAction="_4G8BYp1wEemu59OTdW6dtA" successor_AbstractAction="_6Tta8J1wEemu59OTdW6dtA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_6Tta8J1wEemu59OTdW6dtA" entityName="gib neues Ausstellungskonzept zurück" predecessor_AbstractAction="_5Jfqnp1wEemu59OTdW6dtA"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_I0OzsI3oEeqGfpJ2wir_UA" describedService__SEFF="_h8Uu8I3nEeqGfpJ2wir_UA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_JWpkQI3oEeqGfpJ2wir_UA" successor_AbstractAction="_Len9YI3oEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_JWqLUI3oEeqGfpJ2wir_UA" predecessor_AbstractAction="_Len9YI3oEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_Len9YI3oEeqGfpJ2wir_UA" entityName="Hole Ausstellungskonzeptobjekt aus Ausstellung für die Rückgabe" predecessor_AbstractAction="_JWpkQI3oEeqGfpJ2wir_UA" successor_AbstractAction="_JWqLUI3oEeqGfpJ2wir_UA"/>
+      <returnAssignments id="_N8s5oI35EeqGfpJ2wir_UA">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_PiRwUo35EeqGfpJ2wir_UA" dataType="__X2kTZtBEem7-7-vEoxAxg">
+          <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+        </lhs>
+        <rhs xsi:type="expressions_1:True" id="_QaG6yI36EeqZpoX5-VlCPQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_3fquQI4sEeqbw9NlvrHP6A" describedService__SEFF="_Wt_54I4qEeqbw9NlvrHP6A">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_4BlvkI4sEeqbw9NlvrHP6A" successor_AbstractAction="_RJaTII4uEeqbw9NlvrHP6A"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_4BlvkY4sEeqbw9NlvrHP6A" predecessor_AbstractAction="_eYCQkI4uEeqbw9NlvrHP6A"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_RJaTII4uEeqbw9NlvrHP6A" entityName="Hole Eigenes Ausstelungskonzeptobjekt der laufenden Ausstellungen zum übergebenen Namen" predecessor_AbstractAction="_4BlvkI4sEeqbw9NlvrHP6A" successor_AbstractAction="_YwYEgI4uEeqbw9NlvrHP6A"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_YwYEgI4uEeqbw9NlvrHP6A" entityName="Hole Fremdes Ausstelungskonzeptobjekt der laufenden Ausstellungen zum übergebenen Namen" predecessor_AbstractAction="_RJaTII4uEeqbw9NlvrHP6A" successor_AbstractAction="_eYCQkI4uEeqbw9NlvrHP6A"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_eYCQkI4uEeqbw9NlvrHP6A" entityName="Extrahiere Ausstellungsobjekt aus Eigenem oder Fremdem Ausstellungskonzeptobjekt" predecessor_AbstractAction="_YwYEgI4uEeqbw9NlvrHP6A" successor_AbstractAction="_4BlvkY4sEeqbw9NlvrHP6A"/>
+      <returnAssignments id="_H4veYI8FEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_Kns-848FEeq6s4Ktlhauqg" dataType="_iOoSm5sZEemn470s_s91wg">
+          <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+        </lhs>
+        <rhs xsi:type="expressions_1:True" id="_Mm4BaI8FEeq6s4Ktlhauqg"/>
+      </returnAssignments>
+      <returnAssignments id="_NDivUI8FEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_NT-X848FEeq6s4Ktlhauqg" dataType="_zBUo_YQ2Eemen-4qGppMaQ">
+          <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+        </lhs>
+        <rhs xsi:type="expressions_1:True" id="_fxp0OI8FEeq6s4Ktlhauqg"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_pRrz0JHVEeq5GsfJOQn_FQ" describedService__SEFF="_wHPSIJwLEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_qNswIJHVEeq5GsfJOQn_FQ" successor_AbstractAction="_hkNmQJHfEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_qNswIZHVEeq5GsfJOQn_FQ" predecessor_AbstractAction="_hkNmQJHfEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_hkNmQJHfEeq5GsfJOQn_FQ" entityName="Hole Ausstellungkonzept für Rückgabe" predecessor_AbstractAction="_qNswIJHVEeq5GsfJOQn_FQ" successor_AbstractAction="_qNswIZHVEeq5GsfJOQn_FQ"/>
+      <returnAssignments id="_okUMAJHfEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_pMfmQ5HfEeq5GsfJOQn_FQ" dataType="_523vO5sZEemn470s_s91wg">
+          <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+        </lhs>
+        <rhs xsi:type="expressions_1:True" id="_vDFmOJHfEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_6hJwiZtAEem7-7-vEoxAxg" entityName="ForschungsprojektDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_f2N3kZtDEem7-7-vEoxAxg" entityName="ComProvIZugriffForschungsprojektDB" providedInterface__OperationProvidedRole="_YJz-94O9EemuQ9yUtDd2WA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_7INwiZtAEem7-7-vEoxAxg" entityName="Datendrehscheibe" componentType="INFRASTRUCTURE_COMPONENT">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_x_SNIZvwEem1hMDboMSycg" entityName="ComProvIDatendrehscheibe" providedInterface__OperationProvidedRole="_f2O9FJvwEem1hMDboMSycg"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_onQ2dZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffSammlungsDB" requiredInterface__OperationRequiredRole="_TNBtho4qEeqbw9NlvrHP6A"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_psTy9ZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffLiteraturverwaltungsDB" requiredInterface__OperationRequiredRole="_qNWHx4O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_qMyCxZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffStandortverwaltungsDB" requiredInterface__OperationRequiredRole="_0bMb14O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_qoDphZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffLeihverkehrsverwaltungsDB" requiredInterface__OperationRequiredRole="_6BD4J4O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_rCYOBZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffRestaurierungsDB" requiredInterface__OperationRequiredRole="_6bVZV4O7EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_rqxDtZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffBibliotheksDB" requiredInterface__OperationRequiredRole="_dL0Vt4O8EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_sLPThZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffFotoserver" requiredInterface__OperationRequiredRole="_PXTnh4O9EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_soqPVZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffDatenablage" requiredInterface__OperationRequiredRole="_TMGu14O9EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_oL1CtY4qEeqbw9NlvrHP6A" entityName="ComReqIZugriffDatenablage2" requiredInterface__OperationRequiredRole="_TNBtho4qEeqbw9NlvrHP6A"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_tTbqpZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffForschungsprojektDB" requiredInterface__OperationRequiredRole="_YJz-94O9EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_toacJZtDEem7-7-vEoxAxg" entityName="ComReqIZugriffCRMSystem" requiredInterface__OperationRequiredRole="_geZrV4O9EemuQ9yUtDd2WA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_zFJpBZvwEem1hMDboMSycg" entityName="ComReqIInternZugang" requiredInterface__OperationRequiredRole="_mZLsuJvwEem1hMDboMSycg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_kv3fAJ1wEemu59OTdW6dtA" describedService__SEFF="_L2wxYJwFEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_mOYrcp1wEemu59OTdW6dtA" entityName="Start" successor_AbstractAction="_oXu9mJ1wEemu59OTdW6dtA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_oXu9mJ1wEemu59OTdW6dtA" entityName="erstelle Ausstellungskonzept" predecessor_AbstractAction="_mOYrcp1wEemu59OTdW6dtA" successor_AbstractAction="_pFk7AJ1wEemu59OTdW6dtA" calledService_ExternalService="_rFU3cJwLEem1hMDboMSycg" role_ExternalService="_soqPVZtDEem7-7-vEoxAxg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_pFk7AJ1wEemu59OTdW6dtA" entityName="gib Ausstellungskonzept zurück" predecessor_AbstractAction="_oXu9mJ1wEemu59OTdW6dtA"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_C8gcwJ1xEemu59OTdW6dtA" describedService__SEFF="_CyO7AJvzEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_FPkEgp1xEemu59OTdW6dtA" entityName="Start" successor_AbstractAction="_FsTq6J1xEemu59OTdW6dtA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_FsTq6J1xEemu59OTdW6dtA" entityName="prüfe Token" predecessor_AbstractAction="_FPkEgp1xEemu59OTdW6dtA" successor_AbstractAction="_GdEZcZ1xEemu59OTdW6dtA" calledService_ExternalService="_h05qYJwKEem1hMDboMSycg" role_ExternalService="_zFJpBZvwEem1hMDboMSycg"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="_GdEZcZ1xEemu59OTdW6dtA" entityName="Ist Token gültig?" predecessor_AbstractAction="_FsTq6J1xEemu59OTdW6dtA" successor_AbstractAction="_I53zFJ1xEemu59OTdW6dtA">
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_G-RpE51xEemu59OTdW6dtA" entityName="Ja">
+          <branchBehaviour_BranchTransition id="_IFbeYJ1xEemu59OTdW6dtA">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_XB3ogp1xEemu59OTdW6dtA" entityName="Token ist gültig" successor_AbstractAction="_YLhYM51xEemu59OTdW6dtA"/>
+            <steps_Behaviour xsi:type="seff:BranchAction" id="_YLhYM51xEemu59OTdW6dtA" entityName="Ist Aufruf erlaubt?" predecessor_AbstractAction="_XB3ogp1xEemu59OTdW6dtA" successor_AbstractAction="_Y7h41J1xEemu59OTdW6dtA">
+              <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_deMLs51xEemu59OTdW6dtA" entityName="Ja">
+                <branchBehaviour_BranchTransition id="_egRTwJ1xEemu59OTdW6dtA">
+                  <steps_Behaviour xsi:type="seff:StartAction" id="_kYedQp1xEemu59OTdW6dtA" entityName="Aufruf ist erlaubt" successor_AbstractAction="_lgFlkp1xEemu59OTdW6dtA"/>
+                  <steps_Behaviour xsi:type="seff:StopAction" id="_lgFlkp1xEemu59OTdW6dtA" entityName="Stop (3)" predecessor_AbstractAction="_kYedQp1xEemu59OTdW6dtA"/>
+                </branchBehaviour_BranchTransition>
+                <branchCondition_GuardedBranchTransition specification="0.5"/>
+              </branches_Branch>
+              <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_d3DXqJ1xEemu59OTdW6dtA" entityName="Nein">
+                <branchBehaviour_BranchTransition id="_fAkkcJ1xEemu59OTdW6dtA">
+                  <steps_Behaviour xsi:type="seff:StartAction" id="_gajPIp1xEemu59OTdW6dtA" entityName="Aufruf ist nicht erlaubt" successor_AbstractAction="_gsukQp1xEemu59OTdW6dtA"/>
+                  <steps_Behaviour xsi:type="seff:StopAction" id="_gsukQp1xEemu59OTdW6dtA" entityName="wirf UnautorisiertException" predecessor_AbstractAction="_gajPIp1xEemu59OTdW6dtA"/>
+                </branchBehaviour_BranchTransition>
+                <branchCondition_GuardedBranchTransition specification="0.5"/>
+              </branches_Branch>
+            </steps_Behaviour>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_Y7h41J1xEemu59OTdW6dtA" entityName="Stop (2)" predecessor_AbstractAction="_YLhYM51xEemu59OTdW6dtA"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="0.5"/>
+        </branches_Branch>
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_HmdDaJ1xEemu59OTdW6dtA" entityName="Nein">
+          <branchBehaviour_BranchTransition id="_ImgyMJ1xEemu59OTdW6dtA">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_SkYwkp1xEemu59OTdW6dtA" entityName="Token ist nicht gültig" successor_AbstractAction="_S6PEwp1xEemu59OTdW6dtA"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_S6PEwp1xEemu59OTdW6dtA" entityName="gib UngültigesTokenException weiter" predecessor_AbstractAction="_SkYwkp1xEemu59OTdW6dtA"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="0.5"/>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_I53zFJ1xEemu59OTdW6dtA" entityName="Stop" predecessor_AbstractAction="_GdEZcZ1xEemu59OTdW6dtA"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_go770I3kEeqGfpJ2wir_UA" describedService__SEFF="_CW-1sI3jEeqGfpJ2wir_UA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_khmPcI3kEeqGfpJ2wir_UA" successor_AbstractAction="_w2gWoI3kEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_khmPcY3kEeqGfpJ2wir_UA" predecessor_AbstractAction="_w2gWoI3kEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_w2gWoI3kEeqGfpJ2wir_UA" entityName="sendeBestätigungZuLeihverkehrsverwaltungsDB" predecessor_AbstractAction="_khmPcI3kEeqGfpJ2wir_UA" successor_AbstractAction="_khmPcY3kEeqGfpJ2wir_UA" calledService_ExternalService="_GroFQI3kEeqGfpJ2wir_UA" role_ExternalService="_qoDphZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_Z7ZgkI8HEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_a1xeII8HEeq6s4Ktlhauqg" externalCallAction="_w2gWoI3kEeqGfpJ2wir_UA" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.7/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_bJN-lo8HEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.23/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_aYqEYI8HEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_eCeDo48HEeq6s4Ktlhauqg"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_efqV9Y8HEeq6s4Ktlhauqg" externalCallAction="_w2gWoI3kEeqGfpJ2wir_UA"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_MIDxYI3nEeqGfpJ2wir_UA" describedService__SEFF="_TkNaIIrXEeq-P6mHGLYXLg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_PzI8AI3nEeqGfpJ2wir_UA" successor_AbstractAction="__VV3YI3nEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_PzI8AY3nEeqGfpJ2wir_UA" predecessor_AbstractAction="__VV3YI3nEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="__VV3YI3nEeqGfpJ2wir_UA" entityName="frageAnBeiDatenablage" predecessor_AbstractAction="_PzI8AI3nEeqGfpJ2wir_UA" successor_AbstractAction="_PzI8AY3nEeqGfpJ2wir_UA" calledService_ExternalService="_h8Uu8I3nEeqGfpJ2wir_UA" role_ExternalService="_soqPVZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_6X91YI8OEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_7REAkI8OEeq6s4Ktlhauqg" externalCallAction="__VV3YI3nEeqGfpJ2wir_UA" parameter="//@interfaces__Repository.7/@signatures__OperationInterface.6/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_85NqJo8OEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.7/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+        <parameterAssignments id="_BHfocI8PEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_BW3hMI8PEeq6s4Ktlhauqg" externalCallAction="__VV3YI3nEeqGfpJ2wir_UA" parameter="//@interfaces__Repository.7/@signatures__OperationInterface.6/@parameters__OperationSignature.1"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_CxJG1o8PEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.7/@parameters__OperationSignature.1"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_EeR-II8PEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_EtISY48PEeq6s4Ktlhauqg"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_FSoMJY8PEeq6s4Ktlhauqg" externalCallAction="__VV3YI3nEeqGfpJ2wir_UA"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_DCJKMI3xEeqGfpJ2wir_UA" describedService__SEFF="_-_xl8JwGEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_EueJII3xEeqGfpJ2wir_UA" successor_AbstractAction="_GaAd4I3xEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_EueJIY3xEeqGfpJ2wir_UA" predecessor_AbstractAction="_GaAd4I3xEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_GaAd4I3xEeqGfpJ2wir_UA" entityName="sendeLeihvertragZuDB" predecessor_AbstractAction="_EueJII3xEeqGfpJ2wir_UA" successor_AbstractAction="_EueJIY3xEeqGfpJ2wir_UA" calledService_ExternalService="_IgFsUJwMEem1hMDboMSycg" role_ExternalService="_qoDphZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_NGaY4I8MEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_NWHo0I8MEeq6s4Ktlhauqg" externalCallAction="_GaAd4I3xEeqGfpJ2wir_UA" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.2/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_ObZ15o8MEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.18/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_-IRZ8I4sEeqbw9NlvrHP6A" describedService__SEFF="_2aHHwJvyEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="__REOAI4sEeqbw9NlvrHP6A" successor_AbstractAction="_FLcFQI4uEeqbw9NlvrHP6A"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="__REOAY4sEeqbw9NlvrHP6A" predecessor_AbstractAction="_FLcFQI4uEeqbw9NlvrHP6A"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_FLcFQI4uEeqbw9NlvrHP6A" entityName="holeAusstellungsobjektVonSammlungsDB" predecessor_AbstractAction="__REOAI4sEeqbw9NlvrHP6A" successor_AbstractAction="__REOAY4sEeqbw9NlvrHP6A" calledService_ExternalService="_Wt_54I4qEeqbw9NlvrHP6A" role_ExternalService="_onQ2dZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_HmftMI8EEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_H4FzgI8EEeq6s4Ktlhauqg" externalCallAction="_FLcFQI4uEeqbw9NlvrHP6A" parameter="//@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_JiEpFo8EEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.2/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_LDZ5AI8EEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_LUYUM48EEeq6s4Ktlhauqg"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_M6vOBY8EEeq6s4Ktlhauqg" externalCallAction="_FLcFQI4uEeqbw9NlvrHP6A"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_dFinEJHVEeq5GsfJOQn_FQ" describedService__SEFF="_OXN78JwFEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_ebiJoJHVEeq5GsfJOQn_FQ" successor_AbstractAction="_Xtq-8JHfEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_ebiwsJHVEeq5GsfJOQn_FQ" predecessor_AbstractAction="_Xtq-8JHfEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_Xtq-8JHfEeq5GsfJOQn_FQ" entityName="gibAusstellungkonzept" predecessor_AbstractAction="_ebiJoJHVEeq5GsfJOQn_FQ" successor_AbstractAction="_ebiwsJHVEeq5GsfJOQn_FQ" calledService_ExternalService="_wHPSIJwLEem1hMDboMSycg" role_ExternalService="_soqPVZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_2HakkJHfEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_2j_L0JHfEeq5GsfJOQn_FQ" externalCallAction="_Xtq-8JHfEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.7/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_3MA1JpHfEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.11/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_4IN-wZHfEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_4xbTw5HfEeq5GsfJOQn_FQ"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_5X0lZZHfEeq5GsfJOQn_FQ" externalCallAction="_Xtq-8JHfEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_Wm7IYJHWEeq5GsfJOQn_FQ" describedService__SEFF="_DYchUJHWEeq5GsfJOQn_FQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_XllJAJHWEeq5GsfJOQn_FQ" successor_AbstractAction="_4GcAkJHgEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_XllJAZHWEeq5GsfJOQn_FQ" predecessor_AbstractAction="_4GcAkJHgEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_4GcAkJHgEeq5GsfJOQn_FQ" entityName="gibBestätigungLeihgesuch aus LeihverkehrsverwaltungsDB" predecessor_AbstractAction="_XllJAJHWEeq5GsfJOQn_FQ" successor_AbstractAction="_XllJAZHWEeq5GsfJOQn_FQ" calledService_ExternalService="_L36A8JHWEeq5GsfJOQn_FQ" role_ExternalService="_qoDphZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_XDu_MJHhEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_bMiAkJHhEeq5GsfJOQn_FQ" externalCallAction="_4GcAkJHgEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.8/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_bpPKtpHhEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.6/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_Xsr1oZHhEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_YEmmU5HhEeq5GsfJOQn_FQ"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_YjwnhZHhEeq5GsfJOQn_FQ" externalCallAction="_4GcAkJHgEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_r6GVoJHXEeq5GsfJOQn_FQ" describedService__SEFF="_vdOOIJvyEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_seomEJHXEeq5GsfJOQn_FQ" successor_AbstractAction="_MubuYJHYEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_seomEZHXEeq5GsfJOQn_FQ" predecessor_AbstractAction="_MubuYJHYEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_MubuYJHYEeq5GsfJOQn_FQ" entityName="gibEintrag" predecessor_AbstractAction="_seomEJHXEeq5GsfJOQn_FQ" successor_AbstractAction="_seomEZHXEeq5GsfJOQn_FQ" calledService_ExternalService="_1drn0JwKEem1hMDboMSycg" role_ExternalService="_toacJZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_t_qCAJHZEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_2H-M8JHZEeq5GsfJOQn_FQ" externalCallAction="_MubuYJHYEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.10/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_H2y_JpHaEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_ud42MZHZEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_vQuoU5HZEeq5GsfJOQn_FQ"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_v2mVhZHZEeq5GsfJOQn_FQ" externalCallAction="_MubuYJHYEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_pBHkEJHcEeq5GsfJOQn_FQ" describedService__SEFF="_zc0_0JwJEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_qUyycJHcEeq5GsfJOQn_FQ" successor_AbstractAction="_v8xHkJHcEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_qUyycZHcEeq5GsfJOQn_FQ" predecessor_AbstractAction="_v8xHkJHcEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_v8xHkJHcEeq5GsfJOQn_FQ" entityName="fügeLeihgesuchHinzu" predecessor_AbstractAction="_qUyycJHcEeq5GsfJOQn_FQ" successor_AbstractAction="_qUyycZHcEeq5GsfJOQn_FQ" calledService_ExternalService="_3c0YkJwLEem1hMDboMSycg" role_ExternalService="_qoDphZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_Gvn-4JHeEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_HIEUEJHeEeq5GsfJOQn_FQ" externalCallAction="_v8xHkJHcEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_HmmqNpHeEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.17/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_3TxGIJHjEeq5GsfJOQn_FQ" describedService__SEFF="_xB8ZIJwGEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_5fR7cJHjEeq5GsfJOQn_FQ" successor_AbstractAction="_KFRdUJHkEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_5fR7cZHjEeq5GsfJOQn_FQ" predecessor_AbstractAction="_KFRdUJHkEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_KFRdUJHkEeq5GsfJOQn_FQ" entityName="fügeLeihanfrageHinzu" predecessor_AbstractAction="_5fR7cJHjEeq5GsfJOQn_FQ" successor_AbstractAction="_5fR7cZHjEeq5GsfJOQn_FQ" calledService_ExternalService="_309LwJwLEem1hMDboMSycg" role_ExternalService="_qoDphZtDEem7-7-vEoxAxg">
+        <parameterAssignments id="_hnjb4JHkEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_iBLc0JHkEeq5GsfJOQn_FQ" externalCallAction="_KFRdUJHkEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.3/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_iW-GppHkEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.16/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_3AeI8ptJEemzvcE3zA47iw" entityName="Zugang">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Yy0XMZtMEemzvcE3zA47iw" entityName="ComProvISystemZugang" providedInterface__OperationProvidedRole="_6Op8OJtJEemzvcE3zA47iw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_B480gZvxEem1hMDboMSycg" entityName="ComProvIInternZugang" providedInterface__OperationProvidedRole="_mZLsuJvwEem1hMDboMSycg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_yngzAJ1qEemgFPChlter7w" describedService__SEFF="_h05qYJwKEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_6CFuMp1qEemgFPChlter7w" entityName="Start" successor_AbstractAction="_A6JyPp1rEemgFPChlter7w"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_A6JyPp1rEemgFPChlter7w" entityName="prüfe Token auf Gültigkeit" predecessor_AbstractAction="_6CFuMp1qEemgFPChlter7w" successor_AbstractAction="_7N3k051qEemgFPChlter7w"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="_7N3k051qEemgFPChlter7w" entityName="Ist Token gültig?" predecessor_AbstractAction="_A6JyPp1rEemgFPChlter7w" successor_AbstractAction="_Bk4KNJ1rEemgFPChlter7w">
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_OPe0k51rEemgFPChlter7w" entityName="Ja">
+          <branchBehaviour_BranchTransition id="_O_WyUJ1rEemgFPChlter7w">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_Yz6cop1rEemgFPChlter7w" entityName="Token ist gültig" successor_AbstractAction="_ZRDrrp1rEemgFPChlter7w"/>
+            <steps_Behaviour xsi:type="seff:InternalAction" id="_ZRDrrp1rEemgFPChlter7w" entityName="prüfe Erlaubnis für Aufruf" predecessor_AbstractAction="_Yz6cop1rEemgFPChlter7w" successor_AbstractAction="_Z8E-k51rEemgFPChlter7w"/>
+            <steps_Behaviour xsi:type="seff:BranchAction" id="_Z8E-k51rEemgFPChlter7w" entityName="Ist Aufruf erlaubt?" predecessor_AbstractAction="_ZRDrrp1rEemgFPChlter7w" successor_AbstractAction="_bmD0JJ1rEemgFPChlter7w">
+              <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_mu_QY51rEemgFPChlter7w" entityName="Ja">
+                <branchBehaviour_BranchTransition id="_nlFK4J1rEemgFPChlter7w">
+                  <steps_Behaviour xsi:type="seff:StartAction" id="_oTGHcp1rEemgFPChlter7w" entityName="Aufruf ist erlaubt" successor_AbstractAction="_osBk0p1rEemgFPChlter7w"/>
+                  <steps_Behaviour xsi:type="seff:StopAction" id="_osBk0p1rEemgFPChlter7w" entityName="gib true zurück" predecessor_AbstractAction="_oTGHcp1rEemgFPChlter7w"/>
+                </branchBehaviour_BranchTransition>
+                <branchCondition_GuardedBranchTransition specification="0.5"/>
+              </branches_Branch>
+              <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_nIsw6J1rEemgFPChlter7w">
+                <branchBehaviour_BranchTransition id="_pJduwJ1rEemgFPChlter7w">
+                  <steps_Behaviour xsi:type="seff:StartAction" id="_pe5MMp1rEemgFPChlter7w" entityName="Aufruf ist nicht erlaubt" successor_AbstractAction="_qHgrYp1rEemgFPChlter7w"/>
+                  <steps_Behaviour xsi:type="seff:StopAction" id="_qHgrYp1rEemgFPChlter7w" entityName="gib false zurück" predecessor_AbstractAction="_pe5MMp1rEemgFPChlter7w"/>
+                </branchBehaviour_BranchTransition>
+                <branchCondition_GuardedBranchTransition specification="0.5"/>
+              </branches_Branch>
+            </steps_Behaviour>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_bmD0JJ1rEemgFPChlter7w" entityName="Stop (2)" predecessor_AbstractAction="_Z8E-k51rEemgFPChlter7w"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="0.5"/>
+        </branches_Branch>
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_Q-Vngp1rEemgFPChlter7w" entityName="Nein">
+          <branchBehaviour_BranchTransition id="_RnpDMJ1rEemgFPChlter7w">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_Twg0Mp1rEemgFPChlter7w" entityName="Token ist ungültig" successor_AbstractAction="_UJzd8p1rEemgFPChlter7w"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_UJzd8p1rEemgFPChlter7w" entityName="wirf UngültigesTokenException" predecessor_AbstractAction="_Twg0Mp1rEemgFPChlter7w"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="0.5"/>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Bk4KNJ1rEemgFPChlter7w" entityName="Stop" predecessor_AbstractAction="_7N3k051qEemgFPChlter7w"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_MH5ScJ1qEemgFPChlter7w" describedService__SEFF="_K_MPQJtMEemzvcE3zA47iw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_PHiTYp1qEemgFPChlter7w" entityName="Start" successor_AbstractAction="_mt9yLp1qEemgFPChlter7w"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_mt9yLp1qEemgFPChlter7w" entityName="invalidiere Token" predecessor_AbstractAction="_PHiTYp1qEemgFPChlter7w" successor_AbstractAction="_q_t7Mp1qEemgFPChlter7w"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_q_t7Mp1qEemgFPChlter7w" entityName="Stop" predecessor_AbstractAction="_mt9yLp1qEemgFPChlter7w"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_f4RLUJwaEemuvMBEVKSAMQ" describedService__SEFF="_8ooEQJtJEemzvcE3zA47iw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_PUGQEp1nEemgFPChlter7w" entityName="Start" successor_AbstractAction="_xkbszJ1nEemgFPChlter7w"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_xkbszJ1nEemgFPChlter7w" entityName="prüfe Anmeldedaten" predecessor_AbstractAction="_PUGQEp1nEemgFPChlter7w" successor_AbstractAction="_GNSKoZ1pEemgFPChlter7w"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="_GNSKoZ1pEemgFPChlter7w" entityName="Sind Anmeldedaten gültig?" predecessor_AbstractAction="_xkbszJ1nEemgFPChlter7w" successor_AbstractAction="_HGe48p1oEemgFPChlter7w">
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_HUecMJ1pEemgFPChlter7w" entityName="Ja">
+          <branchBehaviour_BranchTransition id="_ivJBkJ1pEemgFPChlter7w">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_jVlWgp1pEemgFPChlter7w" entityName="Anmeldedaten sind gültig" successor_AbstractAction="_kccQ7J1pEemgFPChlter7w"/>
+            <steps_Behaviour xsi:type="seff:InternalAction" id="_kccQ7J1pEemgFPChlter7w" entityName="erzeuge Token" predecessor_AbstractAction="_jVlWgp1pEemgFPChlter7w" successor_AbstractAction="_mM_ogZ1pEemgFPChlter7w"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_mM_ogZ1pEemgFPChlter7w" entityName="gib Token zurück" predecessor_AbstractAction="_kccQ7J1pEemgFPChlter7w"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="0.5"/>
+        </branches_Branch>
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_MIOfGJ1pEemgFPChlter7w" entityName="Nein">
+          <branchBehaviour_BranchTransition id="_ppb6MJ1pEemgFPChlter7w">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_qGqBsp1pEemgFPChlter7w" entityName="Anmeldedaten sind ungültig" successor_AbstractAction="_q1CKop1pEemgFPChlter7w"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_q1CKop1pEemgFPChlter7w" entityName="wirf Exception" predecessor_AbstractAction="_qGqBsp1pEemgFPChlter7w"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="0.5"/>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_HGe48p1oEemgFPChlter7w" entityName="Stop" predecessor_AbstractAction="_GNSKoZ1pEemgFPChlter7w"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_SpkPGZtOEemzvcE3zA47iw" entityName="Ausstellung">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_opYVUZtOEemzvcE3zA47iw" entityName="ComProvISystemAusstellung" providedInterface__OperationProvidedRole="_mC9suJtOEemzvcE3zA47iw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_FKI4dZvxEem1hMDboMSycg" entityName="ComReqIDatendrehscheibeAusstellung" requiredInterface__OperationRequiredRole="_f2O9FJvwEem1hMDboMSycg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_gbN6UJ1tEemu59OTdW6dtA" describedService__SEFF="_GmySUJtREemzvcE3zA47iw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_zp3ggp1tEemu59OTdW6dtA" entityName="Start" successor_AbstractAction="_0-72CJ1tEemu59OTdW6dtA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_0-72CJ1tEemu59OTdW6dtA" entityName="prüfe Token" predecessor_AbstractAction="_zp3ggp1tEemu59OTdW6dtA" successor_AbstractAction="_zvKawZ1uEemu59OTdW6dtA" calledService_ExternalService="_CyO7AJvzEem1hMDboMSycg" role_ExternalService="_FKI4dZvxEem1hMDboMSycg"/>
+      <steps_Behaviour xsi:type="seff:BranchAction" id="_zvKawZ1uEemu59OTdW6dtA" entityName="Ist Aufruf erlaubt?" predecessor_AbstractAction="_0-72CJ1tEemu59OTdW6dtA" successor_AbstractAction="_O8egpJ1vEemu59OTdW6dtA">
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_1_KHc51uEemu59OTdW6dtA" entityName="Ja">
+          <branchBehaviour_BranchTransition id="_B4hiIJ1vEemu59OTdW6dtA">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_T78EQp1vEemu59OTdW6dtA" entityName="Aufruf ist erlaubt" successor_AbstractAction="_GTWSOJ1wEemu59OTdW6dtA"/>
+            <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_GTWSOJ1wEemu59OTdW6dtA" entityName="erstelle Ausstellungskonzept" predecessor_AbstractAction="_T78EQp1vEemu59OTdW6dtA" successor_AbstractAction="_H_2QQJ1wEemu59OTdW6dtA" calledService_ExternalService="_L2wxYJwFEem1hMDboMSycg" role_ExternalService="_FKI4dZvxEem1hMDboMSycg"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_H_2QQJ1wEemu59OTdW6dtA" entityName="gib Ausstellungskonzept zurück" predecessor_AbstractAction="_GTWSOJ1wEemu59OTdW6dtA"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="0.5"/>
+        </branches_Branch>
+        <branches_Branch xsi:type="seff:GuardedBranchTransition" id="_DtF3GJ1vEemu59OTdW6dtA" entityName="Nein">
+          <branchBehaviour_BranchTransition id="_FFFkwJ1vEemu59OTdW6dtA">
+            <steps_Behaviour xsi:type="seff:StartAction" id="_Un4kQp1vEemu59OTdW6dtA" entityName="Aufruf ist nicht erlaubt" successor_AbstractAction="_U-6kMp1vEemu59OTdW6dtA"/>
+            <steps_Behaviour xsi:type="seff:StopAction" id="_U-6kMp1vEemu59OTdW6dtA" entityName="gib Exception zurück" predecessor_AbstractAction="_Un4kQp1vEemu59OTdW6dtA"/>
+          </branchBehaviour_BranchTransition>
+          <branchCondition_GuardedBranchTransition specification="0.5"/>
+        </branches_Branch>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_O8egpJ1vEemu59OTdW6dtA" entityName="Stop" predecessor_AbstractAction="_zvKawZ1uEemu59OTdW6dtA"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_jw1EqYrVEeq-P6mHGLYXLg" describedService__SEFF="_ZWMQkIq7Eeq-P6mHGLYXLg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_5O03QIrVEeq-P6mHGLYXLg" successor_AbstractAction="_BhEvYIrYEeq-P6mHGLYXLg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_6p7jUIrVEeq-P6mHGLYXLg" predecessor_AbstractAction="_BhEvYIrYEeq-P6mHGLYXLg"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_BhEvYIrYEeq-P6mHGLYXLg" entityName="frageAnBeiDatendrehscheibe" predecessor_AbstractAction="_5O03QIrVEeq-P6mHGLYXLg" successor_AbstractAction="_6p7jUIrVEeq-P6mHGLYXLg" calledService_ExternalService="_TkNaIIrXEeq-P6mHGLYXLg" role_ExternalService="_FKI4dZvxEem1hMDboMSycg">
+        <parameterAssignments id="_iO_qQI8OEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_i_WJII8OEeq6s4Ktlhauqg" externalCallAction="_BhEvYIrYEeq-P6mHGLYXLg" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.7/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_uoc6Ro8OEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.12/@signatures__OperationInterface.6/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+        <parameterAssignments id="_j4n6gI8OEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_kH2CQI8OEeq6s4Ktlhauqg" externalCallAction="_BhEvYIrYEeq-P6mHGLYXLg" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.7/@parameters__OperationSignature.1"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_vjwr9o8OEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.12/@signatures__OperationInterface.6/@parameters__OperationSignature.1"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_zV_AcI8OEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_znC7M48OEeq6s4Ktlhauqg"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_0nQbBY8OEeq6s4Ktlhauqg" externalCallAction="_BhEvYIrYEeq-P6mHGLYXLg"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_f5dgMJHVEeq5GsfJOQn_FQ" describedService__SEFF="_EQkhgJtUEemzvcE3zA47iw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_gQsUcJHVEeq5GsfJOQn_FQ" successor_AbstractAction="_OgKGgJHfEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_gQsUcZHVEeq5GsfJOQn_FQ" predecessor_AbstractAction="_OgKGgJHfEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_OgKGgJHfEeq5GsfJOQn_FQ" entityName="gibAusstellungkonzept" predecessor_AbstractAction="_gQsUcJHVEeq5GsfJOQn_FQ" successor_AbstractAction="_gQsUcZHVEeq5GsfJOQn_FQ" calledService_ExternalService="_OXN78JwFEem1hMDboMSycg" role_ExternalService="_FKI4dZvxEem1hMDboMSycg">
+        <parameterAssignments id="_S2LPEJHgEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_TL19EJHgEeq5GsfJOQn_FQ" externalCallAction="_OgKGgJHfEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.11/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_WityRpHgEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.12/@signatures__OperationInterface.4/@parameters__OperationSignature.1"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_XPVnwZHgEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_avG6M5HgEeq5GsfJOQn_FQ"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_bJizdZHgEeq5GsfJOQn_FQ" externalCallAction="_OgKGgJHfEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_G4ROeZtSEemzvcE3zA47iw" entityName="AllgemeineZugriffe">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_IsUmAZtSEemzvcE3zA47iw" entityName="ComProvISystemAllgemeineZugriffe" providedInterface__OperationProvidedRole="_-kKDOJtREemzvcE3zA47iw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_PWNq5ZvxEem1hMDboMSycg" entityName="ComReqIDatendrehscheibeAllgemeineZugriffe" requiredInterface__OperationRequiredRole="_f2O9FJvwEem1hMDboMSycg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_I8w3QI4tEeqbw9NlvrHP6A" describedService__SEFF="_y7k6cJvpEem62v5r8NkJ9w">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_J7BPQI4tEeqbw9NlvrHP6A" successor_AbstractAction="_YH-dMI4tEeqbw9NlvrHP6A"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_J7BPQY4tEeqbw9NlvrHP6A" predecessor_AbstractAction="_YH-dMI4tEeqbw9NlvrHP6A"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_YH-dMI4tEeqbw9NlvrHP6A" entityName="holeAusstellungsobjektVonDatendrehschreibe" predecessor_AbstractAction="_J7BPQI4tEeqbw9NlvrHP6A" successor_AbstractAction="_J7BPQY4tEeqbw9NlvrHP6A" calledService_ExternalService="_2aHHwJvyEem1hMDboMSycg" role_ExternalService="_PWNq5ZvxEem1hMDboMSycg">
+        <parameterAssignments id="_3L1RkI8DEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_3mKdII8DEeq6s4Ktlhauqg" externalCallAction="_YH-dMI4tEeqbw9NlvrHP6A" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.2/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_53EIxo8DEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.13/@signatures__OperationInterface.4/@parameters__OperationSignature.1"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_8_KiMI8DEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_9TKcM48DEeq6s4Ktlhauqg"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_-sltRY8DEeq6s4Ktlhauqg" externalCallAction="_YH-dMI4tEeqbw9NlvrHP6A"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_6zI4aZtAEem7-7-vEoxAxg" entityName="CRMSystem">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_kC3eMZtDEem7-7-vEoxAxg" entityName="ComProvIZugriffCRMSystem" providedInterface__OperationProvidedRole="_geZrV4O9EemuQ9yUtDd2WA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_aHJRYJHXEeq5GsfJOQn_FQ" describedService__SEFF="_1drn0JwKEem1hMDboMSycg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_aUlQcJHXEeq5GsfJOQn_FQ" successor_AbstractAction="_SDKXYJHYEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_aUlQcZHXEeq5GsfJOQn_FQ" predecessor_AbstractAction="_SDKXYJHYEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_SDKXYJHYEeq5GsfJOQn_FQ" entityName="Hole CRM-Eintrag zum Namen" predecessor_AbstractAction="_aUlQcJHXEeq5GsfJOQn_FQ" successor_AbstractAction="_aUlQcZHXEeq5GsfJOQn_FQ"/>
+      <returnAssignments id="_OmPSspHaEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_Qx-xc5HaEeq5GsfJOQn_FQ" dataType="_X4XezZsYEemn470s_s91wg">
+          <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+        </lhs>
+        <rhs xsi:type="expressions_1:True" id="_RZ336JHaEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_S8MzCZtVEemzvcE3zA47iw" entityName="CRM">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_eGKKAZtVEemzvcE3zA47iw" entityName="ComProvISystemCRM" providedInterface__OperationProvidedRole="_VDnyiJtVEemzvcE3zA47iw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_Rh7UhZvxEem1hMDboMSycg" entityName="ComReqIDatendrehscheibeCRM" requiredInterface__OperationRequiredRole="_f2O9FJvwEem1hMDboMSycg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_mlTNcJHSEeqpJLqO4PkP9w" describedService__SEFF="_iHyzcJtVEemzvcE3zA47iw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_nH7ZYJHSEeqpJLqO4PkP9w" successor_AbstractAction="_Gwg-cJHYEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_nH7ZYZHSEeqpJLqO4PkP9w" predecessor_AbstractAction="_Gwg-cJHYEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_Gwg-cJHYEeq5GsfJOQn_FQ" entityName="gibEintrag" predecessor_AbstractAction="_nH7ZYJHSEeqpJLqO4PkP9w" successor_AbstractAction="_nH7ZYZHSEeqpJLqO4PkP9w" calledService_ExternalService="_vdOOIJvyEem1hMDboMSycg" role_ExternalService="_Rh7UhZvxEem1hMDboMSycg">
+        <parameterAssignments id="_wewXIJHYEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_7YDb8JHYEeq5GsfJOQn_FQ" externalCallAction="_Gwg-cJHYEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.1/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_81hfhpHYEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.14/@signatures__OperationInterface.0/@parameters__OperationSignature.1"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_RVVysZHZEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_ScwGo5HZEeq5GsfJOQn_FQ"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_UGH4NZHZEeq5GsfJOQn_FQ" externalCallAction="_Gwg-cJHYEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_2xmwGZtVEemzvcE3zA47iw" entityName="Leihverkehr">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_-C9d0ZtVEemzvcE3zA47iw" entityName="ComProvISystemLeihverkehr" providedInterface__OperationProvidedRole="_7B2dSJtVEemzvcE3zA47iw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_TyzK9ZvxEem1hMDboMSycg" entityName="ComReqIDatendrehscheibeLeihverkehr" requiredInterface__OperationRequiredRole="_f2O9FJvwEem1hMDboMSycg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_jIF7UI3jEeqGfpJ2wir_UA" describedService__SEFF="_D__s0I3hEeqGfpJ2wir_UA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_lOBtEI3jEeqGfpJ2wir_UA" successor_AbstractAction="_v9Ge4I3jEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_lOBtEY3jEeqGfpJ2wir_UA" predecessor_AbstractAction="_v9Ge4I3jEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_v9Ge4I3jEeqGfpJ2wir_UA" entityName="sendeBestätigungZuDatendrehscheibe" predecessor_AbstractAction="_lOBtEI3jEeqGfpJ2wir_UA" successor_AbstractAction="_lOBtEY3jEeqGfpJ2wir_UA" calledService_ExternalService="_CW-1sI3jEeqGfpJ2wir_UA" role_ExternalService="_TyzK9ZvxEem1hMDboMSycg">
+        <parameterAssignments id="_kX1DMI8HEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_nNx8oI8HEeq6s4Ktlhauqg" externalCallAction="_v9Ge4I3jEeqGfpJ2wir_UA" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.23/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_npdzFo8HEeq6s4Ktlhauqg" parameter="//@interfaces__Repository.15/@signatures__OperationInterface.7/@parameters__OperationSignature.1"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_k-pLoI8HEeq6s4Ktlhauqg">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_lOtA048HEeq6s4Ktlhauqg"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_l6LmxY8HEeq6s4Ktlhauqg" externalCallAction="_v9Ge4I3jEeqGfpJ2wir_UA"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_c3DIII3wEeqGfpJ2wir_UA" describedService__SEFF="_bkgQIJtWEemzvcE3zA47iw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_f-lg0I3wEeqGfpJ2wir_UA" successor_AbstractAction="_wKLlsI3wEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_wKLlsI3wEeqGfpJ2wir_UA" entityName="Hole Ausstellungsobjekt aus Bestätigung Leigesuch o. Leihanfrage" predecessor_AbstractAction="_f-lg0I3wEeqGfpJ2wir_UA" successor_AbstractAction="_1wPPQI3wEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_1wPPQI3wEeqGfpJ2wir_UA" entityName="Erstelle Leihvertrag" predecessor_AbstractAction="_wKLlsI3wEeqGfpJ2wir_UA" successor_AbstractAction="_pzLAUI3wEeqGfpJ2wir_UA"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_pzLAUI3wEeqGfpJ2wir_UA" entityName="sendeLeihvertragZuDatendrehscheibe" predecessor_AbstractAction="_1wPPQI3wEeqGfpJ2wir_UA" successor_AbstractAction="_f-lg0Y3wEeqGfpJ2wir_UA" calledService_ExternalService="_-_xl8JwGEem1hMDboMSycg" role_ExternalService="_TyzK9ZvxEem1hMDboMSycg">
+        <parameterAssignments id="_ptvd0JUvEeqd2o6K3MbdZw">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_rEU2QJUvEeqd2o6K3MbdZw" externalCallAction="_pzLAUI3wEeqGfpJ2wir_UA" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.18/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_ri8E5pUvEeqd2o6K3MbdZw" parameter="//@interfaces__Repository.15/@signatures__OperationInterface.1/@parameters__OperationSignature.1"/>
+        </parameterAssignments>
+        <parameterAssignments id="_vGiHcJUvEeqd2o6K3MbdZw">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_vmRXcJUvEeqd2o6K3MbdZw" externalCallAction="_pzLAUI3wEeqGfpJ2wir_UA" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.18/@parameters__OperationSignature.0">
+            <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+          </lhs>
+          <rhs xsi:type="expressions_1:False" id="_xDXAiZUvEeqd2o6K3MbdZw"/>
+        </parameterAssignments>
+        <parameterAssignments id="_-ByjII8LEeq6s4Ktlhauqg">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_-_bQEI8LEeq6s4Ktlhauqg" dataType="_gN_s_ZsYEemn470s_s91wg" externalCallAction="_pzLAUI3wEeqGfpJ2wir_UA" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.18/@parameters__OperationSignature.0">
+            <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+          </lhs>
+          <rhs xsi:type="expressions_1:True" id="_CFtrmI8MEeq6s4Ktlhauqg"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_f-lg0Y3wEeqGfpJ2wir_UA" predecessor_AbstractAction="_pzLAUI3wEeqGfpJ2wir_UA"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_LFtkcJHVEeq5GsfJOQn_FQ" describedService__SEFF="_DOGF8JtWEemzvcE3zA47iw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_MWXUAJHVEeq5GsfJOQn_FQ" successor_AbstractAction="_I_CSMJHdEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_MWXUAZHVEeq5GsfJOQn_FQ" predecessor_AbstractAction="_aRZnUJHcEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_aRZnUJHcEeq5GsfJOQn_FQ" entityName="fügeLeihgesuchHinzu" predecessor_AbstractAction="_I_CSMJHdEeq5GsfJOQn_FQ" successor_AbstractAction="_MWXUAZHVEeq5GsfJOQn_FQ" calledService_ExternalService="_zc0_0JwJEem1hMDboMSycg" role_ExternalService="_TyzK9ZvxEem1hMDboMSycg">
+        <parameterAssignments id="_QVj-YJHeEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_RHkDEJHeEeq5GsfJOQn_FQ" dataType="_AOt3XYQ3Eemen-4qGppMaQ" externalCallAction="_aRZnUJHcEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.17/@parameters__OperationSignature.0">
+            <characteristicType xsi:type="characteristics:DataTypeCharacteristicType" href="pathmap://DFD_PCM_DEFAULT_MODELS/defaultCharacteristicTypes.xmi#_Kx_44IMcEeqcvN8hbnPcuQ"/>
+          </lhs>
+          <rhs xsi:type="expressions_1:True" id="_u2i0eJHeEeq5GsfJOQn_FQ"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_I_CSMJHdEeq5GsfJOQn_FQ" entityName="Erstelle Leihgesuch aus Eingaben" predecessor_AbstractAction="_MWXUAJHVEeq5GsfJOQn_FQ" successor_AbstractAction="_aRZnUJHcEeq5GsfJOQn_FQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_3EP54JHXEeq5GsfJOQn_FQ" describedService__SEFF="_yC7CQI3rEeqGfpJ2wir_UA">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_4yRh8JHXEeq5GsfJOQn_FQ" successor_AbstractAction="_y6anoJHgEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_4yRh8ZHXEeq5GsfJOQn_FQ" predecessor_AbstractAction="_y6anoJHgEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_y6anoJHgEeq5GsfJOQn_FQ" entityName="gibBestätigungLeihgesuch" predecessor_AbstractAction="_4yRh8JHXEeq5GsfJOQn_FQ" successor_AbstractAction="_4yRh8ZHXEeq5GsfJOQn_FQ" calledService_ExternalService="_DYchUJHWEeq5GsfJOQn_FQ" role_ExternalService="_TyzK9ZvxEem1hMDboMSycg">
+        <parameterAssignments id="_Me0O8JHhEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_QmjgYJHhEeq5GsfJOQn_FQ" externalCallAction="_y6anoJHgEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.6/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_Q8uktpHhEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.15/@signatures__OperationInterface.8/@parameters__OperationSignature.0"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+      <returnAssignments id="_LnMqgJHhEeq5GsfJOQn_FQ">
+        <lhs xsi:type="expressions:SeffReturnCharacteristicReference" id="_Nm7tk5HhEeq5GsfJOQn_FQ"/>
+        <rhs xsi:type="expressions:ReturnCharacteristicReference" id="_N_msRZHhEeq5GsfJOQn_FQ" externalCallAction="_y6anoJHgEeq5GsfJOQn_FQ"/>
+      </returnAssignments>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_9xpIgJHjEeq5GsfJOQn_FQ" describedService__SEFF="_OE0YoJvqEem62v5r8NkJ9w">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_-iTwcJHjEeq5GsfJOQn_FQ" successor_AbstractAction="_B5_d8JHkEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_-iTwcZHjEeq5GsfJOQn_FQ" predecessor_AbstractAction="_B5_d8JHkEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="characterizedActions:CharacterizedExternalCallAction" id="_B5_d8JHkEeq5GsfJOQn_FQ" entityName="fügeLeihanfrageHinzu" predecessor_AbstractAction="_-iTwcJHjEeq5GsfJOQn_FQ" successor_AbstractAction="_-iTwcZHjEeq5GsfJOQn_FQ" calledService_ExternalService="_xB8ZIJwGEem1hMDboMSycg" role_ExternalService="_TyzK9ZvxEem1hMDboMSycg">
+        <parameterAssignments id="_X4brMJHkEeq5GsfJOQn_FQ">
+          <lhs xsi:type="expressions:ParameterCharacteristicReference" id="_YRoOUJHkEeq5GsfJOQn_FQ" externalCallAction="_B5_d8JHkEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.16/@signatures__OperationInterface.16/@parameters__OperationSignature.0"/>
+          <rhs xsi:type="expressions:SeffParameterCharacteristicReference" id="_Y1JLFpHkEeq5GsfJOQn_FQ" parameter="//@interfaces__Repository.15/@signatures__OperationInterface.4/@parameters__OperationSignature.1"/>
+        </parameterAssignments>
+      </steps_Behaviour>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_0uDqwI8HEeq6s4Ktlhauqg" entityName="BestätigungLeihgesuchDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_7Eu48I8HEeq6s4Ktlhauqg" entityName="BestätigungLeihgesuchDB.provided.IBestätigungLeihgesuchDB" providedInterface__OperationProvidedRole="_5C9OcI8HEeq6s4Ktlhauqg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_I5S1AI8IEeq6s4Ktlhauqg" describedService__SEFF="_F30oEI8IEeq6s4Ktlhauqg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_JNYOoI8IEeq6s4Ktlhauqg" successor_AbstractAction="_JNY1sI8IEeq6s4Ktlhauqg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_JNY1sI8IEeq6s4Ktlhauqg" predecessor_AbstractAction="_JNYOoI8IEeq6s4Ktlhauqg"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_J3m3YI8IEeq6s4Ktlhauqg" describedService__SEFF="_AkcC4I8IEeq6s4Ktlhauqg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_KHz2kI8IEeq6s4Ktlhauqg" successor_AbstractAction="_KH0doI8IEeq6s4Ktlhauqg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_KH0doI8IEeq6s4Ktlhauqg" predecessor_AbstractAction="_KHz2kI8IEeq6s4Ktlhauqg"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_dYT6EI8MEeq6s4Ktlhauqg" entityName="LeihvertragDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_r_-uEI8MEeq6s4Ktlhauqg" entityName="LeihvertragDB.provided.ILeihvertragDB" providedInterface__OperationProvidedRole="_fX82n48MEeq6s4Ktlhauqg"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_sAJGII8MEeq6s4Ktlhauqg" describedService__SEFF="_guoVoI8MEeq6s4Ktlhauqg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_sAJGIY8MEeq6s4Ktlhauqg" successor_AbstractAction="_sAJGIo8MEeq6s4Ktlhauqg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_sAJGIo8MEeq6s4Ktlhauqg" predecessor_AbstractAction="_sAJGIY8MEeq6s4Ktlhauqg"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_sBOEMI8MEeq6s4Ktlhauqg" describedService__SEFF="_j_x9UI8MEeq6s4Ktlhauqg">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_sBOEMY8MEeq6s4Ktlhauqg" successor_AbstractAction="_sBOEMo8MEeq6s4Ktlhauqg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_sBOEMo8MEeq6s4Ktlhauqg" predecessor_AbstractAction="_sBOEMY8MEeq6s4Ktlhauqg"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_OMgGipHmEeq5GsfJOQn_FQ" entityName="LeihanfrageDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_cTrckZHmEeq5GsfJOQn_FQ" entityName="LeihvertragDB.provided.ILeihanfrageDB" providedInterface__OperationProvidedRole="_gX4R35HmEeq5GsfJOQn_FQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_L3BK8JHoEeq5GsfJOQn_FQ" describedService__SEFF="_orH6YJHmEeq5GsfJOQn_FQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_MNaRsJHoEeq5GsfJOQn_FQ" successor_AbstractAction="_MNaRsZHoEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_MNaRsZHoEeq5GsfJOQn_FQ" predecessor_AbstractAction="_MNaRsJHoEeq5GsfJOQn_FQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_Mo6h8JHoEeq5GsfJOQn_FQ" describedService__SEFF="_nkdNQJHmEeq5GsfJOQn_FQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_M9hgAJHoEeq5GsfJOQn_FQ" successor_AbstractAction="_M9hgAZHoEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_M9hgAZHoEeq5GsfJOQn_FQ" predecessor_AbstractAction="_M9hgAJHoEeq5GsfJOQn_FQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_LR26WpHmEeq5GsfJOQn_FQ" entityName="LeihgesuchDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_eNUewZHmEeq5GsfJOQn_FQ" entityName="LeihvertragDB.provided.ILeihgesuchDB" providedInterface__OperationProvidedRole="_h43jf5HmEeq5GsfJOQn_FQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_OMTnUJHoEeq5GsfJOQn_FQ" describedService__SEFF="_qdkIYJHmEeq5GsfJOQn_FQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_OiO0AJHoEeq5GsfJOQn_FQ" successor_AbstractAction="_OiO0AZHoEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_OiO0AZHoEeq5GsfJOQn_FQ" predecessor_AbstractAction="_OiO0AJHoEeq5GsfJOQn_FQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+    <serviceEffectSpecifications__BasicComponent xsi:type="characterizedActions:CharacterizedResourceDemandingSEFF" id="_PB_5MJHoEeq5GsfJOQn_FQ" describedService__SEFF="_p7tYgJHmEeq5GsfJOQn_FQ">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_Pyh-QJHoEeq5GsfJOQn_FQ" successor_AbstractAction="_Pyh-QZHoEeq5GsfJOQn_FQ"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_Pyh-QZHoEeq5GsfJOQn_FQ" predecessor_AbstractAction="_Pyh-QJHoEeq5GsfJOQn_FQ"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_JsMRF4O4EemuQ9yUtDd2WA" entityName="IZugriffSammlungsDB">
+    <signatures__OperationInterface id="__Ui_QJwKEem1hMDboMSycg" entityName="gibAusstellungsobjekt" returnType__OperationSignature="_8lXcTZtGEem7-7-vEoxAxg">
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_FsAQkJwLEem1hMDboMSycg" entityName="gibAusstellungsobjekt" returnType__OperationSignature="_g-bgDZtHEem7-7-vEoxAxg">
+      <parameters__OperationSignature dataType__Parameter="_7bhSnZs2Eem7-7-vEoxAxg" parameterName="id" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_LIrUoJwLEem1hMDboMSycg" entityName="gibAusstellungsobjekte" returnType__OperationSignature="_wR51XIQ2Eemen-4qGppMaQ"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_qNWHx4O7EemuQ9yUtDd2WA" entityName="IZugriffLiteraturverwaltungsDB">
+    <signatures__OperationInterface id="_yeiWIJwKEem1hMDboMSycg" entityName="gibLiteratur" returnType__OperationSignature="_bLcjrJsZEemn470s_s91wg"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_0bMb14O7EemuQ9yUtDd2WA" entityName="IZugriffStandortverwaltungsDB">
+    <signatures__OperationInterface id="_TLbDEJwLEem1hMDboMSycg" entityName="gibStandorte" returnType__OperationSignature="_O-h66psZEemn470s_s91wg"/>
+    <signatures__OperationInterface id="_YXEBgJwLEem1hMDboMSycg" entityName="gibStandort" returnType__OperationSignature="_4El_zZtGEem7-7-vEoxAxg">
+      <parameters__OperationSignature dataType__Parameter="_7bhSnZs2Eem7-7-vEoxAxg" parameterName="ausstellungsobjektID" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_jj9XwJwLEem1hMDboMSycg" entityName="aktualisiereStandort">
+      <parameters__OperationSignature dataType__Parameter="_4El_zZtGEem7-7-vEoxAxg" parameterName="standort" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_6BD4J4O7EemuQ9yUtDd2WA" entityName="IZugriffLeihverkehrsverwaltungsDB">
+    <signatures__OperationInterface id="_3c0YkJwLEem1hMDboMSycg" entityName="fügeLeihgesuchHinzu">
+      <parameters__OperationSignature dataType__Parameter="_-MZ9fZtEEem7-7-vEoxAxg" parameterName="leihgesuch" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_309LwJwLEem1hMDboMSycg" entityName="fügeLeihanfrageHinzu">
+      <parameters__OperationSignature dataType__Parameter="_OeJGnZtFEem7-7-vEoxAxg" parameterName="anfrage" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_IgFsUJwMEem1hMDboMSycg" entityName="fügeLeihvertragHinzu">
+      <parameters__OperationSignature dataType__Parameter="_gN_s_ZsYEemn470s_s91wg" parameterName="leihvertrag" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_NhVYoJwMEem1hMDboMSycg" entityName="fügeProtokollHinzu">
+      <parameters__OperationSignature dataType__Parameter="_n6beTZtGEem7-7-vEoxAxg" parameterName="protokoll" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_R3-owJwMEem1hMDboMSycg" entityName="fügeTransportauftragHinzu">
+      <parameters__OperationSignature dataType__Parameter="_OP4rHZvoEem62v5r8NkJ9w" parameterName="auftrag" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_Xs-GMJwMEem1hMDboMSycg" entityName="fügeBestätigungLeihanfrageHinzu">
+      <parameters__OperationSignature dataType__Parameter="_e2c8XZtGEem7-7-vEoxAxg" parameterName="bestätigung Leihanfrage" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_c5FlwJwMEem1hMDboMSycg" entityName="fügeAblehnungLeihanfrageHinzu">
+      <parameters__OperationSignature dataType__Parameter="_R3krHZtGEem7-7-vEoxAxg" parameterName="ablehnung" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_GroFQI3kEeqGfpJ2wir_UA" entityName="fügeBestätigungLeihgesuchHinzu" returnType__OperationSignature="_AOt3XYQ3Eemen-4qGppMaQ">
+      <parameters__OperationSignature dataType__Parameter="_Ghv7zZsZEemn470s_s91wg" parameterName="bestätigung Leihgesuch"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_L36A8JHWEeq5GsfJOQn_FQ" entityName="gibBestätigungLeihgesuch" returnType__OperationSignature="_Ghv7zZsZEemn470s_s91wg">
+      <parameters__OperationSignature parameterName="titel Aussstellungsobjekt">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_6bVZV4O7EemuQ9yUtDd2WA" entityName="IZugriffRestaurierungsDB"/>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_dL0Vt4O8EemuQ9yUtDd2WA" entityName="IZugriffBibliotheksDB"/>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_PXTnh4O9EemuQ9yUtDd2WA" entityName="IZugriffFotoserver"/>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_TMGu14O9EemuQ9yUtDd2WA" entityName="IZugriffDatenablage">
+    <signatures__OperationInterface id="_rFU3cJwLEem1hMDboMSycg" entityName="IZugriffDatenablage_erstelleAusstellungskonzept" returnType__OperationSignature="_523vO5sZEemn470s_s91wg"/>
+    <signatures__OperationInterface id="_wHPSIJwLEem1hMDboMSycg" entityName="gibAusstellungskonzept" returnType__OperationSignature="_523vO5sZEemn470s_s91wg">
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_09h2MJwMEem1hMDboMSycg" entityName="fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu">
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_J9PcXZtHEem7-7-vEoxAxg" parameterName="ausstellungsobjekt" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_-Mv-0JwMEem1hMDboMSycg" entityName="fügeFremdesAusstellungsobjektDemAusstellungskonzeptHinzu">
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_UUgyLZtHEem7-7-vEoxAxg" parameterName="ausstellungsobjekt" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_L9SWgJwNEem1hMDboMSycg" entityName="entferneAusstellungsobjektAusAusstellungskonzept">
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_hV7-5ps4Eem7-7-vEoxAxg" parameterName="ausstellungsobjekt" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_njc2sJwMEem1hMDboMSycg" entityName="fügeKostenUndFinanzierungsplanHinzu">
+      <parameters__OperationSignature dataType__Parameter="_IyAjrZsYEemn470s_s91wg" parameterName="plan" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_h8Uu8I3nEeqGfpJ2wir_UA" entityName="gibEigenesAusstelungobjektAusAusstellungkonzept" returnType__OperationSignature="__X2kTZtBEem7-7-vEoxAxg">
+      <parameters__OperationSignature parameterName="ausstellungsname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="ausstellungsobjektname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_TNBtho4qEeqbw9NlvrHP6A" entityName="IZugriffDatenablage2">
+    <signatures__OperationInterface id="_Wt_54I4qEeqbw9NlvrHP6A" entityName="gibAusstellungsobjekt" returnType__OperationSignature="_zBUo_YQ2Eemen-4qGppMaQ">
+      <parameters__OperationSignature parameterName="name">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_YJz-94O9EemuQ9yUtDd2WA" entityName="IZugriffForschungsprojektDB"/>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_geZrV4O9EemuQ9yUtDd2WA" entityName="IZugriffCRMSystem">
+    <signatures__OperationInterface id="_1drn0JwKEem1hMDboMSycg" entityName="gibEintrag" returnType__OperationSignature="_X4XezZsYEemn470s_s91wg">
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_5Q1wYJwKEem1hMDboMSycg" entityName="gibEintrag" returnType__OperationSignature="_X4XezZsYEemn470s_s91wg">
+      <parameters__OperationSignature dataType__Parameter="_7bhSnZs2Eem7-7-vEoxAxg" parameterName="id" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_6Op8OJtJEemzvcE3zA47iw" entityName="ISystemZugang">
+    <signatures__OperationInterface id="_8ooEQJtJEemzvcE3zA47iw" entityName="anmelden" returnType__OperationSignature="_iVF0LZtLEemzvcE3zA47iw">
+      <exceptions__Signature exceptionName="UngültigeAnmeldedatenException" exceptionMessage="Anmeldedaten sind nicht gültig."/>
+      <parameters__OperationSignature dataType__Parameter="_iLT4rYQ3Eemen-4qGppMaQ" parameterName="cred" modifier__Parameter="in"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_K_MPQJtMEemzvcE3zA47iw" entityName="abmelden">
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="Token" modifier__Parameter="in"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_mC9suJtOEemzvcE3zA47iw" entityName="ISystemAusstellung">
+    <signatures__OperationInterface id="_3EJ835tOEemzvcE3zA47iw" entityName="fügeKostenUndFinanzierungsplanHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_IyAjrZsYEemn470s_s91wg" parameterName="plan" modifier__Parameter="in"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_GmySUJtREemzvcE3zA47iw" entityName="erstelleAusstellungskonzept" returnType__OperationSignature="_523vO5sZEemn470s_s91wg">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation unautorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_hTUw8JtSEemzvcE3zA47iw" entityName="fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_zBUo_YQ2Eemen-4qGppMaQ" parameterName="eigenesAusstellungsobjekt" modifier__Parameter="inout"/>
+      <parameters__OperationSignature parameterName="Restaurorische Maßnahmen erforderlich?" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="inhaltliches" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_aD3EIJtTEemzvcE3zA47iw" entityName="fügeFremdesAusstellungsobjektDemAusstellungskonzeptHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist nicht für die Operation autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_iOoSm5sZEemn470s_s91wg" parameterName="fremdesAusstellungsobjekt" modifier__Parameter="inout"/>
+      <parameters__OperationSignature parameterName="inhaltliches" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_EQkhgJtUEemzvcE3zA47iw" entityName="gibAusstellungskonzept" returnType__OperationSignature="_523vO5sZEemn470s_s91wg">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist nicht für die Operation unautorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature parameterName="ausstellungsName" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_pHp-MIq7Eeq-P6mHGLYXLg" entityName="gibEigenesAusstellungobjektAusAusstellungskonzept" returnType__OperationSignature="__X2kTZtBEem7-7-vEoxAxg">
+      <parameters__OperationSignature parameterName="Ausstellungsname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="Ausstellungsobjektname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_ZWMQkIq7Eeq-P6mHGLYXLg" entityName="gibFremdesAusstellungsobjektAusAusstellungskonzept" returnType__OperationSignature="_M4HrXZtCEem7-7-vEoxAxg">
+      <parameters__OperationSignature parameterName="Ausstellungsname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="Ausstellungsobjektname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_ZI7QcJtUEemzvcE3zA47iw" entityName="entferneAusstellungsobjektAusAusstellungskonzept">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist nicht für die Operation autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_hV7-5ps4Eem7-7-vEoxAxg" parameterName="ausstellungsobjekt" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_-kKDOJtREemzvcE3zA47iw" entityName="ISystemAllgemeineZugriffe">
+    <signatures__OperationInterface id="_Y0U2QJtQEemzvcE3zA47iw" entityName="gibLiteratur" returnType__OperationSignature="_bLcjrJsZEemn470s_s91wg">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_0u8HAJtQEemzvcE3zA47iw" entityName="gibAusstellungsobjekteMitStandort" returnType__OperationSignature="_s6IG7JtQEemzvcE3zA47iw">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_gV4_cJvuEem62v5r8NkJ9w" entityName="gibAusstellungsobjektMitStandort" returnType__OperationSignature="_lWyRTZtQEemzvcE3zA47iw">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_KTuTUJvvEem62v5r8NkJ9w" entityName="aktualisiereStandort">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_M6cjPZsZEemn470s_s91wg" parameterName="standort" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_y7k6cJvpEem62v5r8NkJ9w" entityName="gibAusstellungsobjekt" returnType__OperationSignature="_hV7-5ps4Eem7-7-vEoxAxg">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="in">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_VDnyiJtVEemzvcE3zA47iw" entityName="ISystemCRM">
+    <signatures__OperationInterface id="_iHyzcJtVEemzvcE3zA47iw" entityName="gibEintrag" returnType__OperationSignature="_X4XezZsYEemn470s_s91wg">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_7B2dSJtVEemzvcE3zA47iw" entityName="ISystemLeihverkehr">
+    <signatures__OperationInterface id="_DOGF8JtWEemzvcE3zA47iw" entityName="fügeLeihgesuchHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_X4XezZsYEemn470s_s91wg" parameterName="Empfänger" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_M4HrXZtCEem7-7-vEoxAxg" parameterName="Ausstellungskonzeptobjekt für fremdes Werk"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_bkgQIJtWEemzvcE3zA47iw" entityName="fügeLeihvertragHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature parameterName="Leihvertragsinformationen">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature dataType__Parameter="_VYaOPZs-Eem7-7-vEoxAxg" parameterName="Bestätigung Leihgesuch o. Leihanfrage"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_KTZp0JtYEemzvcE3zA47iw" entityName="fügeProtokollHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_-lDyDZsYEemn470s_s91wg" parameterName="protokoll" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_xohzoJvoEem62v5r8NkJ9w" entityName="fügeTransportauftragHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_8wMBYpvkEem62v5r8NkJ9w" parameterName="auftrag" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_OE0YoJvqEem62v5r8NkJ9w" entityName="fügeLeihanfrageHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_arj_O5sYEemn470s_s91wg" parameterName="anfrage" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_eZCOAJvqEem62v5r8NkJ9w" entityName="fügeBestätigungLeihanfrageHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_2UoM7ZsYEemn470s_s91wg" parameterName="bestätigung Leihanfrage" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_exZqsJvqEem62v5r8NkJ9w" entityName="fügeAblehnungLeihanfrageHinzu">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist nicht gültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature dataType__Parameter="_s5knvZsYEemn470s_s91wg" parameterName="ablehnung" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_D__s0I3hEeqGfpJ2wir_UA" entityName="fügeBestätigungLeihgesuchHinzu" returnType__OperationSignature="_AOt3XYQ3Eemen-4qGppMaQ">
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="Token"/>
+      <parameters__OperationSignature dataType__Parameter="_Ghv7zZsZEemn470s_s91wg" parameterName="bestätigung Leihgesuch"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_yC7CQI3rEeqGfpJ2wir_UA" entityName="gibBestätigungLeihgesuch" returnType__OperationSignature="_Ghv7zZsZEemn470s_s91wg">
+      <parameters__OperationSignature parameterName="titel Aussstellungsobjekt">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_f2O9FJvwEem1hMDboMSycg" entityName="IDatendrehscheibe">
+    <signatures__OperationInterface id="_CyO7AJvzEem1hMDboMSycg" entityName="IDatendrehscheibe_prüfeToken">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <exceptions__Signature exceptionName="UnautorisiertException" exceptionMessage="Der Nutzer ist für die Operation nicht autorisiert."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature parameterName="aufruf" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_vdOOIJvyEem1hMDboMSycg" entityName="gibEintrag" returnType__OperationSignature="_X4XezZsYEemn470s_s91wg">
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_2aHHwJvyEem1hMDboMSycg" entityName="gibAusstellungsobjekt" returnType__OperationSignature="_hV7-5ps4Eem7-7-vEoxAxg">
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_22Dc4JvyEem1hMDboMSycg" entityName="gibLiteratur" returnType__OperationSignature="_bLcjrJsZEemn470s_s91wg"/>
+    <signatures__OperationInterface id="_YSw0gJwEEem1hMDboMSycg" entityName="gibAusstellungsobjekteMitStandort" returnType__OperationSignature="_s6IG7JtQEemzvcE3zA47iw"/>
+    <signatures__OperationInterface id="_6DgLIJwEEem1hMDboMSycg" entityName="gibAusstellungsobjektMitStandort" returnType__OperationSignature="_lWyRTZtQEemzvcE3zA47iw">
+      <parameters__OperationSignature parameterName="name" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_DYchUJHWEeq5GsfJOQn_FQ" entityName="gibBestätigungLeihgesuch" returnType__OperationSignature="_Ghv7zZsZEemn470s_s91wg">
+      <parameters__OperationSignature parameterName="titel Aussstellungsobjekt">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_TkNaIIrXEeq-P6mHGLYXLg" entityName="gibEigenesAusstellungsobjektAusAusstellungskonzept" returnType__OperationSignature="__X2kTZtBEem7-7-vEoxAxg">
+      <parameters__OperationSignature parameterName="ausstellungsname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="ausstellungsobjektname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_Yc6OcYrXEeq-P6mHGLYXLg" entityName="gibFremdesAusstellungsobjektAusAusstellungskonzept">
+      <parameters__OperationSignature parameterName="Ausstellungsname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <parameters__OperationSignature parameterName="Ausstellungsobjektname">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="__fWv0JwEEem1hMDboMSycg" entityName="aktualisiereStandort">
+      <parameters__OperationSignature dataType__Parameter="_M6cjPZsZEemn470s_s91wg" parameterName="standort" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_L2wxYJwFEem1hMDboMSycg" entityName="IDatendrehscheibe_erstelleAusstellungskonzept" returnType__OperationSignature="_523vO5sZEemn470s_s91wg"/>
+    <signatures__OperationInterface id="_OXN78JwFEem1hMDboMSycg" entityName="gibAusstellungskonzept" returnType__OperationSignature="_523vO5sZEemn470s_s91wg">
+      <parameters__OperationSignature parameterName="ausstellungsName" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_Tn0S4JwFEem1hMDboMSycg" entityName="entferneAusstellungsobjektAusAusstellungskonzept">
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_hV7-5ps4Eem7-7-vEoxAxg" parameterName="ausstellungsobjekt" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_e_R6YJwFEem1hMDboMSycg" entityName="fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu">
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="__X2kTZtBEem7-7-vEoxAxg" parameterName="ausstellungsobjekt" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_mnP0gJwJEem1hMDboMSycg" entityName="fügeFremdesAusstellungsobjektDemAusstellungskonzeptHinzu">
+      <parameters__OperationSignature dataType__Parameter="_523vO5sZEemn470s_s91wg" parameterName="konzept" modifier__Parameter="inout"/>
+      <parameters__OperationSignature dataType__Parameter="_M4HrXZtCEem7-7-vEoxAxg" parameterName="ausstellungsobjekt" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_qP7SwJwGEem1hMDboMSycg" entityName="fügeKostenUndFinanzierungsplanHinzu">
+      <parameters__OperationSignature dataType__Parameter="_IyAjrZsYEemn470s_s91wg" parameterName="plan" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_xB8ZIJwGEem1hMDboMSycg" entityName="fügeLeihanfrageHinzu">
+      <parameters__OperationSignature dataType__Parameter="_arj_O5sYEemn470s_s91wg" parameterName="anfrage" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_zc0_0JwJEem1hMDboMSycg" entityName="fügeLeihgesuchHinzu">
+      <parameters__OperationSignature dataType__Parameter="_AOt3XYQ3Eemen-4qGppMaQ" parameterName="leihgesuch" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_-_xl8JwGEem1hMDboMSycg" entityName="fügeLeihvertragHinzu">
+      <parameters__OperationSignature dataType__Parameter="_gN_s_ZsYEemn470s_s91wg" parameterName="leihvertrag" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_8X75oJwJEem1hMDboMSycg" entityName="fügeProtokollHinzu">
+      <parameters__OperationSignature dataType__Parameter="_-lDyDZsYEemn470s_s91wg" parameterName="protokoll" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_Bzkb4JwKEem1hMDboMSycg" entityName="fügeTransportauftragHinzu">
+      <parameters__OperationSignature dataType__Parameter="_8wMBYpvkEem62v5r8NkJ9w" parameterName="auftrag" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_HAtPIJwKEem1hMDboMSycg" entityName="fügeBestätigungLeihanfrageHinzu">
+      <parameters__OperationSignature dataType__Parameter="_2UoM7ZsYEemn470s_s91wg" parameterName="bestätigung Leihanfrage" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_JDN5cJwKEem1hMDboMSycg" entityName="fügeAblehnungLeihanfrageHinzu">
+      <parameters__OperationSignature dataType__Parameter="_s5knvZsYEemn470s_s91wg" parameterName="ablehnung" modifier__Parameter="inout"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_CW-1sI3jEeqGfpJ2wir_UA" entityName="fügeBestätigungLeihgesuchHinzu" returnType__OperationSignature="_AOt3XYQ3Eemen-4qGppMaQ">
+      <parameters__OperationSignature dataType__Parameter="_Ghv7zZsZEemn470s_s91wg" parameterName="bestätigung Leihgesuch"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_mZLsuJvwEem1hMDboMSycg" entityName="IInternZugang">
+    <signatures__OperationInterface id="_h05qYJwKEem1hMDboMSycg" entityName="IInternZugang_istAufrufErlaubt">
+      <exceptions__Signature exceptionName="UngültigesTokenException" exceptionMessage="Token ist ungültig."/>
+      <parameters__OperationSignature dataType__Parameter="_iVF0LZtLEemzvcE3zA47iw" parameterName="token" modifier__Parameter="in"/>
+      <parameters__OperationSignature parameterName="aufruf" modifier__Parameter="inout">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository_1:DBOperationInterface" id="_5C9OcI8HEeq6s4Ktlhauqg" entityName="IBestätigungLeihgesuchDB">
+    <signatures__OperationInterface id="_AkcC4I8IEeq6s4Ktlhauqg" entityName="get" returnType__OperationSignature="_Ghv7zZsZEemn470s_s91wg"/>
+    <signatures__OperationInterface id="_F30oEI8IEeq6s4Ktlhauqg" entityName="add">
+      <parameters__OperationSignature dataType__Parameter="_Ghv7zZsZEemn470s_s91wg" parameterName="bestätigung"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository_1:DBOperationInterface" id="_fX82n48MEeq6s4Ktlhauqg" entityName="ILeihvertragDB">
+    <signatures__OperationInterface id="_guoVoI8MEeq6s4Ktlhauqg" entityName="get" returnType__OperationSignature="_gN_s_ZsYEemn470s_s91wg"/>
+    <signatures__OperationInterface id="_j_x9UI8MEeq6s4Ktlhauqg" entityName="add">
+      <parameters__OperationSignature dataType__Parameter="_gN_s_ZsYEemn470s_s91wg" parameterName="leihvertrag"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository_1:DBOperationInterface" id="_gX4R35HmEeq5GsfJOQn_FQ" entityName="ILeihanfrageDB">
+    <signatures__OperationInterface id="_nkdNQJHmEeq5GsfJOQn_FQ" entityName="get" returnType__OperationSignature="_arj_O5sYEemn470s_s91wg"/>
+    <signatures__OperationInterface id="_orH6YJHmEeq5GsfJOQn_FQ" entityName="add">
+      <parameters__OperationSignature dataType__Parameter="_arj_O5sYEemn470s_s91wg" parameterName="Leihanfrage"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository_1:DBOperationInterface" id="_h43jf5HmEeq5GsfJOQn_FQ" entityName="ILeihgesuchDB">
+    <signatures__OperationInterface id="_p7tYgJHmEeq5GsfJOQn_FQ" entityName="get" returnType__OperationSignature="_AOt3XYQ3Eemen-4qGppMaQ"/>
+    <signatures__OperationInterface id="_qdkIYJHmEeq5GsfJOQn_FQ" entityName="add">
+      <parameters__OperationSignature dataType__Parameter="_AOt3XYQ3Eemen-4qGppMaQ" parameterName="Leihgesuch"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_R3krHZtGEem7-7-vEoxAxg" entityName="Ablehnung Leihanfrage DBO">
+    <innerDeclaration_CompositeDataType entityName="EmpfängerID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Korrespondierende LeihanfrageID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_s5knvZsYEemn470s_s91wg" entityName="Ablehnung Leihanfrage">
+    <innerDeclaration_CompositeDataType entityName="Empfänger" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Korrespondierende Leihanfrage" datatype_InnerDeclaration="_arj_O5sYEemn470s_s91wg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_VYaOPZs-Eem7-7-vEoxAxg" entityName="Allgemeine Leihanfrage">
+    <innerDeclaration_CompositeDataType entityName="ID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="__EzbjZs4Eem7-7-vEoxAxg" entityName="Ausstellungshistorie"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_zBUo_YQ2Eemen-4qGppMaQ" entityName="Ausstellungsobjekt" parentType_CompositeDataType="_hV7-5ps4Eem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="Kaufpreis">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Historie" datatype_InnerDeclaration="__EzbjZs4Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Provenienz" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Zustand">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_wR51XIQ2Eemen-4qGppMaQ" entityName="Ausstellungsobjekte" innerType_CollectionDataType="_zBUo_YQ2Eemen-4qGppMaQ"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_g-bgDZtHEem7-7-vEoxAxg" entityName="AusstellungsobjektDBO" parentType_CompositeDataType="_hV7-5ps4Eem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="Kaufpreis">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Historie" datatype_InnerDeclaration="__EzbjZs4Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="ProvenienzID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Zustand">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_523vO5sZEemn470s_s91wg" entityName="Ausstellungskonzept">
+    <innerDeclaration_CompositeDataType entityName="Ausstellungsname">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Ausstellungskonzeptobjekte" datatype_InnerDeclaration="_l6pKHJtBEem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="ID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="__X2kTZtBEem7-7-vEoxAxg" entityName="Ausstellungskonzeptobjekt für eigenes Werk" parentType_CompositeDataType="_-nFrLZtAEem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="Ausstellungsobjekt" datatype_InnerDeclaration="_zBUo_YQ2Eemen-4qGppMaQ"/>
+    <innerDeclaration_CompositeDataType entityName="Restaurative Maßnahmen erforderlich?">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_J9PcXZtHEem7-7-vEoxAxg" entityName="Ausstellungskonzeptobjekt für eigenes Werk DBO" parentType_CompositeDataType="_-nFrLZtAEem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="AusstellungsobjektID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Restaurative Maßnahmen erforderlich?">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_M4HrXZtCEem7-7-vEoxAxg" entityName="Ausstellungskonzeptobjekt für fremdes Werk" parentType_CompositeDataType="_-nFrLZtAEem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="Fremdes Ausstellungsobjekt" datatype_InnerDeclaration="_iOoSm5sZEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Begleiter" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Leihgesuch" datatype_InnerDeclaration="_AOt3XYQ3Eemen-4qGppMaQ"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_UUgyLZtHEem7-7-vEoxAxg" entityName="Ausstellungskonzeptobjekt für fremdes Werk DBO" parentType_CompositeDataType="_-nFrLZtAEem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="Fremdes AusstellungsobjektID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="BegleiterID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="LeihgesuchID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_lWyRTZtQEemzvcE3zA47iw" entityName="AusstellungsobjektMitStandort">
+    <innerDeclaration_CompositeDataType entityName="Ausstellungsobjekt" datatype_InnerDeclaration="_zBUo_YQ2Eemen-4qGppMaQ"/>
+    <innerDeclaration_CompositeDataType entityName="Standort" datatype_InnerDeclaration="_M6cjPZsZEemn470s_s91wg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_s6IG7JtQEemzvcE3zA47iw" entityName="AusstellungsobjekteMitStandort" innerType_CollectionDataType="_lWyRTZtQEemzvcE3zA47iw"/>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_l6pKHJtBEem7-7-vEoxAxg" entityName="Ausstellungskonzeptobjekte" innerType_CollectionDataType="_-nFrLZtAEem7-7-vEoxAxg"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_-nFrLZtAEem7-7-vEoxAxg" entityName="Ausstellungskonzeptobjekt">
+    <innerDeclaration_CompositeDataType entityName="inhaltliches">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Ausstellungskonzeptobjekt name">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_Ghv7zZsZEemn470s_s91wg" entityName="Bestätigung des Leihgesuchs">
+    <innerDeclaration_CompositeDataType entityName="ID CRM-Eintrag Sender ">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="ID Korrespondierendes Leihgesuch">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_xJMT7ZtGEem7-7-vEoxAxg" entityName="Bestätigung des LeihgesuchsDBO">
+    <innerDeclaration_CompositeDataType entityName="SenderID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Korrespondierendes LeihgesuchID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_2UoM7ZsYEemn470s_s91wg" entityName="Bestätigung Leihanfrage">
+    <innerDeclaration_CompositeDataType entityName="Empfänger" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Korrespondierende Leihanfrage" datatype_InnerDeclaration="_arj_O5sYEemn470s_s91wg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_e2c8XZtGEem7-7-vEoxAxg" entityName="Bestätigung Leihanfrage DBO">
+    <innerDeclaration_CompositeDataType entityName="EmpfängerID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Korrespondierende LeihanfrageID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_iLT4rYQ3Eemen-4qGppMaQ" entityName="Credentials">
+    <innerDeclaration_CompositeDataType entityName="Nutzername">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Passwort">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_X4XezZsYEemn470s_s91wg" entityName="CRM-Eintrag">
+    <innerDeclaration_CompositeDataType entityName="ID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Name">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Adresse">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_xAWwrJT_Eeqd582WEf1v5A" entityName="Fremde Ausstellungsobjekte" innerType_CollectionDataType="_iOoSm5sZEemn470s_s91wg"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_iOoSm5sZEemn470s_s91wg" entityName="Fremdes Ausstellungsobjekt" parentType_CompositeDataType="_hV7-5ps4Eem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="Besitzer" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_8lXcTZtGEem7-7-vEoxAxg" entityName="Fremdes Ausstellungsobjekt DBO" parentType_CompositeDataType="_hV7-5ps4Eem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="BesitzerID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_uq_7jZs4Eem7-7-vEoxAxg" entityName="Foto"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_7bhSnZs2Eem7-7-vEoxAxg" entityName="GUID"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_IyAjrZsYEemn470s_s91wg" entityName="Kosten- und Finanzierungsplan">
+    <innerDeclaration_CompositeDataType entityName="ID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_bLcjrJsZEemn470s_s91wg" entityName="Literatur" innerType_CollectionDataType="_Thfvy5sZEemn470s_s91wg"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_Thfvy5sZEemn470s_s91wg" entityName="Literarisches Werk"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_AOt3XYQ3Eemen-4qGppMaQ" entityName="Leihgesuch" parentType_CompositeDataType="_VYaOPZs-Eem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="Empfänger" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Angefragtes fremdes Ausstellungsobjekt" datatype_InnerDeclaration="_iOoSm5sZEemn470s_s91wg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_-MZ9fZtEEem7-7-vEoxAxg" entityName="LeihgesuchDBO" parentType_CompositeDataType="_VYaOPZs-Eem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="EmpfängerID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Angefragtes fremdes AusstellungsobjektID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_arj_O5sYEemn470s_s91wg" entityName="Leihanfrage" parentType_CompositeDataType="_VYaOPZs-Eem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="Sender" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Angefragtes Ausstellungsobjekt" datatype_InnerDeclaration="_zBUo_YQ2Eemen-4qGppMaQ"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_OeJGnZtFEem7-7-vEoxAxg" entityName="LeihanfrageDBO" parentType_CompositeDataType="_VYaOPZs-Eem7-7-vEoxAxg">
+    <innerDeclaration_CompositeDataType entityName="SenderID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Angefragtes AusstellungsobjektID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_gN_s_ZsYEemn470s_s91wg" entityName="Leihvertrag">
+    <innerDeclaration_CompositeDataType entityName="Partei1" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Partei2" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Verliehenes Ausstellungsobjekt" datatype_InnerDeclaration="_zBUo_YQ2Eemen-4qGppMaQ"/>
+    <innerDeclaration_CompositeDataType entityName="Ausstellungsname">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Verleihzeitraum" datatype_InnerDeclaration="_wSd2XZs9Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Transportzeitfenster" datatype_InnerDeclaration="_wSd2XZs9Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Transportfirma" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Versicherungswert">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Fotoerlaubnis">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_kTfpTZtFEem7-7-vEoxAxg" entityName="LeihvertragDBO">
+    <innerDeclaration_CompositeDataType entityName="Partei1ID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Partei2ID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Verliehenes AusstellungsobjektID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Ausstellungsname">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Ausstellung" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Verleihzeitraum" datatype_InnerDeclaration="_wSd2XZs9Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Transportzeitfenster" datatype_InnerDeclaration="_wSd2XZs9Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="TransportfirmaID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Versicherungswert">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Fotoerlaubnis">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_17rE-psZEemn470s_s91wg" entityName="öffentliche und private Forschungsliteratur" innerType_CollectionDataType="_iOoSm5sZEemn470s_s91wg"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_hV7-5ps4Eem7-7-vEoxAxg" entityName="öffentlich sichtbares Ausstellungsobjekt">
+    <innerDeclaration_CompositeDataType entityName="Titel">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Name Künstler">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Größe">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Abbildung" datatype_InnerDeclaration="_uq_7jZs4Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="ID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_-lDyDZsYEemn470s_s91wg" entityName="Protokoll">
+    <innerDeclaration_CompositeDataType entityName="Verliehenes Ausstellungsobjekt" datatype_InnerDeclaration="_hV7-5ps4Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Leihanfrage" datatype_InnerDeclaration="_VYaOPZs-Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Lieferung?">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_n6beTZtGEem7-7-vEoxAxg" entityName="ProtokollDBO">
+    <innerDeclaration_CompositeDataType entityName="Verliehenes AusstellungsobjektID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="LeihanfrageID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Lieferung?">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </innerDeclaration_CompositeDataType>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_M6cjPZsZEemn470s_s91wg" entityName="Standort">
+    <innerDeclaration_CompositeDataType entityName="Ausstellungsobjekt" datatype_InnerDeclaration="_zBUo_YQ2Eemen-4qGppMaQ"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_4El_zZtGEem7-7-vEoxAxg" entityName="StandortDBO">
+    <innerDeclaration_CompositeDataType entityName="AusstellungsobjektID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_O-h66psZEemn470s_s91wg" entityName="Standortdaten" innerType_CollectionDataType="_M6cjPZsZEemn470s_s91wg"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_iVF0LZtLEemzvcE3zA47iw" entityName="Token"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_8wMBYpvkEem62v5r8NkJ9w" entityName="Transportauftrag">
+    <innerDeclaration_CompositeDataType entityName="Transportfirma" datatype_InnerDeclaration="_X4XezZsYEemn470s_s91wg"/>
+    <innerDeclaration_CompositeDataType entityName="Transporttermin">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Lieferung?">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Verliehenes Ausstellungsobjekt" datatype_InnerDeclaration="_hV7-5ps4Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_OP4rHZvoEem62v5r8NkJ9w" entityName="TransportauftragDBO">
+    <innerDeclaration_CompositeDataType entityName="TransportfirmaID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+    <innerDeclaration_CompositeDataType entityName="Transporttermin">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Lieferung?">
+      <datatype_InnerDeclaration xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.2"/>
+    </innerDeclaration_CompositeDataType>
+    <innerDeclaration_CompositeDataType entityName="Verliehenes AusstellungsobjektID" datatype_InnerDeclaration="_7bhSnZs2Eem7-7-vEoxAxg"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_wSd2XZs9Eem7-7-vEoxAxg" entityName="Zeitraum"/>
+</repository:Repository>

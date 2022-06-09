@@ -1,0 +1,52 @@
+<!DOCTYPE html><html>
+<head>
+<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script><style>
+
+#mynetwork {width: 100%;height: 80vh;border: 1px solid lightgray;}th, td {
+	border: 1px solid lightgrey;
+	text-align: left;
+	padding: 8px;
+	; vertical-align:top;
+	; white-space:nowrap;
+	}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th{
+	background-color: #4CAF50;
+	color: white;
+	}
+
+</style>
+</head>
+<body>
+<h1 align="center">Graph der Berechtigungen und deren Abhängigkeiten von RolePermissionsGraph</h1>
+                 <div id="mynetwork"></div>
+<script type="text/javascript">
+    // create an array with nodes
+    var nodes = new vis.DataSet([
+{id: 0, label: 'Ausschuss:Leihkommission',shape: "box"},{id: 1, label: 'Ausschuss:Wissenschaftsversammlung',shape: "box"},{id: 2, label: 'Kommunikation:Kommunikation',shape: "box"},{id: 3, label: 'Sammlund und Wissenschaft:Restaurator',shape: "box"},{id: 4, label: 'Sammlung und Wissenschaft:Depotmeister',shape: "box"},{id: 5, label: 'Sammlung und Wissenschaft:Kunstvermittler',shape: "box"},{id: 6, label: 'Sammlung und Wissenschaft:Kurator',shape: "box"},{id: 7, label: 'Sammlung und Wissenschaft:Kurier',shape: "box"},{id: 8, label: 'Sammlung und Wissenschaft:Registrar',shape: "box"},{id: 9, label: 'Sammlung und Wissenschaft:Restaurator',shape: "box"},{id: 10, label: 'Vorstand:Direktor',shape: "box"},{id: 11, label: 'Vorstand:Kaufmännische Geschäftsführer',shape: "box"},{id: 12, label: 'Zentrale Dienste:Sicherheit',shape: "box"},]);
+  var edges = new vis.DataSet([{from: 0, to: 1, label: "erbt von", arrows: "to"},{from: 0, to: 7, label: "erbt von", arrows: "to"},{from: 0, to: 12, label: "erbt von", arrows: "to"},{from: 1, to: 7, label: "erbt von", arrows: "to"},{from: 1, to: 12, label: "erbt von", arrows: "to"},{from: 2, to: 1, label: "erbt von", arrows: "to"},{from: 2, to: 5, label: "erbt von", arrows: "to"},{from: 2, to: 7, label: "erbt von", arrows: "to"},{from: 2, to: 12, label: "erbt von", arrows: "to"},{from: 3, to: 1, label: "erbt von", arrows: "to"},{from: 3, to: 7, label: "erbt von", arrows: "to"},{from: 3, to: 12, label: "erbt von", arrows: "to"},{from: 4, to: 1, label: "erbt von", arrows: "to"},{from: 4, to: 7, label: "erbt von", arrows: "to"},{from: 4, to: 12, label: "erbt von", arrows: "to"},{from: 5, to: 1, label: "erbt von", arrows: "to"},{from: 5, to: 2, label: "erbt von", arrows: "to"},{from: 5, to: 7, label: "erbt von", arrows: "to"},{from: 5, to: 12, label: "erbt von", arrows: "to"},{from: 6, to: 1, label: "erbt von", arrows: "to"},{from: 6, to: 3, label: "erbt von", arrows: "to"},{from: 6, to: 7, label: "erbt von", arrows: "to"},{from: 6, to: 12, label: "erbt von", arrows: "to"},{from: 7, to: 1, label: "erbt von", arrows: "to"},{from: 7, to: 12, label: "erbt von", arrows: "to"},{from: 8, to: 1, label: "erbt von", arrows: "to"},{from: 8, to: 2, label: "erbt von", arrows: "to"},{from: 8, to: 5, label: "erbt von", arrows: "to"},{from: 8, to: 7, label: "erbt von", arrows: "to"},{from: 8, to: 12, label: "erbt von", arrows: "to"},{from: 9, to: 1, label: "erbt von", arrows: "to"},{from: 9, to: 7, label: "erbt von", arrows: "to"},{from: 9, to: 12, label: "erbt von", arrows: "to"},{from: 10, to: 1, label: "erbt von", arrows: "to"},{from: 10, to: 7, label: "erbt von", arrows: "to"},{from: 10, to: 11, label: "erbt von", arrows: "to"},{from: 10, to: 12, label: "erbt von", arrows: "to"},{from: 11, to: 1, label: "erbt von", arrows: "to"},{from: 11, to: 7, label: "erbt von", arrows: "to"},{from: 11, to: 12, label: "erbt von", arrows: "to"},{from: 12, to: 1, label: "erbt von", arrows: "to"},{from: 12, to: 7, label: "erbt von", arrows: "to"},  ]);    var container = document.getElementById('mynetwork');
+    var data = {nodes: nodes,edges: edges };
+var options = {
+  layout: {
+    randomSeed: undefined,
+    improvedLayout:true,
+    clusterThreshold: 150,
+    hierarchical: {
+      enabled:true,
+      levelSeparation: 250,
+      nodeSpacing: 300,
+      treeSpacing: 300,
+      blockShifting: false,
+      edgeMinimization: true,
+      parentCentralization: true,
+      direction: 'DU',        // UD, DU, LR, RL
+      sortMethod: 'directed',  // hubsize, directed
+      shakeTowards: 'leaves'  // roots, leaves
+    }
+  }
+};
+    var network = new vis.Network(container, data, options);
+</script></body>
+</html>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_pTUhhppOEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_GIL0AJpPEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_pTUhhppOEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_A6uQoJpPEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_pTUhhppOEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_EA2UEJpPEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_lWLhFppPEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_sh6vAJpPEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_lWLhFppPEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_rhBSsJpPEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_lWLhFppPEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_sD26AJpPEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_tJWtBppQEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_CPwfAJpREeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_tJWtBppQEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_zzPyIJpQEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_tJWtBppQEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_-scJQJpQEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_pHrVZppSEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_5-PC0JpSEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_pHrVZppSEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_w_sagJpSEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_pHrVZppSEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_0ODM4JpSEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_pHrVZppSEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_3T7_wJpSEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_KfVdpppTEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_oL58wJpqEem7Hd476Ia8XA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_KfVdpppTEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_Sd2MUJpTEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_KfVdpppTEeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_yjy1EJpTEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_Jqxq1ppsEem7Hd476Ia8XA"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_cjvU4JpsEem7Hd476Ia8XA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_Jqxq1ppsEem7Hd476Ia8XA"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_SwCmMJpsEem7Hd476Ia8XA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_Jqxq1ppsEem7Hd476Ia8XA"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_YRkVEJpsEem7Hd476Ia8XA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_eh6tFppREeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_M7J1QJpSEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_eh6tFppREeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_-_fysJpREeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_eh6tFppREeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_GuYJ8JpSEeme991UpCdgnw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC8_Leihanfrage_abwickeln.bpusagemodel#_eh6tFppREeme991UpCdgnw"/>
+    <entrylevelsystemcall href="UC8_Leihanfrage_abwickeln.bpusagemodel#_JY9g4JpSEeme991UpCdgnw"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

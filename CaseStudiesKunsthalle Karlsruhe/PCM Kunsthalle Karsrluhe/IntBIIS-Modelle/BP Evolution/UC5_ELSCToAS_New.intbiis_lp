@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_dtFORpo6EemT3cd5zpPfPA"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_nUZGwJo6EemT3cd5zpPfPA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_dtFORpo6EemT3cd5zpPfPA"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_nx7-YJo6EemT3cd5zpPfPA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_dtFORpo6EemT3cd5zpPfPA"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_oEXLIJo6EemT3cd5zpPfPA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_TzWIBn_DEeqtothAHK-iyQ"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_J-vdkH_HEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_TzWIBn_DEeqtothAHK-iyQ"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_LI9N8H_HEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_TzWIBn_DEeqtothAHK-iyQ"/>
+    <entrylevelsystemcall href="UC5_fremdes_Werk_wird_abgeholt_New.bpusagemodel#_L8BCkH_HEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

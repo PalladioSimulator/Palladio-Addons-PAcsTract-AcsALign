@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_kolNdpsOEemrjrtCBQMyXQ"/>
+    <entrylevelsystemcall href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_edfTUH-_EeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_kolNdpsOEemrjrtCBQMyXQ"/>
+    <entrylevelsystemcall href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_ysjNqn-_EeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_tlWUJpsOEemrjrtCBQMyXQ"/>
+    <entrylevelsystemcall href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_zwQ-QJsOEemrjrtCBQMyXQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_tlWUJpsOEemrjrtCBQMyXQ"/>
+    <entrylevelsystemcall href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_2PeysJsOEemrjrtCBQMyXQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#__U77VpsOEemrjrtCBQMyXQ"/>
+    <entrylevelsystemcall href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_Gn5yoJsPEemrjrtCBQMyXQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#__U77VpsOEemrjrtCBQMyXQ"/>
+    <entrylevelsystemcall href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_HAkKQJsPEemrjrtCBQMyXQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#__U77VpsOEemrjrtCBQMyXQ"/>
+    <entrylevelsystemcall href="UC10_eigenes_Werk_wird_zurückgebracht.bpusagemodel#_r7Tt8JvvEem62v5r8NkJ9w"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

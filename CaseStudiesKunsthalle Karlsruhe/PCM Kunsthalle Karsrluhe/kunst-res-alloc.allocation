@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_HDjxwIRDEemPcPOWzdV97g" entityName="Kunsthalle">
+  <targetResourceEnvironment_Allocation href="kunst-res.resourceenvironment#/"/>
+  <system_Allocation href="kunst-system.system#_DpBowIQ8EemPcPOWzdV97g"/>
+  <allocationContexts_Allocation id="_VVrzkIRDEemPcPOWzdV97g" entityName="Zugang">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_nRgnUYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_tvIgYJwNEembRtDV6Cn0CQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_WYvMAIRDEemPcPOWzdV97g" entityName="BibliotheksDB">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_lj9gYYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_yVnKwIQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_WqH28IRDEemPcPOWzdV97g" entityName="CRMSystem">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_munVoYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_yum5kIQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_W58boIRDEemPcPOWzdV97g" entityName="Datenablage">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_mJqOcYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_zCjJQIQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_XNYVAIRDEemPcPOWzdV97g" entityName="Datendrehscheibe">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_nBrbkYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_zWv3oIQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_XmweUIRDEemPcPOWzdV97g" entityName="ForschungsprojektDB">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_mdvBAYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_z6p18IQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_X00IcIRDEemPcPOWzdV97g" entityName="Fotoserver">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_l47DwYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_0L1skIQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_YCvPsIRDEemPcPOWzdV97g" entityName="Ausstellung">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_nhVMAYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_0YVpAJwNEembRtDV6Cn0CQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_YQqW8IRDEemPcPOWzdV97g" entityName="LeihverkehrsverwaltungsDB">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_k-0L8YRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_0tH0sIQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_Ykc1oIRDEemPcPOWzdV97g" entityName="LiteraturverwaltungsDB">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_j-xEMYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_06h-kIQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_Yzwc8IRDEemPcPOWzdV97g" entityName="RestaurierungsDB">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_lSShkYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_1Ip6IIQ8EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_ZEUBcIRDEemPcPOWzdV97g" entityName="SammlungsDB">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_JtehsYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_H_igkIQ9EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_ZVkJgIRDEemPcPOWzdV97g" entityName="StandortverwaltungsDB">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_klPOUYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_Jk-0YIQ9EemPcPOWzdV97g"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_-p34UJwPEemTfoN5iSnjmA" entityName="Leihverkehr">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_nhVMAYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_14emEJwNEembRtDV6Cn0CQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="__Bnp8JwPEemTfoN5iSnjmA" entityName="AllgemeineZugriffe">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_nhVMAYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_yP4HsJwNEembRtDV6Cn0CQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="__UoskJwPEemTfoN5iSnjmA" entityName="CRM">
+    <resourceContainer_AllocationContext href="kunst-res.resourceenvironment#_nhVMAYRAEemPcPOWzdV97g"/>
+    <assemblyContext_AllocationContext href="kunst-system.system#_ugRCYJwNEembRtDV6Cn0CQ"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

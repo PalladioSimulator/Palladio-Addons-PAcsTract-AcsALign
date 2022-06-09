@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_zJg_ZpgxEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_6WnfQJgxEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_3d3UBpgyEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#__oU0CpgyEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_nK8ptpgzEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#__OUjIJgzEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_zJg_ZpgxEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_6Sz6AJm1EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_3d3UBpgyEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_J_TBAJm2EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_nK8ptpgzEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_WlAkUJm2EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_nK8ptpgzEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_PdWlIJm2EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_Kh1UNpgzEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_bDP5sH_CEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_Kh1UNpgzEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_bqeRwH_CEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_Kh1UNpgzEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC4_fremdes_Werk_wird_angeliefert.bpusagemodel#_cKSaQH_CEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

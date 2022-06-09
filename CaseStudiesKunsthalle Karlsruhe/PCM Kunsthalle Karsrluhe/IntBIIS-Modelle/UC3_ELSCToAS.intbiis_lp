@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_aUKeJpgrEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_2OQ78Jm0EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_aUKeJpgrEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_zMH2OpgrEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_aUKeJpgrEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_jDGkMJgrEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_aUKeJpgrEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_62BKMJm0EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_ueqzJpgsEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_CfbyoJm1EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_ueqzJpgsEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_1Xafp4q7Eeq-P6mHGLYXLg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_ueqzJpgsEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_DK5VR4rKEeq-P6mHGLYXLg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_ueqzJpgsEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_tUSDoJgsEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_ueqzJpgsEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_IDWHIJm1EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_e1-xlpgtEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_1sLB5o3gEeqGfpJ2wir_UA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_bGAqdpguEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_Mnu4UJm1EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_bGAqdpguEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_sMfqQJguEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_bGAqdpguEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_n9wJF43rEeqGfpJ2wir_UA"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_bGAqdpguEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_6Z8w8IqxEeqcZItgqQRyrQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_bGAqdpguEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_SPpjEJm1EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_41A0hpgvEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_WdfcgJm1EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_41A0hpgvEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_Ev7HUJgwEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC3_fremde_Werke_ausleihen.bpusagemodel#_41A0hpgvEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC3_fremde_Werke_ausleihen.bpusagemodel#_a4u4wJm1EembgY-6Yjlxug"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

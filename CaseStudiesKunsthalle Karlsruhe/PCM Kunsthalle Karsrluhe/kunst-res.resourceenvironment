@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="KunsthallenRessourcen">
+  <linkingResources__ResourceEnvironment id="_QVwLUIRCEemPcPOWzdV97g" entityName="ConnBack" connectedResourceContainers_LinkingResource="_lj9gYYRAEemPcPOWzdV97g _munVoYRAEemPcPOWzdV97g _mJqOcYRAEemPcPOWzdV97g _nBrbkYRAEemPcPOWzdV97g _mdvBAYRAEemPcPOWzdV97g _l47DwYRAEemPcPOWzdV97g _k-0L8YRAEemPcPOWzdV97g _j-xEMYRAEemPcPOWzdV97g _lSShkYRAEemPcPOWzdV97g _JtehsYRAEemPcPOWzdV97g _klPOUYRAEemPcPOWzdV97g">
+    <communicationLinkResourceSpecifications_LinkingResource id="_TPEh0IRCEemPcPOWzdV97g">
+      <communicationLinkResourceType_CommunicationLinkResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_o3sScH2AEdyH8uerKnHYug"/>
+      <latency_CommunicationLinkResourceSpecification specification="100"/>
+      <throughput_CommunicationLinkResourceSpecification specification="1000"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <linkingResources__ResourceEnvironment id="_yZ8CYIRCEemPcPOWzdV97g" entityName="ConnFore" connectedResourceContainers_LinkingResource="_nRgnUYRAEemPcPOWzdV97g _nhVMAYRAEemPcPOWzdV97g _nBrbkYRAEemPcPOWzdV97g">
+    <communicationLinkResourceSpecifications_LinkingResource id="_4wq68IRCEemPcPOWzdV97g">
+      <communicationLinkResourceType_CommunicationLinkResourceSpecification href="pathmap://PCM_MODELS/Palladio.resourcetype#_o3sScH2AEdyH8uerKnHYug"/>
+      <latency_CommunicationLinkResourceSpecification specification="100"/>
+      <throughput_CommunicationLinkResourceSpecification specification="1000"/>
+    </communicationLinkResourceSpecifications_LinkingResource>
+  </linkingResources__ResourceEnvironment>
+  <resourceContainer_ResourceEnvironment id="_JtehsYRAEemPcPOWzdV97g" entityName="ComSammlungsDB"/>
+  <resourceContainer_ResourceEnvironment id="_j-xEMYRAEemPcPOWzdV97g" entityName="ComLiteraturverwaltungsDB"/>
+  <resourceContainer_ResourceEnvironment id="_klPOUYRAEemPcPOWzdV97g" entityName="ComStandortverwaltungsDB"/>
+  <resourceContainer_ResourceEnvironment id="_k-0L8YRAEemPcPOWzdV97g" entityName="ComLeihverkehrsverwaltungsDB"/>
+  <resourceContainer_ResourceEnvironment id="_lSShkYRAEemPcPOWzdV97g" entityName="ComRestaurierungsDB"/>
+  <resourceContainer_ResourceEnvironment id="_lj9gYYRAEemPcPOWzdV97g" entityName="ComBibliotheksDB"/>
+  <resourceContainer_ResourceEnvironment id="_l47DwYRAEemPcPOWzdV97g" entityName="ComFotoserver"/>
+  <resourceContainer_ResourceEnvironment id="_mJqOcYRAEemPcPOWzdV97g" entityName="ComDatenablage"/>
+  <resourceContainer_ResourceEnvironment id="_mdvBAYRAEemPcPOWzdV97g" entityName="ComForschungsprojektDB"/>
+  <resourceContainer_ResourceEnvironment id="_munVoYRAEemPcPOWzdV97g" entityName="ComCRMSystem"/>
+  <resourceContainer_ResourceEnvironment id="_nBrbkYRAEemPcPOWzdV97g" entityName="ComDatendrehscheibe"/>
+  <resourceContainer_ResourceEnvironment id="_nRgnUYRAEemPcPOWzdV97g" entityName="ComZugang"/>
+  <resourceContainer_ResourceEnvironment id="_nhVMAYRAEemPcPOWzdV97g" entityName="ComSystemschnittstelle"/>
+</resourceenvironment:ResourceEnvironment>

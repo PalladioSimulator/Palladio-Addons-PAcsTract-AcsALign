@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagemodel:UsageModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpusagemodel="http://palladiosimulator.org/PalladioComponentModel/5.2/bp/bpUsageModel" xmlns:characterizedActions="http://palladiosimulator.org/dataflow/confidentiality/characterizedactions/0.1.0" xmlns:datamodel="http://palladiosimulator.org/PalladioComponentModel/5.2/bp/DataModel" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2" xsi:schemaLocation="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//usagemodel">
+  <usageScenario_UsageModel id="_55_KgJnaEemh-vgRJ08npw" entityName="fremdes Werk wird abgeholt">
+    <scenarioBehaviour_UsageScenario xsi:type="characterizedActions:CharacterizableScenarioBehavior" id="_6fiuoJnaEemh-vgRJ08npw" entityName="fremdes Werk wird abgeholt">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="__6THJJnaEemh-vgRJ08npw" entityName="fremdes Werk wird abgeholt" successor="#_DbWzEZnbEemh-vgRJ08npw"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Branch" id="_DbWzEZnbEemh-vgRJ08npw" entityName="Abholung außerhalb der Öffnungszeiten?" successor="#_EqGeJpnbEemh-vgRJ08npw" predecessor="#__6THJJnaEemh-vgRJ08npw">
+        <branchTransitions_Branch branchProbability="0.5">
+          <branchedBehaviour_BranchTransition id="_eiQYMJo5EemT3cd5zpPfPA" entityName="Ja">
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_f-BypJo5EemT3cd5zpPfPA" entityName="Abholung außerhalb der Öffnungszeiten" successor="#_hljKFpo5EemT3cd5zpPfPA"/>
+            <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" id="_hljKFpo5EemT3cd5zpPfPA" entityName="Raum entsichern" successor="#_fSrvk5o5EemT3cd5zpPfPA" predecessor="#_f-BypJo5EemT3cd5zpPfPA" responsibleRole="kunsthalle.organizationenvironmentmodel#_r7T9AJgVEemIcqpEX65OJg"/>
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_fSrvk5o5EemT3cd5zpPfPA" entityName="Abholung außerhalb der Öffnungszeiten" predecessor="#_hljKFpo5EemT3cd5zpPfPA"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+        <branchTransitions_Branch branchProbability="0.5">
+          <branchedBehaviour_BranchTransition id="_5l_EQJo5EemT3cd5zpPfPA" entityName="Nein">
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_6c-9tJo5EemT3cd5zpPfPA" entityName="Abholung innerhalb der Öffnungszeiten" successor="#_7NaVE5o5EemT3cd5zpPfPA"/>
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_7NaVE5o5EemT3cd5zpPfPA" entityName="Abholung innerhalb der Öffnungszeiten" predecessor="#_6c-9tJo5EemT3cd5zpPfPA"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" id="_EqGeJpnbEemh-vgRJ08npw" entityName="Abholung beaufsichtigen" successor="#_dtFORpo6EemT3cd5zpPfPA" predecessor="#_DbWzEZnbEemh-vgRJ08npw" responsibleRole="kunsthalle.organizationenvironmentmodel#_U8TDkJgVEemIcqpEX65OJg"/>
+      <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" id="_dtFORpo6EemT3cd5zpPfPA" entityName="Beausichtigung des Einpackens und protokollierung" successor="#_nUZGwJo6EemT3cd5zpPfPA" predecessor="#_EqGeJpnbEemh-vgRJ08npw" responsibleRole="kunsthalle.organizationenvironmentmodel#_l7oSgJgVEemIcqpEX65OJg" outputDataObjects="datamodel:CompositeDataObject kunst-bp-data.datamodel#_klR74ZgbEemIcqpEX65OJg"/>
+      <actions_ScenarioBehaviour xsi:type="characterizedActions:CharacterizedEntryLevelSystemCall" id="_nUZGwJo6EemT3cd5zpPfPA" entityName="sich im System für Protokoll-Hinzufügung anmelden" successor="#_nx7-YJo6EemT3cd5zpPfPA" predecessor="#_dtFORpo6EemT3cd5zpPfPA" providedRole_EntryLevelSystemCall="../kunst-system.system#_iq7CUIitEeqOsvr3C1Ho0w" operationSignature__EntryLevelSystemCall="../kunst-arch-repo.repository#_8ooEQJtJEemzvcE3zA47iw"/>
+      <actions_ScenarioBehaviour xsi:type="characterizedActions:CharacterizedEntryLevelSystemCall" id="_nx7-YJo6EemT3cd5zpPfPA" entityName="Protokoll hinzufügen" successor="#_oEXLIJo6EemT3cd5zpPfPA" predecessor="#_nUZGwJo6EemT3cd5zpPfPA" providedRole_EntryLevelSystemCall="../kunst-system.system#_FKbjcIiuEeqOsvr3C1Ho0w" operationSignature__EntryLevelSystemCall="../kunst-arch-repo.repository#_KTZp0JtYEemzvcE3zA47iw"/>
+      <actions_ScenarioBehaviour xsi:type="characterizedActions:CharacterizedEntryLevelSystemCall" id="_oEXLIJo6EemT3cd5zpPfPA" entityName="sich im System für Protokoll-Hinzufügung abmelden" successor="#_CFTmI5nbEemh-vgRJ08npw" predecessor="#_nx7-YJo6EemT3cd5zpPfPA" providedRole_EntryLevelSystemCall="../kunst-system.system#_iq7CUIitEeqOsvr3C1Ho0w" operationSignature__EntryLevelSystemCall="../kunst-arch-repo.repository#_K_MPQJtMEemzvcE3zA47iw"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_CFTmI5nbEemh-vgRJ08npw" entityName="fremdes Werk ist abegholt" predecessor="#_oEXLIJo6EemT3cd5zpPfPA"/>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:OpenWorkload">
+      <interArrivalTime_OpenWorkload specification="1"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+</usagemodel:UsageModel>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_EpYNRpsLEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_LvFrsJsLEem0pd-_QvFyUw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_EpYNRpsLEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_Kbc5kJsLEem0pd-_QvFyUw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_EpYNRpsLEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_K3A0MJsLEem0pd-_QvFyUw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_EpYNRpsLEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_LY3kEJsLEem0pd-_QvFyUw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_DBIAlpsMEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_dT7P8H_PEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_DBIAlpsMEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_fPioEH_PEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_DBIAlpsMEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_foMYoH_PEeqtothAHK-iyQ"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_P3kulpsMEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_ZLVY8JsMEem0pd-_QvFyUw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_P3kulpsMEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_a0YaYJsMEem0pd-_QvFyUw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_0lkghpsMEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_74D2sJsMEem0pd-_QvFyUw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_0lkghpsMEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_8X3YIJsMEem0pd-_QvFyUw"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_0lkghpsMEem0pd-_QvFyUw"/>
+    <entrylevelsystemcall href="UC9_eigenes_Werk_wird_abgeholt.bpusagemodel#_ebqR8JvvEem62v5r8NkJ9w"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamodel:DataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datamodel="http://palladiosimulator.org/PalladioComponentModel/5.2/bp/DataModel" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2">
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_iOJXUZgZEemIcqpEX65OJg" entityName="Kosten- und Finanzierungsplan">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_IyAjrZsYEemn470s_s91wg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_uUdB0ZgZEemIcqpEX65OJg" entityName="Leihanfrage">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_arj_O5sYEemn470s_s91wg"/>
+    <innerDataObjectDeclarations entityName="Sender" dataObject="_DEnBkZgbEemIcqpEX65OJg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_DEnBkZgbEemIcqpEX65OJg" entityName="CRM-Eintrag">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_X4XezZsYEemn470s_s91wg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_F6zyoZgbEemIcqpEX65OJg" entityName="Leihvertrag">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_gN_s_ZsYEemn470s_s91wg"/>
+    <innerDataObjectDeclarations entityName="Partei 1" dataObject="_DEnBkZgbEemIcqpEX65OJg"/>
+    <innerDataObjectDeclarations entityName="Partei 2" dataObject="_DEnBkZgbEemIcqpEX65OJg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_T8Y3AZgbEemIcqpEX65OJg" entityName="Ablehnung Leihanfrage">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_s5knvZsYEemn470s_s91wg"/>
+    <innerDataObjectDeclarations entityName="Empfänger" dataObject="_DEnBkZgbEemIcqpEX65OJg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_WWSGkZgbEemIcqpEX65OJg" entityName="Bestätigung Leihanfrage">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_2UoM7ZsYEemn470s_s91wg"/>
+    <innerDataObjectDeclarations entityName="Empfänger" dataObject="_DEnBkZgbEemIcqpEX65OJg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_bFJpcZgbEemIcqpEX65OJg" entityName="Ausstellungsobjekt">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_zBUo_YQ2Eemen-4qGppMaQ"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_ddZ6QJgbEemIcqpEX65OJg" entityName="Ausstellungsobjekte" innerDataObjects="_bFJpcZgbEemIcqpEX65OJg">
+    <dataTypes xsi:type="repository:CollectionDataType" href="../kunst-arch-repo.repository#_wR51XIQ2Eemen-4qGppMaQ"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_klR74ZgbEemIcqpEX65OJg" entityName="Protokoll">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_-lDyDZsYEemn470s_s91wg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_pzlMwZgbEemIcqpEX65OJg" entityName="Leihgesuch">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_AOt3XYQ3Eemen-4qGppMaQ"/>
+    <innerDataObjectDeclarations entityName="Empfänger" dataObject="_DEnBkZgbEemIcqpEX65OJg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_vKOhUZgbEemIcqpEX65OJg" entityName="Bestätigung des Leihgesuchs">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_Ghv7zZsZEemn470s_s91wg"/>
+    <innerDataObjectDeclarations entityName="Sender" dataObject="_DEnBkZgbEemIcqpEX65OJg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_zTIQYZgbEemIcqpEX65OJg" entityName="Standort">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_M6cjPZsZEemn470s_s91wg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_18XjgJgbEemIcqpEX65OJg" entityName="Standortdaten" innerDataObjects="_18XjgJgbEemIcqpEX65OJg">
+    <dataTypes xsi:type="repository:CollectionDataType" href="../kunst-arch-repo.repository#_O-h66psZEemn470s_s91wg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_jiX38ZgcEemIcqpEX65OJg" entityName="Literarisches Werk">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_Thfvy5sZEemn470s_s91wg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_lpMagJgcEemIcqpEX65OJg" entityName="Literatur" innerDataObjects="_jiX38ZgcEemIcqpEX65OJg">
+    <dataTypes xsi:type="repository:CollectionDataType" href="../kunst-arch-repo.repository#_bLcjrJsZEemn470s_s91wg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_pSpNcZgcEemIcqpEX65OJg" entityName="Fremdes Ausstellungsobjekt">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_iOoSm5sZEemn470s_s91wg"/>
+    <innerDataObjectDeclarations entityName="Besitzer" dataObject="_DEnBkZgbEemIcqpEX65OJg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CollectionDataObject" id="_rFzNIJgcEemIcqpEX65OJg" entityName="öffentliche und private Forschungsliteratur" innerDataObjects="_pSpNcZgcEemIcqpEX65OJg">
+    <dataTypes xsi:type="repository:CollectionDataType" href="../kunst-arch-repo.repository#_17rE-psZEemn470s_s91wg"/>
+  </dataObjects>
+  <dataObjects xsi:type="datamodel:CompositeDataObject" id="_pqKagZsaEemn470s_s91wg" entityName="Ausstellungskonzept">
+    <dataTypes xsi:type="repository:CompositeDataType" href="../kunst-arch-repo.repository#_523vO5sZEemn470s_s91wg"/>
+  </dataObjects>
+</datamodel:DataModel>

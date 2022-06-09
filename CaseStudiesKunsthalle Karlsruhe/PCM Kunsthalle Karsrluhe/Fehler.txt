@@ -1,0 +1,39 @@
+CM1 -> Cat3
+CM2 -> Cat6
+CM3 -> Cat1
+CM4 -> Cat4
+
+CM1: falsely defined parameters or return types of operation signatures. (Falsely chosen Parameter and Return of an Operation Signature)
+	UC3: AS Antwort erhalten - ELSC Bestätigung des Leihgesuchs speichern
+	OperationSignature: LeihverkehrsverwaltungsDB.fügeBestätigungLeihgesuchHinzu
+		ReturnType zeigt auf Leihgesuch 
+			statt void zu sein
+		(Zur Verifikation war in der Operation geplant das Leihgesuch zurückzugegeben für welches die bestätigung gespeichert wurde)
+	SEFFs inkl. Datenverarbeitung umgesetzt
+	Analyse liefert korrektes Ergebnis
+
+CM2: falsely wired interfaces and operations of service effect specifications.
+	UC 3: AS individuelles Leihgesuch schreiben - ELSC Hole fremdes Ausstellungkonzeptobjekt
+	Seff: Ausstellung: ISystemAusstellung.gibFremdesAusstellungsobjektAusAusstelungskonzept
+		External Call Action zeigt auf IDatendrehscheibe.gibEigenesAusstellungsobjektAusAusstellungskonzept 
+			statt IDatendrehscheibe.gibFremdesAusstellungsobjektAusAusstellungskonzept
+	SEFFs inkl. Datenverarbeitung umgesetzt
+	Analyse liefert sinnvolles Ergebnis
+	TODO "Leihgesuch hinzufügen" ausmodellieren, damit Write-DT herauskommt
+
+
+CM3: falsely wired systems and components. (Falsely connected Required/Provided Role between a) System and Subsystem or b) Subsystems or c) Subsystem and Components or d) Components)
+	UC8: mündlich Leihanfrage entgegennehmen - ELSC Ausstellungsobjekt holen
+		Operation Req. Role von Datentrehscheibe (Req.IZugriffSammlungsDB) zeigt auf ProvIZugriffDatenablage2 von Datenablage (IZugriffDatenablage2)
+			statt auf ProvIZugriffSammlungsDB von SammlungsDB
+		(IZugriffDatenablage2 bietet ebenfalls die Operation gibAusstellungsobjekt(Name), wie es auch die IZugriffSammlungsDB anbietet (Dieses gibt ein eigenes Ausstellungsobjekt zurück). In der Datenablage wird allerdings ein Eigenes Ausstellungsobjekt oder auch ein Fremdes Ausstellungsobjekt (!Der Fehler ist das nun auch ein FremdesAusstelungsobjekt zurück kommen kann Theoretisch.) zurück gegeben. Siehe SEFF IZugriffDatenablage2.gibAusstellungsobjekt)
+	SEFFs inkl. Datenverarbeitung umgesetzt
+	Analyse liefert korrektes Ergebnis
+
+CM4: falsely built composite and collection data types. (Falsely build Composite and Collection Data Types)
+	UC3: AS Leihvertrag verhandeln - ELSC Leihvertrag erstellen
+		CompositeDT: Leihvertrag - InnerDeclaration Verliehenes Ausstelungsobjekt zeigt auf Ausstellungsobjekt 
+			statt auf öffentlich sichtbares Ausstellungsobjekt
+		(Follglich wird im Seff von Leihverkehr.fügeLeihvertragHinzu das Ausstellungsobjekt aus der bestätigung des Leihgesuchs extrahiert anstatt nur das öffentlich sichtbare Ausstellungsobjekt zu extrahieren; Anschließend wird im Leihvertrag dann das Ausstellungsobjekt gespeichert statt nur das öffentlich Sichtbare Ausstellungsobjekt
+		Fehler wird nicht über die Datenflussanalyse erkannt sondern später über die ELSC Regeln für Datentypen abgelich und deren komponenten (in diesem Fall die innerDeclaration))
+	SEFFs inkl. Datenverarbeitung umgesetzt

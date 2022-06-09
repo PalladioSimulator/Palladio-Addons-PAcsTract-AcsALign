@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:ELSCMatchASExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_T3d2lpgiEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_NpbKgJgjEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_T3d2lpgiEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_IiRqgJgjEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_T3d2lpgiEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_Fw8V4JgkEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_T3d2lpgiEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_AKpbwJgkEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_l-thFpgoEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_xrGPsJgoEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_0fdKhpgkEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_UteCwJgoEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_0fdKhpgkEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_Yi1KwJgoEemIcqpEX65OJg"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_T3d2lpgiEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_AjJhkJm0EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_T3d2lpgiEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_IkErEJm0EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_0fdKhpgkEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_VgEAYJm0EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_0fdKhpgkEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_NhIa8Jm0EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_l-thFpgoEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_frxmcJm0EembgY-6Yjlxug"/>
+  </elscmatchasext>
+  <elscmatchasext>
+    <actorstep href="UC2_Konzept_erstellen.bpusagemodel#_l-thFpgoEemIcqpEX65OJg"/>
+    <entrylevelsystemcall href="UC2_Konzept_erstellen.bpusagemodel#_a6zKwJm0EembgY-6Yjlxug"/>
+  </elscmatchasext>
+</intBIIS_LP:ELSCMatchASExtContainer>

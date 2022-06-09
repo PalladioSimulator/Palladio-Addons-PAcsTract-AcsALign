@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usagemodel:UsageModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpusagemodel="http://palladiosimulator.org/PalladioComponentModel/5.2/bp/bpUsageModel" xmlns:characterizedActions="http://palladiosimulator.org/dataflow/confidentiality/characterizedactions/0.1.0" xmlns:usagemodel="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2" xsi:schemaLocation="http://palladiosimulator.org/PalladioComponentModel/UsageModel/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//usagemodel">
+  <usageScenario_UsageModel id="_55brEJpBEemHh-eIVabj4g" entityName="Leihverkehr für eigene Werke">
+    <scenarioBehaviour_UsageScenario xsi:type="characterizedActions:CharacterizableScenarioBehavior" id="_6MbfkJpBEemHh-eIVabj4g" entityName="Leihverkehr für eigene Werke">
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_83eJhJpBEemHh-eIVabj4g" entityName="Leihanfrage trifft ein" successor="#_Cwd9NppCEemHh-eIVabj4g"/>
+      <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" id="_Cwd9NppCEemHh-eIVabj4g" entityName="Leihanfrage abwickeln" successor="#_B6sLwZpCEemHh-eIVabj4g" predecessor="#_83eJhJpBEemHh-eIVabj4g" responsibleRole="kunsthalle.organizationenvironmentmodel#_U8TDkJgVEemIcqpEX65OJg" interruptable="true"/>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Branch" id="_B6sLwZpCEemHh-eIVabj4g" entityName="Leihanfrage angenommen?" successor="#_9cFSc5pBEemHh-eIVabj4g" predecessor="#_Cwd9NppCEemHh-eIVabj4g">
+        <branchTransitions_Branch branchProbability="0.5">
+          <branchedBehaviour_BranchTransition id="_K6bG4JpCEemHh-eIVabj4g" entityName="Ja">
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_RhruxJpCEemHh-eIVabj4g" entityName="Leihanfrage angenommen" successor="#_TErylppCEemHh-eIVabj4g"/>
+            <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" id="_TErylppCEemHh-eIVabj4g" entityName="eigenes Werk wird abgeholt" successor="#_4lF45ppCEemHh-eIVabj4g" predecessor="#_RhruxJpCEemHh-eIVabj4g" responsibleRole="kunsthalle.organizationenvironmentmodel#_U8TDkJgVEemIcqpEX65OJg" interruptable="true"/>
+            <actions_ScenarioBehaviour xsi:type="bpusagemodel:ActorStep" id="_4lF45ppCEemHh-eIVabj4g" entityName="eigenes Werk wird zurückgebracht" successor="#_9SA7A5pCEemHh-eIVabj4g" predecessor="#_TErylppCEemHh-eIVabj4g" responsibleRole="kunsthalle.organizationenvironmentmodel#_U8TDkJgVEemIcqpEX65OJg" interruptable="true"/>
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_9SA7A5pCEemHh-eIVabj4g" entityName="eigenes Werk wurde ausgeliehen" predecessor="#_4lF45ppCEemHh-eIVabj4g"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+        <branchTransitions_Branch branchProbability="0.5">
+          <branchedBehaviour_BranchTransition id="_L8Q-YJpCEemHh-eIVabj4g" entityName="Nein">
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Start" id="_M4NCNJpCEemHh-eIVabj4g" entityName="Leihanfrage abgelehnt" successor="#_NwNBM5pCEemHh-eIVabj4g"/>
+            <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_NwNBM5pCEemHh-eIVabj4g" entityName="Leihanfrage abgelehnt" predecessor="#_M4NCNJpCEemHh-eIVabj4g"/>
+          </branchedBehaviour_BranchTransition>
+        </branchTransitions_Branch>
+      </actions_ScenarioBehaviour>
+      <actions_ScenarioBehaviour xsi:type="usagemodel:Stop" id="_9cFSc5pBEemHh-eIVabj4g" entityName="Leihanfrage bearbeitet" predecessor="#_B6sLwZpCEemHh-eIVabj4g"/>
+    </scenarioBehaviour_UsageScenario>
+    <workload_UsageScenario xsi:type="usagemodel:OpenWorkload">
+      <interArrivalTime_OpenWorkload specification="1"/>
+    </workload_UsageScenario>
+  </usageScenario_UsageModel>
+</usagemodel:UsageModel>

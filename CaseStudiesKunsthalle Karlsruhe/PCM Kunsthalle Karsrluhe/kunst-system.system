@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:subsystem="http://palladiosimulator.org/PalladioComponentModel/SubSystem/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_DpBowIQ8EemPcPOWzdV97g" entityName="Kunsthalle">
+  <assemblyContexts__ComposedStructure id="_Jk-0YIQ9EemPcPOWzdV97g" entityName="StandortverwaltungsDB">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_1Bzv5IO7EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_yVnKwIQ8EemPcPOWzdV97g" entityName="BibliotheksDB">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_bZ5sJIO8EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_yum5kIQ8EemPcPOWzdV97g" entityName="CRMSystem">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_fADeBIO9EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_zCjJQIQ8EemPcPOWzdV97g" entityName="Datenablage">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_R6TItIO9EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_zWv3oIQ8EemPcPOWzdV97g" entityName="Datendrehscheibe">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_GRfdFIO-EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_z6p18IQ8EemPcPOWzdV97g" entityName="ForschungsprojektDB">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_V2l_JIO9EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_0L1skIQ8EemPcPOWzdV97g" entityName="Fotoserver">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_NzlK9IO9EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_H_igkIQ9EemPcPOWzdV97g" entityName="SammlungsDB">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_eVxPFIO2EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_0tH0sIQ8EemPcPOWzdV97g" entityName="LeihverkehrsverwaltungsDB">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_4x7ylIO7EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_06h-kIQ8EemPcPOWzdV97g" entityName="LiteraturverwaltungsDB">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_bdGcBIO6EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_1Ip6IIQ8EemPcPOWzdV97g" entityName="RestaurierungsDB">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_5XFHBIO7EemuQ9yUtDd2WA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_tvIgYJwNEembRtDV6Cn0CQ" entityName="Zugang">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_1BAyoZtJEemzvcE3zA47iw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_ugRCYJwNEembRtDV6Cn0CQ" entityName="CRM">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_PTkfiZtVEemzvcE3zA47iw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_yP4HsJwNEembRtDV6Cn0CQ" entityName="AllgemeineZugriffe">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_Qkajq5tSEemzvcE3zA47iw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_0YVpAJwNEembRtDV6Cn0CQ" entityName="Ausstellung">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_VLsNm5tOEemzvcE3zA47iw"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_14emEJwNEembRtDV6Cn0CQ" entityName="Leihverkehr">
+    <encapsulatedComponent__AssemblyContext xsi:type="subsystem:SubSystem" href="kunst-arch-repo.repository#_09j_qZtVEemzvcE3zA47iw"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_62AMloQ-EemPcPOWzdV97g" entityName="ConnectionStandortverwaltungsDB" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_Jk-0YIQ9EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_Co0vT5wSEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_PZ1m45wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_W3eItoQ-EemPcPOWzdV97g" entityName="ConnectionBibliotheksDB" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_yVnKwIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_nlxb35wVEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_VXgfM5wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_XmVZ1oQ-EemPcPOWzdV97g" entityName="ConnectionCRMSystem" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_yum5kIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_JQPLX5wWEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_ox8eo5wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_YEWLhoQ-EemPcPOWzdV97g" entityName="ConnectionDatenablage" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_zCjJQIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_5N8Mb5wVEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_WQxpg5wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_Yd-zhoQ-EemPcPOWzdV97g" entityName="ConnectionForschungsprojektDB" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_z6p18IQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_Be3gz5wWEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_n-u5A5wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_ZJaWJoQ-EemPcPOWzdV97g" entityName="ConnectionFotoserver" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_0L1skIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_vXGqL5wVEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_V0jAg5wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_aIbjJoQ-EemPcPOWzdV97g" entityName="ConnectionLeihverkehrsverwaltungsDB" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_0tH0sIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_JLNeP5wSEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_TpIR05wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_agonxoQ-EemPcPOWzdV97g" entityName="ConnectionLiteraturverwaltungsDB" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_06h-kIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#__kteD5wREemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_QlapM5wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_6BxTRoQ-EemPcPOWzdV97g" entityName="ConnectionRestaurierungsDB" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_1Ip6IIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_SXPBj5wVEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_U6hBM5wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_XiBvlpwOEembRtDV6Cn0CQ" entityName="ConnectionInternerZugang" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_tvIgYJwNEembRtDV6Cn0CQ">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_xrtmj5wUEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_pNubs5wWEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_bvMTlpwOEembRtDV6Cn0CQ" entityName="ConnectionCRM" requiringAssemblyContext_AssemblyConnector="_ugRCYJwNEembRtDV6Cn0CQ" providingAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_09J3P5wWEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_rIdxc5wTEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_dv4Y9pwOEembRtDV6Cn0CQ" entityName="ConnectionAusstellung" requiringAssemblyContext_AssemblyConnector="_0YVpAJwNEembRtDV6Cn0CQ" providingAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_09J3P5wWEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_dg1os5wUEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_BGorJpwPEembRtDV6Cn0CQ" entityName="ConnectionLeihverkehr" requiringAssemblyContext_AssemblyConnector="_14emEJwNEembRtDV6Cn0CQ" providingAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_09J3P5wWEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_0EtwM5wSEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_DZcbRpwPEembRtDV6Cn0CQ" entityName="ConnectionAllgemeineZugriffe" requiringAssemblyContext_AssemblyConnector="_yP4HsJwNEembRtDV6Cn0CQ" providingAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_09J3P5wWEemggutmlkhqpA"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_4R8JI5wTEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_nfYP0IitEeqOsvr3C1Ho0w" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_iq7CUIitEeqOsvr3C1Ho0w" assemblyContext_ProvidedDelegationConnector="_tvIgYJwNEembRtDV6Cn0CQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="kunst-arch-repo.repository#_yQknH5wUEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_RebrsIiuEeqOsvr3C1Ho0w" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_FKbjcIiuEeqOsvr3C1Ho0w" assemblyContext_ProvidedDelegationConnector="_14emEJwNEembRtDV6Cn0CQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="kunst-arch-repo.repository#_yyhIf5wSEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_j5huAIiuEeqOsvr3C1Ho0w" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_iihe0IiuEeqOsvr3C1Ho0w" assemblyContext_ProvidedDelegationConnector="_yP4HsJwNEembRtDV6Cn0CQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="kunst-arch-repo.repository#_3ECyn5wTEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_8PHjYIivEeqOsvr3C1Ho0w" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_52F2gIivEeqOsvr3C1Ho0w" assemblyContext_ProvidedDelegationConnector="_0YVpAJwNEembRtDV6Cn0CQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="kunst-arch-repo.repository#_cqSbL5wUEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_feygsIixEeqOsvr3C1Ho0w" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_dtkasIixEeqOsvr3C1Ho0w" assemblyContext_ProvidedDelegationConnector="_ugRCYJwNEembRtDV6Cn0CQ">
+    <innerProvidedRole_ProvidedDelegationConnector href="kunst-arch-repo.repository#_pQBCD5wTEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_4X0JII4qEeqbw9NlvrHP6A" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_zCjJQIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_hAD_no4qEeqbw9NlvrHP6A"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_lGoMY44qEeqbw9NlvrHP6A"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_15kBMI4uEeqbw9NlvrHP6A" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_zWv3oIQ8EemPcPOWzdV97g" providingAssemblyContext_AssemblyConnector="_zCjJQIQ8EemPcPOWzdV97g">
+    <providedRole_AssemblyConnector href="kunst-arch-repo.repository#_hAD_no4qEeqbw9NlvrHP6A"/>
+    <requiredRole_AssemblyConnector href="kunst-arch-repo.repository#_N37sE5wSEemggutmlkhqpA"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_iq7CUIitEeqOsvr3C1Ho0w" entityName="System.ISystemZugangProvidedRole">
+    <providedInterface__OperationProvidedRole href="kunst-arch-repo.repository#_6Op8OJtJEemzvcE3zA47iw"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_FKbjcIiuEeqOsvr3C1Ho0w" entityName="System.ISystemLeihverkehrProvidedRole">
+    <providedInterface__OperationProvidedRole href="kunst-arch-repo.repository#_7B2dSJtVEemzvcE3zA47iw"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_iihe0IiuEeqOsvr3C1Ho0w" entityName="System.ISystemAllgemeineZugriffeProvidedRole">
+    <providedInterface__OperationProvidedRole href="kunst-arch-repo.repository#_-kKDOJtREemzvcE3zA47iw"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_52F2gIivEeqOsvr3C1Ho0w" entityName="System.ISystemAusstellungProvidedRole">
+    <providedInterface__OperationProvidedRole href="kunst-arch-repo.repository#_mC9suJtOEemzvcE3zA47iw"/>
+  </providedRoles_InterfaceProvidingEntity>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_dtkasIixEeqOsvr3C1Ho0w" entityName="System.ISystemCRMProvidedRole">
+    <providedInterface__OperationProvidedRole href="kunst-arch-repo.repository#_VDnyiJtVEemzvcE3zA47iw"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<intBIIS_LP:PoolExtContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:intBIIS_LP="http://www.example.org/intBIIS_LP">
+  <role_poolext organizationalUnit="Sammlung und Wissenschaft">
+    <role href="kunsthalle.organizationenvironmentmodel#_U8TDkJgVEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Kommunikation">
+    <role href="kunsthalle.organizationenvironmentmodel#_BMNkQJgVEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Sammlung und Wissenschaft">
+    <role href="kunsthalle.organizationenvironmentmodel#_hvvg4JgVEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Sammlung und Wissenschaft">
+    <role href="kunsthalle.organizationenvironmentmodel#_gMQ78JgVEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Ausschuss">
+    <role href="kunsthalle.organizationenvironmentmodel#_OT9oMJgWEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Vorstand">
+    <role href="kunsthalle.organizationenvironmentmodel#_foeu4JgUEemIcqpEX65OJg"/>
+  </role_poolext>
+  <role_poolext organizationalUnit="Vorstand">
+    <role href="kunsthalle.organizationenvironmentmodel#_ba8ukJgAEem8wKasv_y3Yg"/>
+  </role_poolext>
+</intBIIS_LP:PoolExtContainer>

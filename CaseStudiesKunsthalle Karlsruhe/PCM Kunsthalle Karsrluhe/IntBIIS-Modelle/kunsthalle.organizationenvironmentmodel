@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organizationenvironmentmodel:OrganizationEnvironmentModel xmlns:organizationenvironmentmodel="http://palladiosimulator.org/PalladioComponentModel/5.2/bp/OrganizationEnvironmentModel" entityName="Kunsthalle">
+  <roles id="_ba8ukJgAEem8wKasv_y3Yg" entityName="Direktor"/>
+  <roles id="_foeu4JgUEemIcqpEX65OJg" entityName="Kaufmännische Geschäftsführer"/>
+  <roles id="_BMNkQJgVEemIcqpEX65OJg" entityName="Kommunikation"/>
+  <roles id="_NOecQJgVEemIcqpEX65OJg" entityName="Pressesprecher"/>
+  <roles id="_s-lX4JgVEemIcqpEX65OJg" entityName="Depotmeister"/>
+  <roles id="_U8TDkJgVEemIcqpEX65OJg" entityName="Kurator"/>
+  <roles id="_krCd4H_DEeqtothAHK-iyQ" entityName="Kurier"/>
+  <roles id="_YJmGAJgVEemIcqpEX65OJg" entityName="Besucherservice"/>
+  <roles id="_ZbGKIJgVEemIcqpEX65OJg" entityName="Besucherinformation"/>
+  <roles id="_gMQ78JgVEemIcqpEX65OJg" entityName="Registrar"/>
+  <roles id="_hvvg4JgVEemIcqpEX65OJg" entityName="Kunstvermittler"/>
+  <roles id="_jBYu8JgVEemIcqpEX65OJg" entityName="Kunstbibliothek"/>
+  <roles id="_l7oSgJgVEemIcqpEX65OJg" entityName="Restaurator"/>
+  <roles id="_qHVd8JgVEemIcqpEX65OJg" entityName="Verwaltung"/>
+  <roles id="_r7T9AJgVEemIcqpEX65OJg" entityName="Sicherheit"/>
+  <roles id="_ucjKsJgVEemIcqpEX65OJg" entityName="Haustechnik"/>
+  <roles id="_wuJZ4JgVEemIcqpEX65OJg" entityName="Shop"/>
+  <roles id="_zFz00JgVEemIcqpEX65OJg" entityName="Dokumentation"/>
+  <roles id="_17qnoJgVEemIcqpEX65OJg" entityName="Provenienzforscher"/>
+  <roles id="_70teoJgVEemIcqpEX65OJg" entityName="Fotowerkstatt"/>
+  <roles id="__GdjQJgVEemIcqpEX65OJg" entityName="Grafik-Designer"/>
+  <roles id="_A9D4gJgWEemIcqpEX65OJg" entityName="Sekretär Geschäftsführung"/>
+  <roles id="_HeEucJgWEemIcqpEX65OJg" entityName="Sekretär Direktor"/>
+  <roles id="_OT9oMJgWEemIcqpEX65OJg" entityName="Wissenschaftsversammlung"/>
+  <roles id="_Vlc40JgWEemIcqpEX65OJg" entityName="Leihkommission"/>
+</organizationenvironmentmodel:OrganizationEnvironmentModel>

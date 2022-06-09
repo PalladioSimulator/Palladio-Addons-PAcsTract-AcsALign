@@ -1,0 +1,1679 @@
+<!DOCTYPE html><html>
+<head>
+<style>
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	}
+
+th, td {
+	border: 1px solid lightgrey;
+	text-align: left;
+	padding: 8px;
+	; vertical-align:top;
+	; white-space:nowrap;
+	}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th{
+	background-color: #4CAF50;
+	color: white;
+	}
+
+</style>
+</head>
+<body>
+<h1 align="center">Access Control Requirement Mapping Model</h1>
+<p align="center">If you want to export it as a PDF, print it with a PDF-reader of your choice, wich is able to print things as a PDF</p>
+
+
+	<table>
+		<tr>
+			<th>Id</th>
+			<th>IDBA</th>
+			<th>Role</th>
+			<th>Process</th>
+			<th>BusinessActivity</th>
+			<th>BusinessPermission</th>
+			<th>ISDataType</th>
+			<th>ISActivity</th>
+			<th>System</th>
+			<th>ServiceCall</th>
+			<th>ISPermission</th>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>Sammlund und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td>Auspacken beaufsichtigen und protokollieren</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>Protokoll hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>1. READ token: Token<br>2. READ protokoll: Protokoll<br></td>
+		<tr>
+			<td>2</td>
+			<td>1</td>
+			<td>Sammlund und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td>Auspacken beaufsichtigen und protokollieren</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für Zustandsaktualisierung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>3</td>
+			<td>2</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td> Auspacken beaufsichtigen und Protokoll ergänzen</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>Protokoll hinzufügen 2</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>1. READ token: Token<br>2. READ protokoll: Protokoll<br></td>
+		<tr>
+			<td>4</td>
+			<td>2</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td> Auspacken beaufsichtigen und Protokoll ergänzen</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für Zustandsaktualisierung anmelden 2</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>5</td>
+			<td>3</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td>Zustand vermerken</td>
+			<td>WRITE Standortdaten (Coll)</td>
+			<td>Standortdaten (Coll)</td>
+			<td>Zustand aktualisieren</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.aktualisiereStandort()</td>
+			<td>1. READ token: Token<br>2. READ standort: Standort<br></td>
+		<tr>
+			<td>6</td>
+			<td>3</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td>Zustand vermerken</td>
+			<td>WRITE Standortdaten (Coll)</td>
+			<td>Standortdaten (Coll)</td>
+			<td>aktuellen Zustand holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjektMitStandort()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE AusstellungsobjektMitStandort<br></td>
+		<tr>
+			<td>7</td>
+			<td>3</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td>Zustand vermerken</td>
+			<td>WRITE Standortdaten (Coll)</td>
+			<td>Standortdaten (Coll)</td>
+			<td>sich im System für Zustandsaktualisierung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>8</td>
+			<td>4</td>
+			<td>Sammlund und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td>Werk begutachten</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>9</td>
+			<td>5</td>
+			<td>Sammlund und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td>Werkarbeiten durchführen</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>10</td>
+			<td>6</td>
+			<td>Sammlund und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td>Werk an vorgesehenen Ort transportieren</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>11</td>
+			<td>7</td>
+			<td>Ausschuss:Wissenschaftsversammlung</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>Ausstellung beschließen</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>12</td>
+			<td>8</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>Konzept erstellen</td>
+			<td>WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>13</td>
+			<td>9</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>Budget verhandeln</td>
+			<td>1. READ Ausstellungskonzept (Comp)<br>2. WRITE Kosten- und Finanzierungsplan (Comp)<br></td>
+			<td>1. Ausstellungskonzept (Comp)<br>2. Kosten- und Finanzierungsplan (Comp)<br></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>14</td>
+			<td>10</td>
+			<td>Vorstand:Direktor</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>Budget absegnen</td>
+			<td>READ Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Kosten- und Finanzierungsplan (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>15</td>
+			<td>11</td>
+			<td>Vorstand:Kaufmännische Geschäftsführer</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>Budget absegnen durch Geschäftsführer</td>
+			<td>READ Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Kosten- und Finanzierungsplan (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>16</td>
+			<td>12</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>über Budgets benachrichtigen</td>
+			<td>READ Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Budget eintragen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeKostenUndFinanzierungsplanHinzu()</td>
+			<td>1. READ token: Token<br>2. READ plan: Kosten- und Finanzierungsplan<br></td>
+		<tr>
+			<td>17</td>
+			<td>12</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>über Budgets benachrichtigen</td>
+			<td>READ Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Kosten- und Finanzierungsplan (Comp)</td>
+			<td>sich im System abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>18</td>
+			<td>12</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>über Budgets benachrichtigen</td>
+			<td>READ Kosten- und Finanzierungsplan (Comp)</td>
+			<td>Kosten- und Finanzierungsplan (Comp)</td>
+			<td>sich im System anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>19</td>
+			<td>13</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>fremde Werke ausleihen</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>20</td>
+			<td>14</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>Katalog erarbeiten</td>
+			<td>READ Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>21</td>
+			<td>15</td>
+			<td>Kommunikation:Kommunikation</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>digitale Produkte erstellen</td>
+			<td>READ Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>22</td>
+			<td>16</td>
+			<td>Sammlung und Wissenschaft:Kunstvermittler</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>Vermittlungsangebot erstellen</td>
+			<td>READ Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>23</td>
+			<td>17</td>
+			<td>Kommunikation:Kommunikation</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>Marketingstrategie vorbereiten</td>
+			<td>READ Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>24</td>
+			<td>18</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>Konzeption neuer Ausstellung</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>25</td>
+			<td>19</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>eigene Ausstellungsobjekte für Ausstellung auswählen</td>
+			<td>1. READ Ausstellungsobjekte (Coll)<br>2. READ Literatur (Coll)<br>3. READ Standortdaten (Coll)<br>4. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Ausstellungsobjekte (Coll)<br>2. Literatur (Coll)<br>3. Standortdaten (Coll)<br>4. Ausstellungskonzept (Comp)<br></td>
+			<td>Ausstellungskonzept anlegen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.erstelleAusstellungskonzept()</td>
+			<td>1. READ token: Token<br>2. WRITE Ausstellungskonzept<br></td>
+		<tr>
+			<td>26</td>
+			<td>19</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>eigene Ausstellungsobjekte für Ausstellung auswählen</td>
+			<td>1. READ Ausstellungsobjekte (Coll)<br>2. READ Literatur (Coll)<br>3. READ Standortdaten (Coll)<br>4. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Ausstellungsobjekte (Coll)<br>2. Literatur (Coll)<br>3. Standortdaten (Coll)<br>4. Ausstellungskonzept (Comp)<br></td>
+			<td>Ausstellungsobjekte mit deren Standort holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekteMitStandort()</td>
+			<td>1. READ token: Token<br>2. WRITE AusstellungsobjekteMitStandort<br></td>
+		<tr>
+			<td>27</td>
+			<td>19</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>eigene Ausstellungsobjekte für Ausstellung auswählen</td>
+			<td>1. READ Ausstellungsobjekte (Coll)<br>2. READ Literatur (Coll)<br>3. READ Standortdaten (Coll)<br>4. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Ausstellungsobjekte (Coll)<br>2. Literatur (Coll)<br>3. Standortdaten (Coll)<br>4. Ausstellungskonzept (Comp)<br></td>
+			<td>Literatur holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibLiteratur()</td>
+			<td>1. READ token: Token<br>2. WRITE Literatur<br></td>
+		<tr>
+			<td>28</td>
+			<td>19</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>eigene Ausstellungsobjekte für Ausstellung auswählen</td>
+			<td>1. READ Ausstellungsobjekte (Coll)<br>2. READ Literatur (Coll)<br>3. READ Standortdaten (Coll)<br>4. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Ausstellungsobjekte (Coll)<br>2. Literatur (Coll)<br>3. Standortdaten (Coll)<br>4. Ausstellungskonzept (Comp)<br></td>
+			<td>eigenes Ausstellungsobjekt dem Ausstellungskonzept hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeEigenesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>1. READ token: Token<br>2. READ konzept: Ausstellungskonzept<br>3. READ eigenesAusstellungsobjekt: Ausstellungsobjekt<br>4. READ Restaurorische Maßnahmen erforderlich?: BOOL<br>5. READ inhaltliches: STRING<br></td>
+		<tr>
+			<td>29</td>
+			<td>19</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>eigene Ausstellungsobjekte für Ausstellung auswählen</td>
+			<td>1. READ Ausstellungsobjekte (Coll)<br>2. READ Literatur (Coll)<br>3. READ Standortdaten (Coll)<br>4. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Ausstellungsobjekte (Coll)<br>2. Literatur (Coll)<br>3. Standortdaten (Coll)<br>4. Ausstellungskonzept (Comp)<br></td>
+			<td>sich im System für die Konzepterstellung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>30</td>
+			<td>19</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>eigene Ausstellungsobjekte für Ausstellung auswählen</td>
+			<td>1. READ Ausstellungsobjekte (Coll)<br>2. READ Literatur (Coll)<br>3. READ Standortdaten (Coll)<br>4. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Ausstellungsobjekte (Coll)<br>2. Literatur (Coll)<br>3. Standortdaten (Coll)<br>4. Ausstellungskonzept (Comp)<br></td>
+			<td>sich im System für die Konzepterstellung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>31</td>
+			<td>20</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>Konzept erstellen</td>
+			<td>über Ausstellfähigkeit der eigenen Werke entscheiden</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibAusstellungskonzept()</td>
+			<td>1. READ token: Token<br>2. READ ausstellungsName: STRING<br>3. WRITE Ausstellungskonzept<br></td>
+		<tr>
+			<td>32</td>
+			<td>20</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>Konzept erstellen</td>
+			<td>über Ausstellfähigkeit der eigenen Werke entscheiden</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungsobjekt entfernen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.entferneAusstellungsobjektAusAusstellungskonzept()</td>
+			<td>1. READ token: Token<br>2. READ konzept: Ausstellungskonzept<br>3. READ ausstellungsobjekt: öffentlich sichtbares Ausstellungsobjekt<br></td>
+		<tr>
+			<td>33</td>
+			<td>20</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>Konzept erstellen</td>
+			<td>über Ausstellfähigkeit der eigenen Werke entscheiden</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td>sich im System für die Ausstell-Entscheidung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>34</td>
+			<td>20</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>Konzept erstellen</td>
+			<td>über Ausstellfähigkeit der eigenen Werke entscheiden</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td>sich im System für die Ausstell-Entscheidung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>35</td>
+			<td>21</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>in Literatur nach verwandten Werken recherchieren</td>
+			<td>1. READ Literatur (Coll)<br>2. READ öffentliche und private Forschungsliteratur (Coll)<br>3. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Literatur (Coll)<br>2. öffentliche und private Forschungsliteratur (Coll)<br>3. Ausstellungskonzept (Comp)<br></td>
+			<td>fremdes Ausstellungsobjekt dem Ausstellungskonzept hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.fügeFremdesAusstellungsobjektDemAusstellungskonzeptHinzu()</td>
+			<td>1. READ token: Token<br>2. READ konzept: Ausstellungskonzept<br>3. READ fremdesAusstellungsobjekt: Fremdes Ausstellungsobjekt<br>4. READ inhaltliches: STRING<br></td>
+		<tr>
+			<td>36</td>
+			<td>21</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>in Literatur nach verwandten Werken recherchieren</td>
+			<td>1. READ Literatur (Coll)<br>2. READ öffentliche und private Forschungsliteratur (Coll)<br>3. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Literatur (Coll)<br>2. öffentliche und private Forschungsliteratur (Coll)<br>3. Ausstellungskonzept (Comp)<br></td>
+			<td>sich im System für die Konzepterweiterung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>37</td>
+			<td>21</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>in Literatur nach verwandten Werken recherchieren</td>
+			<td>1. READ Literatur (Coll)<br>2. READ öffentliche und private Forschungsliteratur (Coll)<br>3. WRITE Ausstellungskonzept (Comp)<br></td>
+			<td>1. Literatur (Coll)<br>2. öffentliche und private Forschungsliteratur (Coll)<br>3. Ausstellungskonzept (Comp)<br></td>
+			<td>sich im System für die Konzepterweiterung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>38</td>
+			<td>22</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Konzept erstellen</td>
+			<td>fremde Werke für Ausstellung auswählen</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>39</td>
+			<td>23</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>mündlich fremdes Werk anfragen</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. READ Ausstellungskonzept (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Ausstellungskonzept (Comp)<br></td>
+			<td>Ausstellungskonzept zum Anfragen holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibAusstellungskonzept()</td>
+			<td>1. READ token: Token<br>2. READ ausstellungsName: STRING<br>3. WRITE Ausstellungskonzept<br></td>
+		<tr>
+			<td>40</td>
+			<td>23</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>mündlich fremdes Werk anfragen</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. READ Ausstellungskonzept (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Ausstellungskonzept (Comp)<br></td>
+			<td>Kontakt des Kurators holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE CRM-Eintrag<br></td>
+		<tr>
+			<td>41</td>
+			<td>23</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>mündlich fremdes Werk anfragen</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. READ Ausstellungskonzept (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Ausstellungskonzept (Comp)<br></td>
+			<td>sich im System für die mündliche Anfrage abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>42</td>
+			<td>23</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>mündlich fremdes Werk anfragen</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. READ Ausstellungskonzept (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Ausstellungskonzept (Comp)<br></td>
+			<td>sich im System für die mündliche Anfrage anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>43</td>
+			<td>24</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>individuelles Leihgesuch schreiben</td>
+			<td>1. READ Fremdes Ausstellungsobjekt (Comp)<br>2. READ CRM-Eintrag (Comp)<br>3. WRITE Leihgesuch (Comp)<br></td>
+			<td>1. Fremdes Ausstellungsobjekt (Comp)<br>2. CRM-Eintrag (Comp)<br>3. Leihgesuch (Comp)<br></td>
+			<td>Hole Empfänger für Leihgesuch</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE CRM-Eintrag<br></td>
+		<tr>
+			<td>44</td>
+			<td>24</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>individuelles Leihgesuch schreiben</td>
+			<td>1. READ Fremdes Ausstellungsobjekt (Comp)<br>2. READ CRM-Eintrag (Comp)<br>3. WRITE Leihgesuch (Comp)<br></td>
+			<td>1. Fremdes Ausstellungsobjekt (Comp)<br>2. CRM-Eintrag (Comp)<br>3. Leihgesuch (Comp)<br></td>
+			<td>Hole fremdes Ausstellungkonzeptobjekt</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibFremdesAusstellungsobjektAusAusstellungskonzept()</td>
+			<td>1. READ Ausstellungsname: STRING<br>2. READ Ausstellungsobjektname: STRING<br>3. WRITE Ausstellungskonzeptobjekt für fremdes Werk<br></td>
+		<tr>
+			<td>45</td>
+			<td>24</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>individuelles Leihgesuch schreiben</td>
+			<td>1. READ Fremdes Ausstellungsobjekt (Comp)<br>2. READ CRM-Eintrag (Comp)<br>3. WRITE Leihgesuch (Comp)<br></td>
+			<td>1. Fremdes Ausstellungsobjekt (Comp)<br>2. CRM-Eintrag (Comp)<br>3. Leihgesuch (Comp)<br></td>
+			<td>Leihgesuch hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihgesuchHinzu()</td>
+			<td>1. READ token: Token<br>2. READ Empfänger: CRM-Eintrag<br>3. READ Ausstellungskonzeptobjekt für fremdes Werk: Ausstellungskonzeptobjekt für fremdes Werk<br></td>
+		<tr>
+			<td>46</td>
+			<td>24</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>individuelles Leihgesuch schreiben</td>
+			<td>1. READ Fremdes Ausstellungsobjekt (Comp)<br>2. READ CRM-Eintrag (Comp)<br>3. WRITE Leihgesuch (Comp)<br></td>
+			<td>1. Fremdes Ausstellungsobjekt (Comp)<br>2. CRM-Eintrag (Comp)<br>3. Leihgesuch (Comp)<br></td>
+			<td>sich im System für die Leihgesuch-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>47</td>
+			<td>24</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>individuelles Leihgesuch schreiben</td>
+			<td>1. READ Fremdes Ausstellungsobjekt (Comp)<br>2. READ CRM-Eintrag (Comp)<br>3. WRITE Leihgesuch (Comp)<br></td>
+			<td>1. Fremdes Ausstellungsobjekt (Comp)<br>2. CRM-Eintrag (Comp)<br>3. Leihgesuch (Comp)<br></td>
+			<td>sich im System für die Leihgesuch-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>48</td>
+			<td>25</td>
+			<td>Vorstand:Direktor</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihgesuch unterschreiben</td>
+			<td>READ/WRITE Leihgesuch (Comp)</td>
+			<td>Leihgesuch (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>49</td>
+			<td>26</td>
+			<td>Vorstand:Direktor</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihgesuch verschicken</td>
+			<td>READ Leihgesuch (Comp)</td>
+			<td>Leihgesuch (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>50</td>
+			<td>27</td>
+			<td>Vorstand:Direktor</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Antwort erhalten</td>
+			<td>WRITE Bestätigung des Leihgesuchs (Comp)</td>
+			<td>Bestätigung des Leihgesuchs (Comp)</td>
+			<td>Bestätigung des Leihgesuchs speichern</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeBestätigungLeihgesuchHinzu()</td>
+			<td>1. READ Token: Token<br>2. READ bestätigung Leihgesuch: Bestätigung des Leihgesuchs<br>3. WRITE Leihgesuch<br></td>
+		<tr>
+			<td>51</td>
+			<td>28</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Bestätigung weiterleiten</td>
+			<td>READ/WRITE Bestätigung des</td>
+			<td>Bestätigung des Leihgesuchs (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>52</td>
+			<td>29</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag verhandeln</td>
+			<td>1. READ Bestätigung des Leihgesuchs (Comp)<br>2. READ Ausstellungskonzept (Comp)<br>3. WRITE Leihvertrag (Comp)<br>4. WRITE CRM-Eintrag (Comp)<br></td>
+			<td>1. Bestätigung des Leihgesuchs (Comp)<br>2. Ausstellungskonzept (Comp)<br>3. Leihvertrag (Comp)<br>4. CRM-Eintrag (Comp)<br></td>
+			<td>Ausstellungskonzept für Leihvertragsverhandlung holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAusstellungProvidedRole.gibAusstellungskonzept()</td>
+			<td>1. READ token: Token<br>2. READ ausstellungsName: STRING<br>3. WRITE Ausstellungskonzept<br></td>
+		<tr>
+			<td>53</td>
+			<td>29</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag verhandeln</td>
+			<td>1. READ Bestätigung des Leihgesuchs (Comp)<br>2. READ Ausstellungskonzept (Comp)<br>3. WRITE Leihvertrag (Comp)<br>4. WRITE CRM-Eintrag (Comp)<br></td>
+			<td>1. Bestätigung des Leihgesuchs (Comp)<br>2. Ausstellungskonzept (Comp)<br>3. Leihvertrag (Comp)<br>4. CRM-Eintrag (Comp)<br></td>
+			<td>Hole Bestätigung des Leihgesuchs</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.gibBestätigungLeihgesuch()</td>
+			<td>1. READ titel Aussstellungsobjekt: STRING<br>2. WRITE Bestätigung des Leihgesuchs<br></td>
+		<tr>
+			<td>54</td>
+			<td>29</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag verhandeln</td>
+			<td>1. READ Bestätigung des Leihgesuchs (Comp)<br>2. READ Ausstellungskonzept (Comp)<br>3. WRITE Leihvertrag (Comp)<br>4. WRITE CRM-Eintrag (Comp)<br></td>
+			<td>1. Bestätigung des Leihgesuchs (Comp)<br>2. Ausstellungskonzept (Comp)<br>3. Leihvertrag (Comp)<br>4. CRM-Eintrag (Comp)<br></td>
+			<td>Leihvertrag erstellen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihvertragHinzu()</td>
+			<td>1. READ token: Token<br>2. READ Leihvertragsinformationen: STRING<br>3. READ Bestätigung Leihgesuch o. Leihanfrage: Allgemeine Leihanfrage<br></td>
+		<tr>
+			<td>55</td>
+			<td>29</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag verhandeln</td>
+			<td>1. READ Bestätigung des Leihgesuchs (Comp)<br>2. READ Ausstellungskonzept (Comp)<br>3. WRITE Leihvertrag (Comp)<br>4. WRITE CRM-Eintrag (Comp)<br></td>
+			<td>1. Bestätigung des Leihgesuchs (Comp)<br>2. Ausstellungskonzept (Comp)<br>3. Leihvertrag (Comp)<br>4. CRM-Eintrag (Comp)<br></td>
+			<td>sich im System für Verhandlungen abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>56</td>
+			<td>29</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag verhandeln</td>
+			<td>1. READ Bestätigung des Leihgesuchs (Comp)<br>2. READ Ausstellungskonzept (Comp)<br>3. WRITE Leihvertrag (Comp)<br>4. WRITE CRM-Eintrag (Comp)<br></td>
+			<td>1. Bestätigung des Leihgesuchs (Comp)<br>2. Ausstellungskonzept (Comp)<br>3. Leihvertrag (Comp)<br>4. CRM-Eintrag (Comp)<br></td>
+			<td>sich im System für Verhandlungen anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>57</td>
+			<td>30</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag prüfen</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>58</td>
+			<td>31</td>
+			<td>Vorstand:Direktor</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag unterschreiben</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>59</td>
+			<td>32</td>
+			<td>Vorstand:Direktor</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag an Museum verschicken</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>60</td>
+			<td>33</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag archivieren</td>
+			<td>READ Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>Leihvertrag hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihvertragHinzu()</td>
+			<td>1. READ token: Token<br>2. READ Leihvertragsinformationen: STRING<br>3. READ Bestätigung Leihgesuch o. Leihanfrage: Allgemeine Leihanfrage<br></td>
+		<tr>
+			<td>61</td>
+			<td>33</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag archivieren</td>
+			<td>READ Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>sich im System für die Leihvertrags-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>62</td>
+			<td>33</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremde Werke ausleihen</td>
+			<td>Leihvertrag archivieren</td>
+			<td>READ Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>sich im System für die Leihvertrags-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>63</td>
+			<td>34</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Transportunternehmen beauftragen</td>
+			<td>READ CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag (Comp)</td>
+			<td>Kontakt zu Transportunternehmen holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE CRM-Eintrag<br></td>
+		<tr>
+			<td>64</td>
+			<td>34</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Transportunternehmen beauftragen</td>
+			<td>READ CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag (Comp)</td>
+			<td>sich im System für den Transport anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>65</td>
+			<td>35</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Liefertermin ausmachen</td>
+			<td></td>
+			<td></td>
+			<td>Lieferauftrag verbuchen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeTransportauftragHinzu()</td>
+			<td>1. READ token: Token<br>2. READ auftrag: Transportauftrag<br></td>
+		<tr>
+			<td>66</td>
+			<td>35</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Liefertermin ausmachen</td>
+			<td></td>
+			<td></td>
+			<td>sich im System für den Transport abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>67</td>
+			<td>36</td>
+			<td>Zentrale Dienste:Sicherheit</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Raum entsichern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>68</td>
+			<td>37</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Anlieferung beaufsichtigen und protokollieren</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>Protokoll hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>1. READ token: Token<br>2. READ protokoll: Protokoll<br></td>
+		<tr>
+			<td>69</td>
+			<td>37</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Anlieferung beaufsichtigen und protokollieren</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für die Protokoll-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>70</td>
+			<td>37</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Anlieferung beaufsichtigen und protokollieren</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für die Protokoll-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>71</td>
+			<td>38</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Kurator bei Anlieferung unterstützen</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>Protokoll hinzufügen 2</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>1. READ token: Token<br>2. READ protokoll: Protokoll<br></td>
+		<tr>
+			<td>72</td>
+			<td>38</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Kurator bei Anlieferung unterstützen</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für die Protokoll-Hinzufügung abmelden 2</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>73</td>
+			<td>38</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td>Kurator bei Anlieferung unterstützen</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für die Protokoll-Hinzufügung anmelden 2</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>74</td>
+			<td>39</td>
+			<td>Zentrale Dienste:Sicherheit</td>
+			<td>fremdes Werk wird abgeholt</td>
+			<td>Raum entsichern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>75</td>
+			<td>40</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>fremdes Werk wird abgeholt</td>
+			<td>Abholung beaufsichtigen</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>76</td>
+			<td>41</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>fremdes Werk wird abgeholt</td>
+			<td>Beausichtigung des Einpackens und protokollierung</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>Protokoll hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>1. READ token: Token<br>2. READ protokoll: Protokoll<br></td>
+		<tr>
+			<td>77</td>
+			<td>41</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>fremdes Werk wird abgeholt</td>
+			<td>Beausichtigung des Einpackens und protokollierung</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für Protokoll-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>78</td>
+			<td>41</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>fremdes Werk wird abgeholt</td>
+			<td>Beausichtigung des Einpackens und protokollierung</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für Protokoll-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>79</td>
+			<td>42</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihverkehr für fremde Werke</td>
+			<td>fremde Werke ausleihen</td>
+			<td>READ/WRITE Ausstellungskonzept (Comp)</td>
+			<td>Ausstellungskonzept (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>80</td>
+			<td>43</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihverkehr für fremde Werke</td>
+			<td>fremdes Werk wird angeliefert</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>81</td>
+			<td>44</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihverkehr für fremde Werke</td>
+			<td>fremdes Werk wird abgeholt</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>82</td>
+			<td>45</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihverkehr für eigene Werke</td>
+			<td>Leihanfrage abwickeln</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>83</td>
+			<td>46</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihverkehr für eigene Werke</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>84</td>
+			<td>47</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihverkehr für eigene Werke</td>
+			<td>eigenes Werk wird zurückgebracht</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>85</td>
+			<td>48</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>mündlich Leihanfrage entgegennehmen</td>
+			<td>READ Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekt holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekt()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE öffentlich sichtbares Ausstellungsobjekt<br></td>
+		<tr>
+			<td>86</td>
+			<td>48</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>mündlich Leihanfrage entgegennehmen</td>
+			<td>READ Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekte (Coll)</td>
+			<td>sich im System für Objekt-Abruf abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>87</td>
+			<td>48</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>mündlich Leihanfrage entgegennehmen</td>
+			<td>READ Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekte (Coll)</td>
+			<td>sich im System für Objekt-Abruf anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>88</td>
+			<td>49</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ausstellungsobjekt auf Transportfähigkeit prüfen</td>
+			<td>READ Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekt für Transport-Prüfung holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekt()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE öffentlich sichtbares Ausstellungsobjekt<br></td>
+		<tr>
+			<td>89</td>
+			<td>49</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ausstellungsobjekt auf Transportfähigkeit prüfen</td>
+			<td>READ Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekte (Coll)</td>
+			<td>sich im System für Transport-Prüfung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>90</td>
+			<td>49</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ausstellungsobjekt auf Transportfähigkeit prüfen</td>
+			<td>READ Ausstellungsobjekte (Coll)</td>
+			<td>Ausstellungsobjekte (Coll)</td>
+			<td>sich im System für Transport-Prüfung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>91</td>
+			<td>50</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Anfrage mündlich bestätigen</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>92</td>
+			<td>51</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihanfrage entgegennehmen</td>
+			<td>WRITE Leihanfrage (Comp)</td>
+			<td>Leihanfrage (Comp)</td>
+			<td>Leihanfrage hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihanfrageHinzu()</td>
+			<td>1. READ token: Token<br>2. READ anfrage: Leihanfrage<br></td>
+		<tr>
+			<td>93</td>
+			<td>51</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihanfrage entgegennehmen</td>
+			<td>WRITE Leihanfrage (Comp)</td>
+			<td>Leihanfrage (Comp)</td>
+			<td>sich im System für Leihanfragen-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>94</td>
+			<td>51</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihanfrage entgegennehmen</td>
+			<td>WRITE Leihanfrage (Comp)</td>
+			<td>Leihanfrage (Comp)</td>
+			<td>sich im System für Leihanfragen-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>95</td>
+			<td>52</td>
+			<td>Ausschuss:Leihkommission</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>über Leihanfrage entscheiden</td>
+			<td>READ Leihanfrage (Comp)</td>
+			<td>Leihanfrage (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>96</td>
+			<td>53</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Bestätigung schreiben</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. WRITE Bestätigung Leihanfrage (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Bestätigung Leihanfrage (Comp)<br></td>
+			<td>Bestätigung der Leihanfrage hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeBestätigungLeihanfrageHinzu()</td>
+			<td>1. READ token: Token<br>2. READ bestätigung Leihanfrage: Bestätigung Leihanfrage<br></td>
+		<tr>
+			<td>97</td>
+			<td>53</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Bestätigung schreiben</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. WRITE Bestätigung Leihanfrage (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Bestätigung Leihanfrage (Comp)<br></td>
+			<td>CRM-Eintrag für die Bestätigung holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE CRM-Eintrag<br></td>
+		<tr>
+			<td>98</td>
+			<td>53</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Bestätigung schreiben</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. WRITE Bestätigung Leihanfrage (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Bestätigung Leihanfrage (Comp)<br></td>
+			<td>sich im System für die Bestätigungs-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>99</td>
+			<td>53</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Bestätigung schreiben</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. WRITE Bestätigung Leihanfrage (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Bestätigung Leihanfrage (Comp)<br></td>
+			<td>sich im System für die Bestätigungs-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>100</td>
+			<td>54</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Bestätigung unterschreiben</td>
+			<td>READ/WRITE Bestätigung Leihanfrage</td>
+			<td>Bestätigung Leihanfrage (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>101</td>
+			<td>55</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Bestätigung verschicken</td>
+			<td>READ Bestätigung Leihanfrage (Comp)</td>
+			<td>Bestätigung Leihanfrage (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>102</td>
+			<td>56</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihvertrag verhandeln</td>
+			<td>WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>Ausstellungsobjekt für Vertragsverhandlungen holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjekt()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE öffentlich sichtbares Ausstellungsobjekt<br></td>
+		<tr>
+			<td>103</td>
+			<td>56</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihvertrag verhandeln</td>
+			<td>WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>sich im System für Vertragsverhandlungen abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>104</td>
+			<td>56</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihvertrag verhandeln</td>
+			<td>WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>sich im System für Vertragsverhandlungen anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>105</td>
+			<td>57</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihvertrag prüfen</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>106</td>
+			<td>58</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihvertrag zustimmen</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>107</td>
+			<td>59</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihvertrag unterschreiben</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>Leihvertrag hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeLeihvertragHinzu()</td>
+			<td>1. READ token: Token<br>2. READ Leihvertragsinformationen: STRING<br>3. READ Bestätigung Leihgesuch o. Leihanfrage: Allgemeine Leihanfrage<br></td>
+		<tr>
+			<td>108</td>
+			<td>59</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihvertrag unterschreiben</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>sich im System für die Vertrags-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>109</td>
+			<td>59</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Leihvertrag unterschreiben</td>
+			<td>READ/WRITE Leihvertrag (Comp)</td>
+			<td>Leihvertrag (Comp)</td>
+			<td>sich im System für die Vertrags-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>110</td>
+			<td>60</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ablehnung schreiben</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. WRITE Ablehnung Leihanfrage (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Ablehnung Leihanfrage (Comp)<br></td>
+			<td>Ablehnung der Leihanfrage hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeAblehnungLeihanfrageHinzu()</td>
+			<td>1. READ token: Token<br>2. READ ablehnung: Ablehnung Leihanfrage<br></td>
+		<tr>
+			<td>111</td>
+			<td>60</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ablehnung schreiben</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. WRITE Ablehnung Leihanfrage (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Ablehnung Leihanfrage (Comp)<br></td>
+			<td>CRM-Eintrag für Ablehnung holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE CRM-Eintrag<br></td>
+		<tr>
+			<td>112</td>
+			<td>60</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ablehnung schreiben</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. WRITE Ablehnung Leihanfrage (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Ablehnung Leihanfrage (Comp)<br></td>
+			<td>sich im System für die Ablehnungs-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>113</td>
+			<td>60</td>
+			<td>Sammlung und Wissenschaft:Kurator</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ablehnung schreiben</td>
+			<td>1. READ CRM-Eintrag (Comp)<br>2. WRITE Ablehnung Leihanfrage (Comp)<br></td>
+			<td>1. CRM-Eintrag (Comp)<br>2. Ablehnung Leihanfrage (Comp)<br></td>
+			<td>sich im System für die Ablehnungs-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>114</td>
+			<td>61</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ablehnung unterschreiben</td>
+			<td>READ/WRITE Ablehnung Leihanfrage</td>
+			<td>Ablehnung Leihanfrage (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>115</td>
+			<td>62</td>
+			<td>Vorstand:Direktor</td>
+			<td>Leihanfrage abwickeln</td>
+			<td>Ablehnung verschicken</td>
+			<td>READ Ablehnung Leihanfrage (Comp)</td>
+			<td>Ablehnung Leihanfrage (Comp)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>116</td>
+			<td>63</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Termin ausmachen</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>117</td>
+			<td>64</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Termin bestätigen (Restaurator)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>118</td>
+			<td>65</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Termin bestätigen (Depotmeister)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>119</td>
+			<td>66</td>
+			<td>Zentrale Dienste:Sicherheit</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Termin bestätigen (Sicherheit)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>120</td>
+			<td>67</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Termin an Museum bestätigen (Registrar)</td>
+			<td>READ CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag für Transportunternehmen holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemCRMProvidedRole.gibEintrag()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE CRM-Eintrag<br></td>
+		<tr>
+			<td>121</td>
+			<td>67</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Termin an Museum bestätigen (Registrar)</td>
+			<td>READ CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag (Comp)</td>
+			<td>Termin für Abholung eintragen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeTransportauftragHinzu()</td>
+			<td>1. READ token: Token<br>2. READ auftrag: Transportauftrag<br></td>
+		<tr>
+			<td>122</td>
+			<td>67</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Termin an Museum bestätigen (Registrar)</td>
+			<td>READ CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag (Comp)</td>
+			<td>sich im System für Terminbestätigung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>123</td>
+			<td>67</td>
+			<td>Sammlung und Wissenschaft:Registrar</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Termin an Museum bestätigen (Registrar)</td>
+			<td>READ CRM-Eintrag (Comp)</td>
+			<td>CRM-Eintrag (Comp)</td>
+			<td>sich im System für Terminbestätigung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>124</td>
+			<td>68</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Werk vorbereiten</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>125</td>
+			<td>69</td>
+			<td>Zentrale Dienste:Sicherheit</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Raum entsichern</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>126</td>
+			<td>70</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Einpacken beaufsichtigen und protokollieren</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>Protokoll hinzufügen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>1. READ token: Token<br>2. READ protokoll: Protokoll<br></td>
+		<tr>
+			<td>127</td>
+			<td>70</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Einpacken beaufsichtigen und protokollieren</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für die Protokoll-Hinzufügung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>128</td>
+			<td>70</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Einpacken beaufsichtigen und protokollieren</td>
+			<td>WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für die Protokoll-Hinzufügung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>129</td>
+			<td>71</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Restaurierung beim Einpacken unterstützen</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>Protokoll hinzufügen 2</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemLeihverkehrProvidedRole.fügeProtokollHinzu()</td>
+			<td>1. READ token: Token<br>2. READ protokoll: Protokoll<br></td>
+		<tr>
+			<td>130</td>
+			<td>71</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Restaurierung beim Einpacken unterstützen</td>
+			<td>READ/WRITE Protokoll (Comp)</td>
+			<td>Protokoll (Comp)</td>
+			<td>sich im System für die Protokoll-Hinzufügung und Zustandsaktualisierung anmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.anmelden()</td>
+			<td>1. READ cred: Credentials<br>2. WRITE Token<br></td>
+		<tr>
+			<td>131</td>
+			<td>72</td>
+			<td>Sammlung und Wissenschaft:Restaurator</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Verladen beaufsichtigen</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>132</td>
+			<td>73</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Restaurierung beim Verladen unterstützen</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		<tr>
+			<td>133</td>
+			<td>74</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>verliehenen Zustand vermerken</td>
+			<td>WRITE Standortdaten (Coll)</td>
+			<td>Standortdaten (Coll)</td>
+			<td>Zustand aktualisieren</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.aktualisiereStandort()</td>
+			<td>1. READ token: Token<br>2. READ standort: Standort<br></td>
+		<tr>
+			<td>134</td>
+			<td>74</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>verliehenen Zustand vermerken</td>
+			<td>WRITE Standortdaten (Coll)</td>
+			<td>Standortdaten (Coll)</td>
+			<td>aktuellen Zustand holen</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemAllgemeineZugriffeProvidedRole.gibAusstellungsobjektMitStandort()</td>
+			<td>1. READ token: Token<br>2. READ name: STRING<br>3. WRITE AusstellungsobjektMitStandort<br></td>
+		<tr>
+			<td>135</td>
+			<td>74</td>
+			<td>Sammlung und Wissenschaft:Depotmeister</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>verliehenen Zustand vermerken</td>
+			<td>WRITE Standortdaten (Coll)</td>
+			<td>Standortdaten (Coll)</td>
+			<td>sich im System für die Protokoll-Hinzufügung und Zustandsaktualisierung abmelden</td>
+			<td>Kunsthalle</td>
+			<td>System.ISystemZugangProvidedRole.abmelden()</td>
+			<td>READ Token: Token</td>
+		<tr>
+			<td>136</td>
+			<td>75</td>
+			<td>Sammlung und Wissenschaft:Kurier</td>
+			<td>eigenes Werk wird abgeholt</td>
+			<td>Begleitung des Transports</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+	</table>
+</body>
+</html>
