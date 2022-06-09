@@ -1,9 +1,9 @@
 # Palladio-Addons-PAcsTract-AcsALign
 
 This Repository contains the tools developed by Roman Pilipchuk throughout his dissertation.
-* IntBIIS_LP: Extention of IntBIIS in order to provide a minimum set of BPMN capabilities
-* PAcsTract (old name PallBPMNRME): Uses in IntBIIS_LP defined business processes in order to extract access control requirement
-* AcsALign: Uses PAcsTract and a Palladio defined architecture model in order to analze the architecture (Enterprise Application Architecture) for violations of access control requirements extracted from business processes
+* **IntBIIS_LP**: Extention of IntBIIS in order to provide a minimum set of BPMN capabilities
+* **PAcsTract (old name PallBPMNRME)**: Uses in IntBIIS_LP defined business processes in order to extract access control requirement
+* **AcsALign**: Uses PAcsTract and a Palladio defined architecture model in order to analze the architecture (Enterprise Application Architecture) for violations of access control requirements extracted from business processes
 
 ### IntBIIS_Lanes and Pool (IntBIIS_LP)
 
